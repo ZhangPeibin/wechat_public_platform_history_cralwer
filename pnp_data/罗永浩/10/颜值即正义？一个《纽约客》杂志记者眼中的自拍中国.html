@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<!--headTrap<body></body><head></head><html></html>--><html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+
+        <script nonce="1891694841" type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+<script nonce="1891694841" type="text/javascript">
+    var biz = "MjM5NzAxNTkzNg=="||"";
+    var sn = "" || ""|| "";
+    var mid = "" || ""|| "";
+    var idx = "" || "" || "";
+    window.__allowLoadResFromMp = true; 
+    
+    </script>
+<script nonce="1891694841" type="text/javascript">
+var page_begintime=+new Date,is_rumor="",norumor="";
+1*is_rumor&&!(1*norumor)&&biz&&mid&&(document.referrer&&-1!=document.referrer.indexOf("mp.weixin.qq.com/mp/rumor")||(location.href="http://mp.weixin.qq.com/mp/rumor?action=info&__biz="+biz+"&mid="+mid+"&idx="+idx+"&sn="+sn+"#wechat_redirect")),
+document.domain="qq.com";
+</script>
+<script nonce="1891694841" type="text/javascript">
+var MutationObserver=window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver,isDangerSrc=function(t){
+if(t){
+var e=t.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+if(e&&!/qq\.com(\:8080)?$/.test(e[1])&&!/weishi\.com$/.test(e[1]))return!0;
+}
+return!1;
+},ishttp=0==location.href.indexOf("http://");
+-1==location.href.indexOf("safe=0")&&ishttp&&"function"==typeof MutationObserver&&"mp.weixin.qq.com"==location.host&&(window.__observer_data={
+count:0,
+exec_time:0,
+list:[]
+},window.__observer=new MutationObserver(function(t){
+window.__observer_data.count++;
+var e=new Date,r=[];
+t.forEach(function(t){
+for(var e=t.addedNodes,o=0;o<e.length;o++){
+var n=e[o];
+if("SCRIPT"===n.tagName){
+var i=n.src;
+isDangerSrc(i)&&(window.__observer_data.list.push(i),r.push(n)),!i&&window.__nonce_str&&n.getAttribute("nonce")!=window.__nonce_str&&(window.__observer_data.list.push("inlinescript_without_nonce"),
+r.push(n));
+}
+}
+});
+for(var o=0;o<r.length;o++){
+var n=r[o];
+n.parentNode&&n.parentNode.removeChild(n);
+}
+window.__observer_data.exec_time+=new Date-e;
+}),window.__observer.observe(document,{
+subtree:!0,
+childList:!0
+})),function(){
+if(-1==location.href.indexOf("safe=0")&&Math.random()<.01&&ishttp&&HTMLScriptElement.prototype.__lookupSetter__&&"undefined"!=typeof Object.defineProperty){
+window.__danger_src={
+xmlhttprequest:[],
+script_src:[],
+script_setAttribute:[]
+};
+var t="$"+Math.random();
+HTMLScriptElement.prototype.__old_method_script_src=HTMLScriptElement.prototype.__lookupSetter__("src"),
+HTMLScriptElement.prototype.__defineSetter__("src",function(t){
+t&&isDangerSrc(t)&&window.__danger_src.script_src.push(t),this.__old_method_script_src(t);
+});
+var e="element_setAttribute"+t;
+Object.defineProperty(Element.prototype,e,{
+value:Element.prototype.setAttribute,
+enumerable:!1
+}),Element.prototype.setAttribute=function(t,r){
+"SCRIPT"==this.tagName&&"src"==t&&isDangerSrc(r)&&window.__danger_src.script_setAttribute.push(r),
+this[e](t,r);
+};
+}
+}();
+</script>
+
+        <link rel="dns-prefetch" href="//res.wx.qq.com">
+<link rel="dns-prefetch" href="//mmbiz.qpic.cn">
+<link rel="shortcut icon" type="image/x-icon" href="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script nonce="1891694841" type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var tmp = url.split('?'),
+            query = (tmp[1] || "").split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || "" || '';
+        window.key = params['key'] || "" || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+        window.appmsg_token = "";
+    })();
+
+    function wx_loaderror() {
+        if (location.pathname === '/bizmall/reward') {
+            new Image().src = '/mp/jsreport?key=96&content=reward_res_load_err&r=' + Math.random();
+        }
+    }
+
+</script>
+
+        <title>颜值即正义？一个《纽约客》杂志记者眼中的自拍中国</title>
+        
+<style>html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;line-height:1.6}body{-webkit-touch-callout:none;font-family:-apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background-color:#f3f3f3;line-height:inherit}body.rich_media_empty_extra{background-color:#fff}body.rich_media_empty_extra .rich_media_area_primary:before{display:none}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:16px}*{margin:0;padding:0}a{color:#607fa6;text-decoration:none}.rich_media_inner{font-size:16px;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.rich_media_area_primary{position:relative;padding:20px 15px 15px;background-color:#fff}.rich_media_area_primary.voice{padding-top:66px}.rich_media_area_primary:before{content:" ";position:absolute;left:0;top:0;width:100%;height:1px;border-top:1px solid #e5e5e5;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5);top:auto;bottom:-2px}.rich_media_area_primary .original_img_wrp{display:inline-block;font-size:0}.rich_media_area_primary .original_img_wrp .tips_global{display:block;margin-top:.5em;font-size:14px;text-align:right;width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.rich_media_area_extra{padding:0 15px 0}.rich_media_title{margin-bottom:10px;line-height:1.4;font-weight:400;font-size:24px}.icon_original_tag_primary{display:inline-block;padding:1px .65em;margin-top:-0.2em;vertical-align:middle;line-height:1.4;font-size:12px;border-top-left-radius:.85em 50%;-moz-border-radius-topleft:.85em 50%;-webkit-border-top-left-radius:.85em 50%;border-top-right-radius:.85em 50%;-moz-border-radius-topright:.85em 50%;-webkit-border-top-right-radius:.85em 50%;border-bottom-left-radius:.85em 50%;-moz-border-radius-bottomleft:.85em 50%;-webkit-border-bottom-left-radius:.85em 50%;border-bottom-right-radius:.85em 50%;-moz-border-radius-bottomright:.85em 50%;-webkit-border-bottom-right-radius:.85em 50%;border:1px solid #9e9e9e;color:#8c8c8c}.icon_original_tag_primary.title_tag{background-color:#e94442;border-color:#d04b4e;color:#fff;margin-bottom:.5em;padding:2px .65em;border-top-left-radius:.95em 50%;-moz-border-radius-topleft:.95em 50%;-webkit-border-top-left-radius:.95em 50%;border-top-right-radius:.95em 50%;-moz-border-radius-topright:.95em 50%;-webkit-border-top-right-radius:.95em 50%;border-bottom-left-radius:.95em 50%;-moz-border-radius-bottomleft:.95em 50%;-webkit-border-bottom-left-radius:.95em 50%;border-bottom-right-radius:.95em 50%;-moz-border-radius-bottomright:.95em 50%;-webkit-border-bottom-right-radius:.95em 50%}.rich_media_meta_list{margin-bottom:18px;line-height:20px;font-size:0}.rich_media_meta_list em{font-style:normal}.rich_media_meta{display:inline-block;vertical-align:middle;margin-right:8px;margin-bottom:10px;font-size:16px}.meta_original_tag{display:inline-block;vertical-align:middle;padding:1px .5em;border:1px solid #9e9e9e;color:#8c8c8c;border-top-left-radius:20% 50%;-moz-border-radius-topleft:20% 50%;-webkit-border-top-left-radius:20% 50%;border-top-right-radius:20% 50%;-moz-border-radius-topright:20% 50%;-webkit-border-top-right-radius:20% 50%;border-bottom-left-radius:20% 50%;-moz-border-radius-bottomleft:20% 50%;-webkit-border-bottom-left-radius:20% 50%;border-bottom-right-radius:20% 50%;-moz-border-radius-bottomright:20% 50%;-webkit-border-bottom-right-radius:20% 50%;font-size:15px;line-height:1.1}.meta_enterprise_tag img{width:30px;height:30px!important;display:block;position:relative;margin-top:-3px;border:0}.rich_media_meta_text{color:#8c8c8c}span.rich_media_meta_nickname{display:none}.rich_media_thumb_wrp{margin-bottom:6px}.rich_media_thumb_wrp .original_img_wrp{display:block}.rich_media_thumb{display:block;width:100%}.rich_media_content{overflow:hidden;color:#3e3e3e}.rich_media_content *{max-width:100%!important;box-sizing:border-box!important;-webkit-box-sizing:border-box!important;word-wrap:break-word!important}.rich_media_content p{clear:both;min-height:1em}.rich_media_content em{font-style:italic}.rich_media_content fieldset{min-width:0}.rich_media_content .list-paddingleft-2{padding-left:2.2em}.rich_media_content .list-paddingleft-2 .list-paddingleft-2{padding-left:30px}.rich_media_content blockquote{margin:0;padding-left:10px;border-left:3px solid #dbdbdb}img{height:auto!important}@media screen and (device-aspect-ratio:2/3),screen and (device-aspect-ratio:40/71){.meta_original_tag{padding-top:0}}@media(min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2){.mm_appmsg .rich_media_inner,.mm_appmsg .rich_media_meta,.mm_appmsg .discuss_list,.mm_appmsg .rich_media_extra,.mm_appmsg .title_tips .tips{font-size:17px}.mm_appmsg .meta_original_tag{font-size:15px}}@media(min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3){.mm_appmsg .rich_media_title{font-size:25px}}@media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait){.rich_media_area_extra{padding-bottom:34px}}@media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape){.rich_media_area_primary{padding:20px 59px 15px 59px}.rich_media_area_extra{padding:0 59px 21px 59px}}@media screen and (min-width:1024px){.rich_media{width:740px;margin-left:auto;margin-right:auto}.rich_media_inner{padding:20px}body{background-color:#fff}}@media screen and (min-width:1025px){body{font-family:"Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif}.rich_media{position:relative}.rich_media_inner{background-color:#fff;padding-bottom:100px}}.radius_avatar{display:inline-block;background-color:#fff;padding:3px;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;overflow:hidden;vertical-align:middle}.radius_avatar img{display:block;width:100%;height:100%;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;background-color:#eee}.cell{padding:.8em 0;display:block;position:relative}.cell_hd,.cell_bd,.cell_ft{display:table-cell;vertical-align:middle;word-wrap:break-word;word-break:break-all;white-space:nowrap}.cell_primary{width:2000px;white-space:normal}.flex_cell{padding:10px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.flex_cell_primary{width:100%;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;box-flex:1;flex:1}.original_tool_area{display:block;padding:.75em 1em 0;-webkit-tap-highlight-color:rgba(0,0,0,0);color:#3e3e3e;border:1px solid #eaeaea;margin:20px 0}.original_tool_area .tips_global{position:relative;padding-bottom:.5em;font-size:15px}.original_tool_area .tips_global:after{content:" ";position:absolute;left:0;bottom:0;right:0;height:1px;border-bottom:1px solid #dbdbdb;-webkit-transform-origin:0 100%;transform-origin:0 100%;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.original_tool_area .radius_avatar{width:27px;height:27px;padding:0;margin-right:.5em}.original_tool_area .radius_avatar img{height:100%!important}.original_tool_area .flex_cell_bd{width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.original_tool_area .flex_cell_ft{font-size:14px;color:#8c8c8c;padding-left:1em;white-space:nowrap}.original_tool_area .icon_access:after{content:" ";display:inline-block;height:8px;width:8px;border-width:1px 1px 0 0;border-color:#cbcad0;border-style:solid;transform:matrix(0.71,0.71,-0.71,0.71,0,0);-ms-transform:matrix(0.71,0.71,-0.71,0.71,0,0);-webkit-transform:matrix(0.71,0.71,-0.71,0.71,0,0);position:relative;top:-2px;top:-1px}.weui_loading{width:20px;height:20px;display:inline-block;vertical-align:middle;-webkit-animation:weuiLoading 1s steps(12,end) infinite;animation:weuiLoading 1s steps(12,end) infinite;background:transparent url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iciIgd2lkdGg9JzEyMHB4JyBoZWlnaHQ9JzEyMHB4JyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJub25lIiBjbGFzcz0iYmsiPjwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjRTlFOUU5JwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoMCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICA8L3JlY3Q+CiAgICA8cmVjdCB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzk4OTY5NycKICAgICAgICAgIHRyYW5zZm9ybT0ncm90YXRlKDMwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4KICAgICAgICAgICAgICAgICByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyM5Qjk5OUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSg2MCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICAgICAgICAgICAgICAgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz4KICAgIDwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjQTNBMUEyJwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoOTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNBQkE5QUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxMjAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCMkIyQjInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxNTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCQUI4QjknCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxODAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDMkMwQzEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyMTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDQkNCQ0InCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEMkQyRDInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEQURBREEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNFMkUyRTInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0Pgo8L3N2Zz4=) no-repeat;-webkit-background-size:100%;background-size:100%}@-webkit-keyframes weuiLoading{0%{-webkit-transform:rotate3d(0,0,1,0deg)}100%{-webkit-transform:rotate3d(0,0,1,360deg)}}@keyframes weuiLoading{0%{-webkit-transform:rotate3d(0,0,1,0deg)}100%{-webkit-transform:rotate3d(0,0,1,360deg)}}.gif_img_wrp{display:inline-block;font-size:0;position:relative;font-weight:400;font-style:normal;text-indent:0;text-shadow:none 1px 1px rgba(0,0,0,0.5)}.gif_img_wrp img{vertical-align:top}.gif_img_tips{background:rgba(0,0,0,0.6)!important;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000',endcolorstr = '#99000000');border-top-left-radius:1.2em 50%;-moz-border-radius-topleft:1.2em 50%;-webkit-border-top-left-radius:1.2em 50%;border-top-right-radius:1.2em 50%;-moz-border-radius-topright:1.2em 50%;-webkit-border-top-right-radius:1.2em 50%;border-bottom-left-radius:1.2em 50%;-moz-border-radius-bottomleft:1.2em 50%;-webkit-border-bottom-left-radius:1.2em 50%;border-bottom-right-radius:1.2em 50%;-moz-border-radius-bottomright:1.2em 50%;-webkit-border-bottom-right-radius:1.2em 50%;line-height:2.3;font-size:11px;color:#fff;text-align:center;position:absolute;bottom:10px;left:10px;min-width:65px}.gif_img_tips.loading{min-width:75px}.gif_img_tips i{vertical-align:middle;margin:-0.2em .73em 0 -2px}.gif_img_play_arrow{display:inline-block;width:0;height:0;border-width:8px;border-style:dashed;border-color:transparent;border-right-width:0;border-left-color:#fff;border-left-style:solid;border-width:5px 0 5px 8px}.gif_img_loading{width:14px;height:14px}i.gif_img_loading{margin-left:-4px}.gif_bg_tips_wrp{position:relative;height:0;line-height:0;margin:0;padding:0}.gif_bg_tips_wrp .gif_img_tips_group{position:absolute;top:0;left:0;z-index:9999}.gif_bg_tips_wrp .gif_img_tips_group .gif_img_tips{top:0;left:0;bottom:auto}.rich_media_global_msg{position:fixed;top:0;left:0;right:0;padding:1em 35px 1em 15px;z-index:2;background-color:#c6e0f8;color:#8c8c8c;font-size:13px}.rich_media_global_msg .icon_closed{position:absolute;right:15px;top:50%;margin-top:-5px;line-height:300px;overflow:hidden;-webkit-tap-highlight-color:rgba(0,0,0,0);background:transparent url(//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_appmsg_msg_closed_sprite.2x2eb52b.png) no-repeat 0 0;width:11px;height:11px;vertical-align:middle;display:inline-block;-webkit-background-size:100% auto;background-size:100% auto}.rich_media_global_msg .icon_closed:active{background-position:0 -17px}.rich_media_global_msg.voice{color:#1aad19;background-color:#e8f6e8;padding-left:43.3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rich_media_global_msg.voice .ic_voice{position:absolute;top:50%;margin-top:-10px;left:15px;display:inline-block;width:13.3px;height:18.3px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAA3CAYAAAB+fggjAAAAAXNSR0IArs4c6QAACb9JREFUaAW9WX9wVMUd3917d5cf/Agp1OTuQgIlQqUoI1JI1Noojg2I+VU7hVrtDDpadRypgzKjU52x09KOdsS20ypSO/WPWttcAqhTOlSoU4FIoRUn0wEZIMndBUkwGEhyv97bfvaS97L77t3lHYUuc+z3935397vf/e4LJZfQnuPPsW0d25ZQzr9mELKSUnIVzHxB/Dh+lBOKf4OEk0FOyQAl/CyltIt5tL29d/V2FzIkLUQ4FA7dwon+KCF0Fee8rBBdS5aSs/D+PUrYbyKtkb9b9BzAlA7CERrqDN1DOH8C8HU57FwSGat6kBGypbcluhMwFj+75XWwemf1vHQqtZ0T3pCtelkp73uJ79s9bT39dqs5HQyFK79jcPIKFErtSgLHjPvQHQB0EFt2hDE2QHU6RMvpkODrw3o50Uk5p3w2N/SlUKhHTNZjskHBz2pi6ylbH22J/k3mOToYCAceIYT/AgYVPhxJQTkMQ792Ez/yQCY8d0fgRl0nj8J2G5z1mvSJ3qCMrYOTb5l0xQFBDIUDjxmcbzUFJnu621/kf/DUmlM9k7RLh4LtwRChxquck0bFCqWjxENuijXF/iXoioNVnZU36wZ5D7PTTCWsWhyp4uFYa+x1k3Y5ezj6oNgtdTVpL0Lo+mhr9BwO0Xib+/bcWYZB35Sdg/sXsOSNV8o5MXK0LfoKYXQDxpJOMZ8L1g8E33JQT6aeQRoJCOJEMxjxfCvSEtlnEq5Uj5h7Ayv2I8U+5w9du/va0oyD896ZV004RQKebIzQ53EQ/jJJubJQhUa2YBXPmqNgy8vPjZ67N+NgMh6/HwSfyURgniwqLvmJif8/+sNrY6O4XV5WxjKMuvHDQOl9uCksHmX0xydWn0hYBJfAgncXzBhNjjZSnX8Fq3ENdmWWUMUhS2Ebv5HrtjDNg/+B5IY4wos0cVukUskqUwj9xfKS2W9GSEwi5QdxFS5BMn54dGzkHkhOy0x18j9COY1O5VxmhGJylIxMjgUTC7WUkfrqJAkQpfuP3nFUElO4WUgwHHza0HU1wG1SGOi0jeSI+kf92hgZlXg0yajBV0gUwri4vqZud/O7PbhxkGiNvM5NWHKV3NN8LGQbuVdDsYIVzOzHOI+ygzYhR/RAxwdbELcPZDEp+Q+2YQcS2L+Zwc4gdSUQS7Oz5BwIKUqWyq5ApEdDsVmhBKaHnHDQVUg1uwKLkkm+USEScsbjId/ra+7fbaMThMHVdpoTjuyxXloqcUg+Eqe4WBb26/5hGXeCkynyfdA9Fo/SQeZlN/StjUQtmgQUFxVnKhyJlAUGOgP13OC3ygxGWZhhSYtkYqIicUHGnWCUluoFz8mzkRzOCf14Wfyikx2ThvQ0B6XZdvhi1QaoAfZHmiMf40xMJmih4BvxWQnbNCD3i/cunoYab4FMQwr5o4zb4Uh9ZMxOM3Fsf91YfPQfOAeLTJrouYc8K3rEII0ikBcKRLTEhUQNuo8E7NSGh4dnyDOFzIioOpxkZdqyXYGSAV2rMYjhIUamkL2ZcANvG+MWWS4DU/parDm2R8AiBj/Bz3IQe14DPKeDRho1hNyonFplhgp/mmaNhpH6s0VVToNFxR7TPcVFJVZdgMG4cNBq0LvRQhyA2vLaMyDrFouTL169KzBlGkEofdnScQYMXBI/raiuXC1fs4wz2iXLI+U0y7gd3tewL41IVhLvmM6X2eWycM7nZ9EEAXWgWDWPpjWg7tx8+IbD4llhNTadTn8XcWgVBphprbhbLQkngJK/ymTdoE/IuDPME5jYSYx1HLn3EH6/B77Rq/m+FG2L3d7X1Pe+kx5kCBJp4G0clDWmAJTD0db+NhO398GO4G3cMDJBbPIY9bShfgyb+OXqMwGPV9rrskFsc6t4fck0GRZPQ5GnZBpO4x/wvrAmKfP+FzjjYF9zn5i58s0ET8MX8hnGc+BxOGnFi8innBg7UUBsFaV6Pt1CeBMrKD73qG8CbPnKUHvg/lzG+tr6DlGWufJkEWQp/tjgyMBJPF+fWrhj4XSZeSlwJgaFIhyioY7gHvS3moYyK6TRO6JN0b0mzd6HOgIbEBK/gp7fzsOBGMLUX2Z+bWvvnb1T3sd2fYFbDgoET8/56UTqKEBrizDIeY1463tae1BGObeq9qrlBtXb4aRcmVvCmOjneFq+UFZW9lJ3Q3fee9lSmgAUBwUNd+N9CPjfTfDHO0pO+z1FK081nfpUoUuIuKPPD322Gav5OMjWBCURRBGN4GH0QCGvxSwHhcFguPLnGEip97AKXd5y39dPN5yOy4PaYXGrjKToRsTMIzg4M+38cZz+LNYWe8qZp1Izh0QlEVLfctMmzNb6gCP4GGxFcij5W7usHT++NjaI4uHpadr0KkbpZvAH7DKw9iRi98lsejbFcQWF2LJ/LvOe6Yl14m5eLavhU8gqkQdlWj5YnOSL+sXNWNFNmKT1NQsLkGAez3zcIHmfj44rKAYUd2Jxcek6HCP1cHD+Ig5DzonZnT3WdOyCWFGukRUIwkGTL069kdYz319MmlOf00EhjKpiWKPku7IiDF9X3RHMecvIsjIsPqdh1ewO3SXLOMF5HRQKvS39h5GNOmVlnZP1Mu4W9pZ5/4TDZh0ybHkt3iKOqcm0OaWDQpB52DZTQfQo+Vtl3C08kQGO2OStYtlGz6CuHJxZO3MPYnHYMsDJVSKpW3ghAOXKsxaPoup86q4c7F7cncSyHZANGen0Shl3C+PSPy/L4qmZ97525aAwiMLgQ8Uwp8tl3C2MASff00KJMRW3GXLtIFbwY1kXp/kaGXcL42AoDqHit6p5JxuuHfQwj1IvIhFO9QhyGk/QpskM/C3Gyo0y3YRdOzgnNOcTHJS0qYgVrBIfLE28gF75ToN3bySfrmsHM68tTo7JxuKJ+PUyPhWcqbQ5XarI+TRlZxQeENcOjitS5dMc5/oqu8F8+ODI4FrEoPVpBTfL8akK2YIc9DCiFAkoyTbUdNSU5XPK5Im/MQPeZOKZnpNdCu6AFOTgrJLZO2FDrogrUjyxPbQ/VOxgWyG9Fn71h6hoJkMC8exlvl8qQg6I66rE1A22Vz6PEuwZExe92CrQtmmU72U+fzQ9K/15XV1dsuudrhlc50t0XX8Izq1TdAh5I9rWf69Mc4ILdlCU9kNDn32ICvZS0wySAY2W+shSUdw6OSXTCtpioSgePZrPeydWTUncstF8MPRw1dFvunFO2CnYQaGEk3cSn8iWYyVeBGoImqtG6RHxQsQfEJVskE+34C22GxOfb8fiY40owtaAJ0qnciTxcvSlE7VfBPX3IQ8lb/U2R3dgBRGu7tt/AYJkZEGv/oaXAAAAAElFTkSuQmCC) no-repeat center;background-size:contain}.rich_media_global_msg.voice .icon_more{position:absolute;right:15px;top:50%;margin-top:-6.5px;width:8px;height:13px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAmCAYAAADeB1slAAAAAXNSR0IArs4c6QAAA49JREFUSA2tVk1IVFEUPveOmhQk1ibfvLFZSJtACqJIIpCIoB+imcFV2Z9ZUVnRomgRGFn2i6mFf5XVotCZMYmgIMhlq6BFENFiwjfPAosgFzXOvNu5o3fmeue98Y16F3PP+c453/fu/xCQmvZSWwwJaC0G6P8WND9IoTmbVFRycpqAdgBWkwRo94V960RsPn1aoPpN9RI6CR0WsDWcjAErtUiqTR/S18+HnNcSTv5zYrwDSatVMgLkH6aciwfj79WYW5+OT4xfsyPnBIgvwt872qBW45ZQzaMlJXCfMPJbDQgfRUoIhduVUW2TwArpaWyX+bnYU9JAAH44FaJIccqCW76Ib7NTjhOOvFPN/8q/IvE3cR+npFJgao9rkiSUXjD2GCNqzMnPbNPYjth3mqINlJAvTsk4kiJmWa3eQe8WpxwVzwjwgFFn/CorL29EkY9qovC5CFDrKq7JVoHl6zNTJCf53/lLk78SN/FcbJRx2cZCixC4ZATGXsu4as8YgQjGamN/q5atOotn4K3A1J4BUMbgsh7Wt6sx2bcV4AkjtSPJxkDjRQL0hVwg21zEglSzN+rdKeOybTtFcgK39ajWZDFWr+IZHxfGQ8mV0YA5nMGmDVcCPNcb8R5gYJ1UCWQfp6PFCI4NyZhrAV6EIiHGrPOAB0ImkW2c0la8u8ICc0wUCWrvC1dsw+3TnN6uanDaJ4zeiIfiA9wtWIAX8XspxeA6iuBlaN88hNzCNXk+JwFOuXJYW5tMQmc+EcqgzXGb2n9XFk1NstX5yKczl89JAF+6vRaBM1m5XAu//qkRGrtb8BThTtqH2/V0LmUWwbvsiREw8X0vcJHxxNbjNm3KUuVaMjmPFuWm2CPesHc/kp+yj06hFMhj/PIOOcfVFLk6xZT0G3vMTpmc27MusityZk/OBfKOwA05MPLIDJn3OJldcxTQotpBYOyEXVEWIw/NoInvuHOznSJfVDs0GzneNw9mI+eyOSPQI9phfCqPO38TFhHaFw/Eu/LliNiMESB5w6zkzD05F8mMYJr8mFC263Fa+vAadvXloj4toEcrjlgMjgrQrseHpBcfkm67WD6M6MN6lTWZeoZjyYxGLcB57MGnsEfF3fjU2G189QBpcUqmBLrnSs4504s8GjLxrwm5qYrg3dKFf6x6VbwQ3yOS/wz8+bS0ruwfELaBY2nyoNkn4gvW65GKRn4WForwP+dONHDaOHeZAAAAAElFTkSuQmCC) no-repeat center;background-size:contain}.preview_appmsg .rich_media_title{margin-top:1.9em}@media screen and (min-width:1024px){.rich_media_global_msg{position:relative;margin:0 20px}.preview_appmsg .rich_media_title{margin-top:0}}.pages_reset{color:#3e3e3e;line-height:1.6;font-size:16px;font-weight:400;font-style:normal;text-indent:0;letter-spacing:normal;text-align:left;text-decoration:none;white-space:normal}.weapp_element,.weapp_display_element,.mp-miniprogram{display:block;margin:1em 0}.share_audio_context{margin:16px 0}.weapp_text_link{font-size:17px}.weapp_text_link:before{content:'';display:inline-block;line-height:1;background-size:12px 12px;background-repeat:no-repeat;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAb1BMVEUAAAB4it11h9x2h9x2h9x2htx8j+R8i+B1h9x2h9x3h92Snv91htt2h9x1h9x4h9x1h9x1h9x2idx1h9t2h9t1htt1h9x1h9x1htx2h9x1h912h9x4h913iN17juOOjuN1iNx2h9t4h958i+B1htvejBiPAAAAJHRSTlMALPLcxKcVEOXXUgXtspU498sx69DPu5+Yc2JeRDwbCYuIRiGBtoolAAAA3ElEQVQoz62S1xKDIBBFWYiFYImm2DWF///G7DJEROOb58U79zi4O8iOo8zuCRfV8EdFgbYE49qFQs8ksJInajOA1wWfYvLcGSueU/oUGBtPpti09uNS68KTMcrQ5jce4kmN/HKn9XVPAo702JEdx9hTUrWUqVrI3KwUmM1NhIWMKdwiGvpGMWZOAj1PZuzAxHwhVSplrajoseBnbyDHAwvrtvKKhdqTtFBkL8wO5ijcsS3G1JMNvQ5mdW7fc0x0+ZcnlJlZiflAomdEyFaM7qeK2JahEjy5ZyU7jC/q/Rz/DgqEuAAAAABJRU5ErkJggg==');vertical-align:middle;font-size:11px;color:#888;border-radius:10px;background-color:#f4f4f4;margin-right:6px;margin-top:-4px;background-position:center;height:20px;width:20px}.weui-mask{position:fixed;z-index:1000;top:0;right:0;left:0;bottom:0;background:rgba(0,0,0,0.6)}.weui-dialog{position:fixed;z-index:5000;width:80%;max-width:300px;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background-color:#fff;text-align:center;border-radius:3px;overflow:hidden}.weui-dialog__hd{padding:1.3em 1.6em .5em}.weui-dialog__title{font-weight:400;font-size:18px}.weui-dialog__bd{padding:0 1.6em .8em;min-height:40px;font-size:15px;line-height:1.3;word-wrap:break-word;word-break:break-all;color:#999}.weui-dialog__bd:first-child{padding:2.7em 20px 1.7em;color:#353535}.weui-dialog__ft{position:relative;line-height:48px;font-size:18px;display:-webkit-box;display:-webkit-flex;display:flex}.weui-dialog__ft:after{content:" ";position:absolute;left:0;top:0;right:0;height:1px;border-top:1px solid #d5d5d6;color:#d5d5d6;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.weui-dialog__btn{display:block;-webkit-box-flex:1;-webkit-flex:1;flex:1;color:#3cc51f;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);position:relative}.weui-dialog__btn:active{background-color:#eee}.weui-dialog__btn:after{content:" ";position:absolute;left:0;top:0;width:1px;bottom:0;border-left:1px solid #d5d5d6;color:#d5d5d6;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleX(0.5);transform:scaleX(0.5)}.weui-dialog__btn:first-child:after{display:none}.weui-dialog__btn_default{color:#353535}.weui-dialog__btn_primary{color:#0bb20c}</style>
+<style>
+        </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_pc2c9cd6.css">
+<![endif]-->
+
+    </head>
+    <body id="activity-detail" class="zh_CN mm_appmsg">
+        
+<script nonce="1891694841" type="text/javascript">
+    var write_sceen_time = (+new Date());
+</script>
+
+<div id="js_article" class="rich_media">
+    <div class="rich_media_inner">
+                        
+        
+        <div id="page-content" class="rich_media_area_primary">
+            
+                        <div id="img-content">
+                
+                <h2 class="rich_media_title" id="activity-name">
+                    颜值即正义？一个《纽约客》杂志记者眼中的自拍中国                                    </h2>
+                <div id="meta_content" class="rich_media_meta_list">
+                                                            <em id="post-date" class="rich_media_meta rich_media_meta_text">2018-01-04</em>
+
+                                        <a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname" href="##" id="post-user">罗永浩</a>
+                    <span class="rich_media_meta rich_media_meta_text rich_media_meta_nickname">罗永浩</span>
+
+                    <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                        <div class="profile_inner">
+                            <strong class="profile_nickname">罗永浩</strong>
+                            <img class="profile_avatar" id="js_profile_qrcode_img" src="" alt="">
+
+                            <p class="profile_meta">
+                            <label class="profile_meta_label">微信号</label>
+                            <span class="profile_meta_value">smartisan2013</span>
+                            </p>
+
+                            <p class="profile_meta">
+                            <label class="profile_meta_label">功能介绍</label>
+                            <span class="profile_meta_value">锤子科技 CEO</span>
+                            </p>
+                            
+                        </div>
+                        <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                            <i class="profile_arrow arrow_out"></i>
+                            <i class="profile_arrow arrow_in"></i>
+                        </span>
+                    </div>
+                </div>
+                
+                
+                
+                
+                                                
+                                                                
+                
+                <div class="rich_media_content " id="js_content">
+                    
+
+                    
+
+                    
+                    
+                    <blockquote style="white-space: normal;"><p style="text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);"><span style="color: rgb(102, 102, 102);font-size: 13px;">来源：</span><span style="font-size: 13px;"><strong><span style="color: rgb(214, 0, 15);">锤子阅读</span></strong></span><span style="color: rgb(102, 102, 102);font-size: 13px;">，本文授权转载自：36氪</span></span></span></p></blockquote><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);"><br  /></span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);">编者按：“不把照片 P 一下，都不好意思发朋友圈。”这在当下中国已经司空见惯。但这背后传递出了什么信息呢？近日，《纽约客》杂志发布了一篇记者范嘉阳（音译，Fan Jiayang）的报道，以美图为核心，勾勒出了国人对自拍的痴迷程度以及背后的文化现象。</span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);"><br  /></span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><img data-s="300,640" data-type="jpeg" data-src="https://mmbiz.qpic.cn/mmbiz_jpg/6AcP1PhrIChxbgClbYRmEvuEU1DfgPworh2neqYnHO5KN9A1D7EmK8yxnWiasT1IpcakCNndNZ39N0scIXo0LRw/0?wx_fmt=jpeg" data-copyright="0" class="" data-ratio="1.51125" data-w="800" data-backw="558" data-backh="843" style="width: 100%;height: auto;"  /></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);"><br  /></span></span></p><p style="white-space: normal;text-align: center;line-height: 1.75em;"><span style="color: rgb(214, 0, 15);font-size: 15px;">━━━━━</span></p><p style="margin-top: 0em;margin-bottom: 0em;white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin-top: 0em;margin-bottom: 0em;white-space: normal;text-align: justify;line-height: 1.75em;"><strong><span style="font-size: 19px;color: rgb(214, 0, 15);">一</span></strong></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);"><br  /></span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);">HoneyCC 喜欢说，她几乎不记得上一次有人喊她真实的名字林楚楚（音译，Lin Chuchu）是什么时候了。她的网名 HoneyCC，来自于一部在 2003 年由“杰西卡·阿尔芭”（Jessica Alba）主演的电影，讲述的是一个名为 Honey 的有抱负的嘻哈舞者和舞蹈指导，在一个音乐视频导演看到她表演的片段后，获得了出道的机会。这与受过嘻哈舞蹈、爵士乐和中国民乐训练的“HoneyCC”的经历有一些相似的地方，她同样相信要被发现。</span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);"><br  /></span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);">几年前，在一次伤病导致她的舞蹈生涯中断之后，她和一些朋友成立了一家广告公司。她的许多客户都是社交媒体公司，她为这些公司所做的工作，从某种程度上也反映了这个行业的发展历程：首先是基于文本服务的微博，在当时是中国最大的社交媒体网络，然后人们开始发布图片。“但一张照片能传递的信息很有限，”她最近告诉我。“要真正传达一个信息，你需要一个视频。”</span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);"><br  /></span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);">今天，二十七岁的 HoneyCC 是视频分享平台美拍的最大明星之一。美拍于 2014 年推出，现在是中国最受欢迎的视频平台之一，每月的浏览量接近 80 亿次。她的视频时长从 15 秒到 5 分钟不等，内容包括对口型表演伤感的情歌、嘻哈乐、舞台剧以及懒洋洋地躺在床上，等等。娇小的她，有着精致的小脸，她可以扮演天真无邪的少女或邻家女孩的角色，服装变化的速度令人眼花缭乱。“有时候我看起来就像梦中的东西，”Honey 说，“其他时候我看起来像个精神病人。但是是一个漂亮的精神病人。”</span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);"><br  /></span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);">HoneyCC 理解破坏完美的魅力。比如，与男神一起浪漫的散步时突然摔个“屁股蹲儿”。她用嘴对着镜头说话，营造出一种不经意间的亲密感。在一个关于卡丁车的短片中，她努力脱下头盔，当她的头出现时，她脸上的妆都被抹花了。</span></span><br  /></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);"><br  /></span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);">HoneyCC 拥有数以百万计的粉丝，并收到了很多品牌的广告（她的广告客户包括纪梵希，香奈儿和惠普）。她经营着一家成功的网店，销售化妆品和服装。最近，她推出了自己的化妆品牌“HoneyCC”。她发布了一段穿着紧身牛仔裤跳舞的 5 分钟视频，同款的紧身牛仔裤卖出了三万条。她早就是一个百万富翁了。</span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);"><br  /></span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);">今年 5 月，我第一次在厦门见到了 HoneyCC。当时是在美拍的母公司美图公司的总部。2008 年，该公司的第一款产品是一款照片编辑应用，也被称为美图，年轻人将其作为一种增强自拍照的工具。该公司现在有一系列的应用程序，包括 BeautyPlus、 BeautyCam 和 SelfieCity 这样的名字，可以平滑皮肤，夸大面部特征，让眼睛更明亮。</span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);"><br  /></span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);">这些应用安装在 10 亿多的手机上——主要是在中国和亚洲其他地区，但也越来越多地出现在西方，美图试图扩大其在西方的市场份额。该公司还销售一系列智能手机，这些智能手机的设计特别讨人喜欢：前置自拍摄像头比普通手机拥有更强大的传感器和处理器，在拍照的那一刻，美化应用程序就开始发挥它们的魔力了。去年，手机销售额占美图收入的 93%，目前该公司的估值为 60 亿美元。美图在一年前上市，是近十年来香港交易所上市的最大的互联网公司。</span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);"><br  /></span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);">在全球范围内，美图的应用每月会处理大约六十亿张照片，据估计，在中国社交媒体上上传的自拍照中，有超过一半是用美图的产品编辑的。HoneyCC 告诉我，分享一张你没有P过的照片被认为是一种“失礼”。她说：“自拍是当前中国文化的一部分，美图也是。”在过去的九年里，这家公司的 Slogan 是“让世界变得更美”，它几乎改变了中国的“面”貌。这种新面孔有一个名字，由美图公司的应用程序完善，现在你可以在任何地方看到：网红脸。</span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);"><br  /></span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);">网红在中国几乎无处不在。他们的名声和收入能够与著名的流行歌手相媲美，甚至都超过了电视和电影明星。美图从美拍用户制作视频中会收取一部分费用——在某些情况下，这一比例高达 30%，尽管没有高管或网红会讨论具体的数字。像 HoneyCC 这样的网红，成为了美图的品牌大使。当她和我见面的时候，她即将参加一个会议的彩排，以纪念美拍的三周年纪念日——一场派对，也是一场为网红和网红的粉丝举办的研讨会。HoneyCC 和她的同伴们将分享她们成功的秘诀，而其他人则会记录如何加入她们的队伍，甚至可能会取代她们。“市场竞争越来越激烈，”她说，“粉丝们不断要求更多、更精致、更美。你必须满足他们，鼓励他们，弄清楚他们喜欢什么，甚至在他们还没表现出来之前，”她继续说道。“当他们的眼睛盯着你的时候是非常疯狂的，但你并不能保证他们会一直待在那里。”</span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="font-size: 15px;"><span style="color: rgb(51, 51, 51);"><br  /></span></span></p><p style="white-space: normal;text-align: center;line-height: 1.75em;"><span style="color: rgb(214, 0, 15);font-size: 15px;">━━━━━</span></p><p style="margin-top: 0em;margin-bottom: 0em;white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin-top: 0em;margin-bottom: 0em;white-space: normal;text-align: justify;line-height: 1.75em;"><strong><span style="font-size: 19px;color: rgb(214, 0, 15);">二</span></strong></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">在美图总部的入口处，用倾斜的粉色字母写着公司的名称。入口两侧是一些真人大小的人物，像涂上明亮、光滑油漆的天线宝宝。一位员工解释说，它们代表了公司运营的各个方面，比如营销、产品管理和编程。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">这栋建筑的内部有一个巨大的 Hello Kitty 商店。墙每隔几个月就会换一种颜色，桌上还摆着毛绒玩具和芭比娃娃。会议室以“春假”的地点命名：夏威夷、波拉波拉岛、斐济。（员工的平均年龄是二十七岁。）穿着时髦的男男女女在用花哨的贴纸盖住的电脑。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">一位 27 岁的陈姓女子，给我展示了美图最受欢迎的应用程序，在她的美图M8手机上。她紧紧地握着这个设备，抬起来斜对着我们（“所以脸变得更小了”），拍了一张我们的照片，把结果递给了我。我的皮肤看起来更光滑，眼睛更大、更圆。我问我是不是“P”的。她说，是手机自动“升级”了我。她解释说：“只有当你喜欢自拍时，你才会有更多的自信。只有当你看起来很漂亮的时候，你才会喜欢自拍和拍照片。你看，这一切都很合乎逻辑。”</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">接下来，她使用 BeautyPlus 应用程序向我展示了从 1 到 7 的“美颜等级”——一种渐进的美白和祛除雀斑。然后我们可以把脸变瘦、轮廓变清晰、美白牙齿、调整我们的瞳孔大小、甚至让我们的腰围变细、身高增加几英寸。我们也可以应用各种种类的滤镜。最近加入的一款名为“个性化”的滤镜试图抵消这项技术带来的可预见的后果：人们越多地看自己的自拍照，就会发现和其他人看起来没什么区别。和应用内的其他功能一样，个性化滤镜也是预先设定好的。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">她打开了 BeautyCam 应用，上面写着“美丽即正义！”在屏幕上闪现。它的界面像糖果乐园一样，蜿蜒曲折，有兔子、彩虹。然后是 MakeupPlus，它不仅可以应用粉底、口红、腮红、眼影和睫毛膏，还可以给你的头发染色，塑造你的眉毛，改变你的眼睛颜色。最近，美图与多家化妆品品牌建立了合作关系，包括丝芙兰，兰蔻和芭比波朗;用户可以在她们的自拍照上测试产品，然后被定向到品牌的网站上下单。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我问了很多中国朋友，在把照片发布到社交媒体上之前，她们会花多长时间来编辑一张照片。大多数人的答案是每张脸约 40 分钟，而与朋友一起自拍则需要一个多小时的时间。这项工作需要几个应用，每一个都有各自的强项。没有人会考虑上传或发送没有改进过的照片。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">那天晚些时候，当我见到美图董事长蔡文胜时，他证实，编辑你的照片已经变成了一种礼貌。他说：“就像你会向你的朋友指出 TA 的衬衫纽扣扣错了，或者裤子拉链没拉上那样，当你想要和你的朋友分享照片的话，你应该先美化一下，才算有礼貌。”他以“美图”作为动词进入中文词典这一事实而深感自豪。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">蔡文胜今年 47 岁，在距离厦门五十英里的泉州郊区一个农民家庭长大。他把自己的成功归功于中国转变，“从一个只能穿黑色或海军绿色的时代跨向一个你可以穿任何东西的时代。”20 世纪 80 年代中期，在学校里，他注意到一个女孩受到了很大的关注，因为她是唯一一个穿胸罩的学生。他很快发现在人行道上卖化妆品是有赚头的——“拥有一筒口红是一种不为人知的奢侈”——所以，他在上完初三后就辍学去创业了。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">蔡文胜与另一个泉州企业家吴欣鸿共同创立了美图。最初的计划是为蔡文胜所说的为“老百姓”制作一个简化的 Photoshop。（他很喜欢用“老百姓”这个词）但用户数据显示，自己的应用被年轻女性用于美化自拍照。“尽管没人知道，但需求还是存在的，”他说。他意识到，网上美化市场是他应该抓住的机遇。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">吴欣鸿告诉我，用户数据仍然是公司战略的核心。“它能实时地告诉我们，我们需要知道什么，”他说。一开始，人们比较喜欢有着大大的眼睛和白皮肤日本动漫。现在人们已经转向他所说的“欧美浪潮”，基于这一事实，这些应用可以让人们看起来更像西方人——例如，把单眼皮换成双眼皮。在 BeautyPlus 上，甚至还有一种被称为“混血”的新滤镜，用来实现外观的转换。今年早些时候，社交媒体上出现了大量的愤怒情绪，因为国际用户指出，应用中不断增加的审美标准会导致皮肤颜色的减少。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我采访过的美图高管，都小心地“消除”了他们的应用影响人们对什么是有吸引力的先入之见的暗示。首席技术官表示：“中国人对美的观念根深蒂固，而且长期以来没有争议。大眼睛，双眼皮，白皮肤，高鼻梁，尖下巴。”（这种观点在历史上是有争议的，但在中国却普遍存在。）吴欣鸿甚至暗示，美图正在让美变得民主化，使之成为你可以改变的东西，而不是遗传的问题。“老百姓会去追求一些比他们所知的更美丽的东西，”吴欣鸿说。“这是一项成就。”</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: center;line-height: 1.75em;"><span style="color: rgb(214, 0, 15);font-size: 15px;">━━━━━</span></p><p style="margin-top: 0em;margin-bottom: 0em;white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin-top: 0em;margin-bottom: 0em;white-space: normal;text-align: justify;line-height: 1.75em;"><strong><span style="font-size: 19px;color: rgb(214, 0, 15);">三</span></strong></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">一天下午，在厦门的一栋高层建筑的七层，邓兰菲（音译，Deng Lanfei），一个拥有三百万粉丝的美拍明星，弓着腰，就像一个遭受饥荒的人，在吃一碗方便面。在她旁边，正在“贪婪地”吃着面条的是一个叫付云峰（音译，Fu Yunfeng）的年轻人（有一百万个粉丝）。两个人都穿着白衬衫，打着红色领带，看起来就像是汽车出租店的店员。她们身后贴着一个贴纸——“赚一百万的广告公司”——表明她们在一家广告公司工作，但却没有成功，以至于员工们都快饿死了。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我来到的是一家名为“自娱自乐”的小电影公司总部，这家公司为美拍和其他一些平台拍摄视频。片场中的两个人正在拍一个广告（一个全新的瓶装矿泉水品牌）。但是，就像在许多美拍视频中一样，有一层有趣的自我参照。邓的商业经理杨晓红（音译，Yang Xiaohong）给了我一份剧本的副本。在濒临死亡的边缘，这两名员工同意用石头、剪刀、布来决定谁吃一杯面条。但就在这时，这家矿泉水公司接到了一个电话，该公司想要利用邓的受欢迎程度来获得商业利益。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">“等等，”我轻声对杨说。“邓应该是在扮演她自己吗？”杨笑着说：“邓一方面在扮演自己，另一方面扮演的也不是自己。”</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">表演被夸大了。邓的刘海遮住了她的脸部，付无法判断他的手臂能否更好地传达“最大的绝望”。最后以邓的“结束”为结束。我翻了翻剧本。邓只有 15 句台词，但这一幕似乎永远都不会结束。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">杨向我保证，随意的表演和适度的制作价值是一种资产。她说：“在社交媒体上，传统广告不再有效，因为每个人都知道自己面前放的是一个无趣的广告。但是，如果一个网红能够将一款产品嵌入到她的生活中，她的粉丝们会做出回应：他们觉得使用她所使用的东西会让他们更接近她。”</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">这家制作公司是两年前成立的，获得了美拍公司的 400 万元投资，由一个叫严迟（音译，Yan Chi）的人经营，他也是 HoneyCC 的男友。当我和他交谈时，他刚从硅谷回来，在那里他与 YouTube 和谷歌的人交谈，谈到他通过从中国各地的主要城市招募新网红来扩大公司规模的努力。他说，他面临的最大挑战是一种具有中国品味的地域主义。他告诉我：“这使得制作热门内容变得极其困难。”在说英语的网络文化中，视频可以在许多不同的国家传播。中国则不同，他说：“从接触外部世界到普通教育水平，再到复杂程度和消费能力，一切都是如此。在一个国家里，人们的生活方式是不同的。”</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">过了一会儿，一群人来了，他们看起来很像韩国流行音乐 MV 里的人——来自中国各地的美拍网红，她们都来参加周年纪念大会。杨给她们倒茶，回答了她们关于增加粉丝数量的问题。美拍四分之一的视频上传者都是男性，他们的视频内容倾向于喜剧。一个拥有化学学位的二十四岁的孩子提到了他的突破性作品，这是一个关于中国南方人和北方人对雪的反应有多么不同的短剧。我在想，这条新闻是否曾是漫画的好素材，但当我问他时，他是沉默的，不时被紧张的笑声打断。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">“如果你想吸引一群观众，尤其是年轻观众，你应该选一些粉丝真正感兴趣的内容，”一个人最终说。”他们都是十几岁的孩子，想要被那些与他们生活息息相关的东西逗乐。”</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">一名网红解释说，上世纪 70 年代出生的人仍然带有一些集体主义心态的痕迹。他说：“他们只知道取悦这个群体是什么感觉，也没有真正的自我意识。”独生子女政策意味着 80 年代出生的人更以自我为中心，而后几代人更是如此。今天的青少年，他说，“想要脱颖而出，要成为一个独特的个体，和其他人一样，是不酷的。”</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">《Buying Beauty》一书是对中国审美标准和消费主义的研究。作者温华（音译，Wen Hua）证实，这种对个人主义的偏好，是一个长期崇尚“随大流”的社会的新现象。她说：“美图和整容手术的到来似乎是一个机会，可以让你拥有自己和你的身体。但这是真正的个性吗？”她认为，对美貌的狂热追求，并不是一种真正的独立表达，而是对社会和经济压力的反应。在中国长大的人眼中，有所谓的“铁饭碗”——一种完全依靠政府工作的生活的保障，而今天的年轻人，温指出，没有社会保障，也面临着比他们学历高得多的大学毕业生的竞争。更重要的是，服务行业的发展让自我展示变得更加重要。“铁饭碗”已经被有时被称为“青春饭”所取代——在公共关系和销售等领域，低层次但高薪的工作岗位，年轻人和漂亮的外表被认为是核心竞争力。她说，对外貌的新强调是美图成功的根源：“美图是在制造一种追求完美的渴望，这样你就能感受到它的目光，发现自己符合——并确认了它的标准。”</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我采访了吴冠军，他是上海一所大学的社会学家，也在纽约大学的校园里任教。他指出，年轻人不仅面临着一个功能失调的就业市场，而且还受到媒体明星和富二代的轰炸。看到努力工作与回报之间没有任何联系，年轻人越来越多地选择逃避。吴认为美图是这一趋势的缩影。“它填补了空白，因为它提供了分心和刺激，”他告诉我。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我问吴，这和卡戴珊时代（Kardashian-era）的美国有什么不同。</span><span style="color: rgb(51, 51, 51);font-size: 15px;">他说，西方流行文化的发展需要更长时间，而在西方，流行文化则更加多样化。他觉得，在中国，名人崇拜仍有可能要从整个文化层面来理解。他说：“我的一些学生认为这是他们存在的决定性特征，当其他事情似乎都失控时，他们的生活就有了意义。参与到这种文化中就是要验证你的存在。”他回忆说，有个学生花了大量时间追星。有一天，她中了奖，赢得了一张亲自去看他的票。挣扎了一段时间后，她决定不去了。“我知道她不会去，”吴说。对她来说，这位名人也可能是一个神。你不想和你的上帝面对面，因为想到你可能会在他的下巴上看到一个粉刺，这是很可怕的。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: center;line-height: 1.75em;"><span style="color: rgb(214, 0, 15);font-size: 15px;">━━━━━</span></p><p style="margin-top: 0em;margin-bottom: 0em;white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin-top: 0em;margin-bottom: 0em;white-space: normal;text-align: justify;line-height: 1.75em;"><strong><span style="font-size: 19px;color: rgb(214, 0, 15);">四</span></strong></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">离开厦门，我来到了成都，那里是一个整形手术的中心，去了四川最大的整容医院——西禅医院。它是十二年前由张义祥（音译，Zhang Yixiang）创立的，他是一名四川人，最初接受公共卫生方面的培训，但后来意识到整容手术的利润潜力。他说：“我有个医生朋友告诉我，手术的费用是一百元，但客户愿意支付二千元或更多。”“我当时就知道，这将是一个不断增长的市场。”</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">西禅医院 98% 的病人是女性，其中大多数是年龄在十八岁到三十五岁之间的女性。鼻子整形和眼睑成形术（割双眼皮）是最受欢迎的手术。张说，在早期，大多数客户都在寻求隐藏伤疤或身体畸形，现在，他说，“通常情况下，有魅力的女性都开始追求完美。”</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">一个 30 岁出头的女人叫许学一（音译，Xu Xueyi），带我参观了这家医院，它看起来就像一个以拉斯维加斯为主题的拉斯维加斯酒店 —— 8 层华丽的房间和镀金的走廊，商店和温泉。大量的人造花、大理石和闪闪发光的吊灯分散了人们在视线之外的活动的注意力。你可能会把颚骨锯下来，让你的脸看起来像一个精致的椭圆形，但是，就在走廊的另一头，你可以给自己戴上镶嵌着玉石的金项链，烫发或修指甲，或者买一些瘦身内衣。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">“我们在这里做的一切都是为了让你开心和满足，”她带我穿过一间带按摩浴缸的贵宾套间。穿着条纹长袍的妇女们走过，在护士们的指导下，她们向许挥手。护士们都很好看，许说她已经做过好几次手术了。“我给下巴注射了填充物，让它更尖，但我不喜欢，所以两周后就把它溶解了。”</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">许带我去见了医院的一位资深外科医生李斌（Li Bin），他是一个五十岁的老人，说话时有种学者般的平静。“过去，在保守的中国，我们习惯于把一个人的内心放在首位，排除一切其他因素，”李告诉我。“但是，在当今竞争激烈的世界里，你的外表是你想要最大化的资产。”他提到，求职者的简历中包含一个照片是很正常的，而且，实际上，在中国整形手术的病人通常更感兴趣的是美貌而非浪漫。这些手术被视为一项简单的投资，将产生实质性的红利。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">自从美图的崛起之后，另一种类型的客户就变得更加普遍了：年轻、易受影响的女性把她们的偶像的照片带到医院，要求得到这个或那个特征。他微笑着摇了摇头。他说：“人们的预期比以往任何时候都要高，而且很难向客户了解复苏期间的情况，以及无法预见的结果。”“要想改变脸型，就需要切下颚骨”——这是西方医生不愿意做的手术，除非有医疗需求，因为有致命并发症的风险。“但用美图软件，这种转变是即时的，完全可控的。”</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">下午，我遇到了这家医院的一个名叫李燕（Li Yan）的忠实顾客。她三十岁，从大学开始，她做的手术比她记忆中的还要多：双眼皮、开眼角、鼻整形、下巴移植、嘴唇注射。她脸上的几乎每一项特征都已经做过几次了，但她仍然觉得自己仿佛是一个草稿，在修改的过程中。她说：“我觉得我的鼻梁不够高，而且顶端没有我想要的那种微微翘起的弓形。”</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我问李，她是一家地区银行的行政助理，她是如何负担得起所有手术的。她告诉我，“我大部分的钱都花在这了。”她还说，这些年来，男友们也出了不少钱。她满意地说，在学校里认识她的人之前都不认识她，而且在手术开始前她就把自己能找到的所有照片都毁掉了。“数码时代之前拍摄的照片之美在于，如果你毁了它，它就永远消失了。”</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">李是专门为美图做的，她用这些应用来预览她正在考虑的手术会是什么样子。最近，一家网红招聘机构联系了她，希望她能在网上建立自己的形象，但她担心自己的生计会变得太不稳定，此外，她不可能真的唱歌、跳舞或表演。招聘人员曾说过她不需要任何技能，但她仍然不相信。“我永远不会像网红那样美丽，”她笑着对我说。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">“你也应该考虑做一下，”李一度说。当我在中国的网红周围闲逛时，我听到了一个令人不安的评论。医院的一位医生李俊（Li Jun）说，她会给我一个整形咨询意见，但我得等到晚上。虽然是周日，但她的日程排得满满的。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我们的谈话持续了半个小时，她用来在我脸上画画的粉笔几乎从不停歇。到最后，我的脸就像一幅在一场漫长的战斗的末期军事地图。她说我的脸有结构性问题。我的下巴太宽，颧骨太宽，眼皮也下垂。我的鼻子向外弯曲——“驼峰”——我的下巴很薄弱。改善这些缺陷，我需要六个左右的程序，可以通过肉毒杆菌和填充剂来处理。费用将超过三万美元。“还有其他的部位可以做，”她说，一面盯着镜子里的我那张苍白的脸，但她小心翼翼地管理着人们的期望。很明显，再多的干预也无法让我的脸变成网红的脸。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: center;line-height: 1.75em;"><span style="color: rgb(214, 0, 15);font-size: 15px;text-align: center;">━━━━━</span></p><p style="margin-top: 0em;margin-bottom: 0em;white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin-top: 0em;margin-bottom: 0em;white-space: normal;text-align: justify;line-height: 1.75em;"><strong><span style="font-size: 19px;color: rgb(214, 0, 15);">五</span></strong></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我回到厦门的时候，正好赶上美拍的周年纪念大会，这次会议是在美图总部附近的一个豪华酒店举行的。来自全国各地的四百名美拍网红都在那里。年龄最小的是 4 岁，年龄最大的 72 岁，但大多数人的年龄都在十几岁到二十几岁之间。</span><br  /></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">在礼堂里的一个屏幕上展示了贾斯汀比伯和其他全球巨星的照片，他们在网上开始了自己的工作，而美图的工作人员向这些年轻的候选人解释说，如果他们继续保持勤奋的工作，未来可能会是什么样子。霓虹色的幻灯片展示了电子商务和名人的货币化潜力，但我很快意识到观众并没有太在意。一位名叫马克（Mark）的男子解释说：“在这样的活动中，这一切都是为了与影响力更大的明星们搭关系。”马克是一个稀有物种：网红。他是南非人，在 9 年前，他就搬到了中国，在他十几岁的时候，他的父亲在那里找到了一份工作。他有一头红发，看起来像哈里王子，但比较瘦。“这是为了进入明星圈子，或许还可以分享一张你和网红合影的照片，网红的粉丝数量是你粉丝的两倍甚至十倍。”</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">整整一天，房间里充满了紧张的气氛，即使是最友好的互动也会带来竞争优势。网红谈到了预约理发的难度，因为大家都挤进了同样的几家沙龙，而且每次化妆都要两小时不吃早餐。一名有着小麦色头发，穿着一件花边的白色紧身连衣裙的女人，她的屏幕上写着“StylistMimi”，她告诉我，她认为自己已经进场很晚了，只在美拍待了一年。她的粉丝不到 40 万人，她急于弥补错过的时间。另一位名叫刘赞赞（音Liu Zhanzhan）的人警告说，网红“孵化器”现在已经饱和了。她说：“他们会向你承诺一切，但你签了一份合同，你基本上就相当于卖给他们 6、7、8 年。他们管理着数百人，在一天结束的时候，有多少人真正做到了？”</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">为了直播视频，StylistMimi为自己留出了一段时间，她举着手机向粉丝们展示了整个房间的全景，并以一种甜蜜的声音叙述了整个过程。流媒体直播，在美拍或其他平台上，如快手和花椒，已经成为网红的重要收入来源。当Mimi向粉丝们广播时，她的屏幕底部出现了实时的现金捐赠和其他礼物，这些礼物都是金币和鲜花的象征。那些捐赠的人都要问问题，一个粉丝想知道Mimi能找到什么大牌明星。“你看到前面三排有HoneyCC吗？”Mimi耳语道，把她的手机对准了前面。“我从远处看她，但没能看到她的特写镜头。”在现实生活中，她看起来没什么不同。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">与如此之多的网红会面，复杂之处在于很难让她们保持清醒。她们倾向于只和她们的美图照片相类似。但每次我拿出 iPhone 6 和别人自拍时，我都被拒绝了。人们会怀疑这是什么类型的相机，然后才会带着怜悯的表情。“我不能让你用那台相机拍下我的照片——它太丑了，”一位重庆女性告诉我。我向她保证，我不是网红，也不会发布这张照片，于是我们达成了妥协：她会在美图手机上自拍，P她的脸，然后把照片发给我。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">“一个普通的相机无法捕捉到一个人的全部，”一个头发蓬乱、金发碧眼的年轻人告诉我，他展示了自己的P图技巧。“它无法表达你的全部美丽。”他十九岁，来自南京，自称是 Abner，他说他选择了这个名字，因为它听起来“充满异国情调”。一年前，他发布了一段简短的视频，上了“热门榜单”。这段视频是“自恋的”，他说：“我一点也不说话，只是看起来很美。”这是他最喜欢的模式。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">Abner 对美拍的关注是适度的，只有 4 万粉丝;他更喜欢流媒体直播，这在脚本和制作设计方面要求更少。但流媒体直播有其风险。他抱怨道：“你必须不停地直播，否则你的粉丝会忘记你。”他还补充说，他经常在电脑上花 8 个小时的时间。为了打发时间，他说，“我会直播化妆，或者，如果我的化妆已经完成了，我会唱卡拉 OK，但我的嗓子不好。”</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我问是否有很多男性化妆。Abner 回答说：“是的，越来越多了。但当然不是每个人都像我这样精心安排的工作。我的情况有点特殊，因为我做了所有的整形手术。”当他十五岁的时候，他开始重塑自己的脸，他对美图的应用改变自己的脸的方式很着迷。“他们打开了这个世界，在那里我可以创造出我的样子，”他说。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">多年来，他利用业余工作挣来的钱，稳步地抬高了鼻梁。他做了双眼皮手术，然后把眼睛的外眼角延长了——这是一种被称为侧眦成形术的手术。Abner 告诉我，他也会做一些内部的整形，但他的医生告诉他，他没有多余的皮肤来切割。总之，他的眼睛上做了六种手术，而就在会议的前一周，他已经完成了他的第三次整形手术。缝线都没有拆除，我也不应该去旅行，”他说，露出了两下鼻孔之间的淤青。“但我不在乎。我来这里是为了和网红见面，一起自拍，并增加我的粉丝数。”</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">Abner 说，到目前为止，他的流媒体收入已经为他支付了好几次手术费用。他告诉我，他的造型主要是受到他在 Instagram 上关注的韩国模特的启发。</span><br  /></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">Abner 在大学里学金融，但他说：“我不去上课，尽管我试着去参加考试。我可能会拿到学位，即使这完全没有意义。”在办公室工作的想法让他觉得很可笑，他对经营一家小型手机商店的父母的做法表示蔑视，他的父母只想到工作，总是为钱而烦恼。“成为网红比任何办公室职业都要实用得多，”他继续说道。“事实是，在中国上学是没用的。教授们喋喋不休地谈论着这些事情——他们真的能帮我赚钱吗？最好的情况是，你将成为富人拥有的公司里的一个不起眼的小角色，最后归他们的孩子管。”</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(214, 0, 15);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: center;line-height: 1.75em;"><span style="color: rgb(214, 0, 15);font-size: 15px;">━━━━━</span></p><p style="margin-top: 0em;margin-bottom: 0em;white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin-top: 0em;margin-bottom: 0em;white-space: normal;text-align: justify;line-height: 1.75em;"><strong><span style="font-size: 19px;color: rgb(214, 0, 15);">六</span></strong></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">那天晚上，美图的明星们成群结队地来到酒店的院子里参加一个聚会。在一个“肾形”游泳池周围的棕榈树上挂满了彩灯，人们在桌子周围漂浮着鸡尾酒、香槟和海鲜烤肉串。除了 4 岁的网红，他在往里面泼水，没有一个大人在泳池里。尽管女卫生间里满是穿着暴露的网红，在全身镜中审视自己，但其中一人解释说，游泳是不可能的：有太多的自拍需要拍照和编辑，几乎所有人都在现场直播这一活动。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">附近喝啤酒的有两个看起来不像网红的年轻人。他们原来是一家总部位于上海的公司的股票分析师，该公司帮助投资者在中国的互联网和媒体行业寻找机会。其中一人说，“在这个聚会上，有更多的钱在流动，而不像我们曾经参加过的任何投资者关系会议。”他的名字叫罗伯特（Robert），他来自德克萨斯。他的同事是中国人，名字叫 JC。他说，这次活动的奢华是美图向其网红推销自己的方式：“美图需要网红来宣传它作为一个顶级品牌。”</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">在泳池边的一个舞台上，晚会开始了。HoneyCC 在舞台附近和几个朋友一起跳舞，一群人围在她的周围，当他们向粉丝们展示这一奇观时，她的手机高高在上。每一个问候和亲密的姿势都是自拍的姿势，而人们忙于直播，无法交谈。“把聚会从你的手机里拿出来，”DJ 一再恳求，但他的劝诫却被拍摄下来并传播给了数百万观众。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我看见一个年长的女人，大概 70 多岁，站在那里，看着年轻的舞者，带着一种狂喜，展现着一种未经过滤的喜悦。她的脸虽然皱巴巴的，但她的嘴巴却充满了惊奇，给了她一种孩子气的表情。她是唯一一个不拿手机的人，她衣着朴素。两个保安走到她面前，问她在那里做什么。她说她是酒店里一个清洁工的妻子，听到了音乐，想知道发生了什么事。“奶奶，你得走了，”一个保安说。她点了点头，但一动也不动，直到男人们架着她的一只胳膊，试图把她推向出口，她才开始走路，她的头仍然转向音乐，她的微笑没有改变。当保安成功地把她驱逐时，我意识到她是派对上最漂亮的人。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">美图的员工喜欢把公司的产品描述为“美丽的生态系统”，但生态系统天生是多样化的，而美图和它的缩影似乎是将中国朝着同质性的方向发展。这一代中国人，尽管他们强烈主张个人主义，但这对他们的父母和祖父母来说是不可想象的，同时也在上演一场可怕的趋同。他们的自拍照变得越来越相似，他们的脸也变得越来越相似。通过美图相机的镜头，世界是完美无瑕的，但完美与美丽不一样，完美自拍的自由并不一定会产生一种无拘无束的自我感。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">在舞台上，Abner 漫不经心地尝试着美图提供的各种各样的“夜光”配饰，每一种新造型都拍了一张自拍照。“我仍然不知道为什么我今天早上的视频没有像病毒一样传播开来，”他生气地说，然后走开了。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我拿出手机，浏览了他的视频。Abner 的眼睛非常大，恳求着，他的脸色非常苍白，当他碰巧在一堵白色的墙上摆姿势时，他精心雕刻的脸融化在背景中，几乎看不见了。在一段视频中，一缕头发被巧妙地置于他的眼睛里。他会用胳膊把它擦去。他穿着一件褶边的衬衫，太大了，不适合他的瘦骨架，而这种过分的效果不知怎的让他想起了小王子。在另一个故事里，他无精打采地把玩着一块奶酪蛋糕，但从来没有咬过一口。</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">每个视频下面都有他的十几岁粉丝的评论和捐款。（他告诉我，挣钱的最佳时间是在春节前后，孩子们能从家人那里得到不少钱，他每周可以轻松赚到六千美元。）他的屏幕底部是一堆红心和财袋。但是一个崇拜他的女孩写了一个更长的、更真诚的信息：“他是我的第一位网红偶像。我从没想过能如此爱一个人。他真的是我的第一个。有着时尚的，宏伟的，超凡的美。真的，任何人都能如此完美吗？“</span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><span style="color: rgb(102, 102, 102);font-size: 13px;text-align: justify;">编译：36氪｜</span></span><span style="color: rgb(102, 102, 102);font-size: 13px;">编辑：郝鹏程</span></p><p style="white-space: normal;text-align: left;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><span style="color: rgb(102, 102, 102);font-size: 13px;"><span style="color: rgb(102, 102, 102);font-size: 13px;text-align: justify;">原文链接：https://www.newyorker.com/magazine/2017/12/18/chinas-selfie-obsession</span></span></span></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><img data-s="300,640" data-type="png" data-src="https://mmbiz.qpic.cn/mmbiz_png/kcSInyQE8pFJS96pLU5yT9ibWefdib7FiczyiaWAFReESRUicFyvDvaibCvLknicWY0e2yib5VW2UT2EKY46EGsMSHrTGg/0?wx_fmt=png" data-copyright="0" class="" data-ratio="0.0035971223021582736" data-w="556" data-backw="558" data-backh="2" style="color: rgb(51, 51, 51);font-size: 15px;width: 558px;"  /><br  /></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><strong><span style="color: rgb(51, 51, 51);font-size: 15px;">你或许还对这些内容感兴趣：</span></strong></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><strong><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></strong></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><a href="http://mp.weixin.qq.com/s?__biz=MjM5NzAxNTkzNg==&amp;mid=2654968991&amp;idx=1&amp;sn=72b39c7e244fc6a5f055fccb0feeeed8&amp;chksm=bd2b44708a5ccd6651162dbdd3cfc0f0fc8df53bfc7e9a8ccf7fabf088c4231c8eeb21b9a729&amp;scene=21#wechat_redirect" target="_blank"><img data-s="300,640" data-type="jpeg" data-src="https://mmbiz.qpic.cn/mmbiz_jpg/6AcP1PhrIChFtUXyIf4uNHTaTg7ZoLpo8gG43RZNP4gsdGlSAamOoZR0UVBUh2tL6yeRjjUgibCxpwHTOl30bdw/0?wx_fmt=jpeg" data-copyright="0" data-backw="558" data-backh="124" class="" data-ratio="0.2222222222222222" data-w="900" style="width: 100%;height: auto;"  /></a></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><a href="http://mp.weixin.qq.com/s?__biz=MjM5NzAxNTkzNg==&amp;mid=2654968893&amp;idx=1&amp;sn=166b59c58f07e0025d1d2a6b559cebac&amp;chksm=bd2b44d28a5ccdc49cc8fb59e8b4052af846b09dd4c04bda57bead06752181300bde10b371f0&amp;scene=21#wechat_redirect" target="_blank"><img data-s="300,640" data-type="jpeg" data-src="https://mmbiz.qpic.cn/mmbiz_jpg/6AcP1PhrIChFtUXyIf4uNHTaTg7ZoLpoibS4VYgTtGQgoXibTfpJLrpVIsAA5AFc8qzcxBRiay2oKpwlGN50JjeNA/0?wx_fmt=jpeg" data-copyright="0" class="" data-ratio="0.2222222222222222" data-w="900" data-backw="558" data-backh="124" style="width: 100%;height: auto;"  /></a></p><p style="white-space: normal;text-align: justify;line-height: 1.75em;"><img data-s="300,640" data-type="png" data-src="https://mmbiz.qpic.cn/mmbiz_png/kcSInyQE8pFJS96pLU5yT9ibWefdib7FiczyiaWAFReESRUicFyvDvaibCvLknicWY0e2yib5VW2UT2EKY46EGsMSHrTGg/0?wx_fmt=png" data-copyright="0" class="" data-ratio="0.0035971223021582736" data-w="556" data-backw="558" data-backh="2" style="width: 100%;height: auto;"  /></p><p style="margin-top: 0em;margin-bottom: 0em;white-space: normal;text-align: justify;line-height: 1.75em;"><img data-type="gif" data-src="https://mmbiz.qpic.cn/mmbiz_png/6AcP1PhrIChRSFwuYEswcRZTibbBlFHMkmM5xaofpXmiaMe8ZpexX1uJ6QHQ43flX6LGfmdw0drZ6W2m9R18UHFA/0?wx_fmt=gif" data-copyright="0" class="" data-ratio="0.6666666666666666" data-w="1080" data-backw="558" data-backh="372" style="width: 100%;height: auto;"  /></p><p style="margin-top: 0em;margin-bottom: 0em;white-space: normal;text-align: justify;line-height: 1.75em;"><span style="color: rgb(51, 51, 51);font-size: 15px;">点击「</span><strong style="color: rgb(51, 51, 51);font-size: 15px;"><span style="color: rgb(214, 0, 15);">阅读原文</span></strong><span style="color: rgb(51, 51, 51);font-size: 15px;">」前往锤子科技官方商城购买坚果 Pro 2。</span></p>
+                </div>
+                <script nonce="1891694841" type="text/javascript">
+                    var first_sceen__time = (+new Date());
+
+                    if ("" == 1 && document.getElementById('js_content')) {
+                        document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+                    }
+
+                    
+                    (function(){
+                        if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                            var link = document.createElement('link');
+                            var head = document.getElementsByTagName('head')[0];
+                            link.rel = 'stylesheet';
+                            link.type = 'text/css';
+                            link.href = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx31619e.css";
+                            head.appendChild(link);
+                        }
+                    })();
+                </script>
+                
+                
+                                
+                <div class="ct_mpda_wrp" id="js_sponsor_ad_area" style="display:none;"></div>
+
+                
+                                <div class="reward_area tc" id="js_preview_reward" style="display:none;">
+                    <p id="js_preview_reward_wording" class="tips_global reward_tips" style="display:none;"></p>
+                    <p>
+                        <a class="reward_access" id='js_preview_reward_link' href="##"><span class="icon-reward"></span>赞赏</a>
+
+                    </p>
+                </div>
+                <div class="reward_qrcode_area reward_area tc" id="js_preview_reward_qrcode" style="display:none;">
+                    <p class="tips_global">长按二维码向我转账</p>
+                    <p id="js_preview_reward_ios_wording" class="reward_tips" style="display:none;"></p>
+                    <span class="reward_qrcode_img_wrp"><img class="reward_qrcode_img" src="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_reward_qrcode.2x3534dd.png"></span>
+                    <p class="tips_global">受苹果公司新规定影响，微信 iOS 版的赞赏功能被关闭，可通过二维码转账支持公众号。</p>
+                </div>
+                            </div>
+                        
+                        <div class="rich_media_tool" id="js_toobar3">
+                                            <a class="media_tool_meta meta_primary" id="js_view_source" href="##">阅读原文</a>
+                                <div id="js_read_area3" class="media_tool_meta tips_global meta_primary" style="display:none;">阅读 <span id="readNum3"></span></div>
+
+                <span style="display:none;" class="media_tool_meta meta_primary tips_global meta_praise" id="like3">
+                    <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                </span>
+
+                <a id="js_report_article3" style="display:none;" class="media_tool_meta tips_global meta_extra" href="##">投诉</a>
+
+            </div>
+
+
+                    </div>
+
+        <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none"></div>
+
+        
+        <div class="rich_media_area_extra">
+
+            
+                        <div class="mpda_bottom_container" id="js_bottom_ad_area"></div>
+                        
+            <div id="js_iframetest" style="display:none;"></div>
+                        
+                        <div class="rich_media_extra" id="js_cmt_area" style="display:none">
+            </div>
+                    </div>
+
+        
+        <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display:none;">
+            <div class="qr_code_pc_inner">
+                <div class="qr_code_pc">
+                    <img id="js_pc_qr_code_img" class="qr_code_pc_img">
+                    <p>微信扫一扫<br>关注该公众号</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="js_minipro_dialog" style="display:none;">
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+        <div class="weui-dialog__bd">即将打开"<span id="js_minipro_dialog_name"></span>"小程序</div>
+        <div class="weui-dialog__ft">
+            <a id="js_minipro_dialog_cancel" href="javascript:void(0);" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+            <a id="js_minipro_dialog_ok" href="javascript:void(0);" class="weui-dialog__btn weui-dialog__btn_primary">打开</a>
+        </div>
+    </div>
+</div>
+
+        
+        <script nonce="1891694841">
+    var __DEBUGINFO = {
+        debug_js : "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console34c264.js",
+        safe_js : "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe34c264.js",
+        res_list: []
+    };
+</script>
+
+<script nonce="1891694841" type="text/javascript">
+(function() {
+	var totalCount = 0,
+			finishCount = 0;
+
+	function _loadVConsolePlugin() {
+		window.vConsole = new window.VConsole();
+		while (window.vConsolePlugins.length > 0) {
+			var p = window.vConsolePlugins.shift();
+			window.vConsole.addPlugin(p);
+		}
+	}
+	
+	function _addVConsole(uri, cb) {
+		totalCount++;
+		var url = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/vconsole/' + uri;
+		var node = document.createElement('SCRIPT');
+		node.type = 'text/javascript';
+		node.src = url;
+		node.setAttribute('nonce', '1891694841');
+		if (cb) {
+			node.onload = cb;
+		}
+		document.getElementsByTagName('head')[0].appendChild(node);
+	}
+	if (
+		(document.cookie && document.cookie.indexOf('vconsole_open=1') > -1)
+		|| location.href.indexOf('vconsole=1') > -1
+	) {
+		window.vConsolePlugins = [];
+		_addVConsole('3.0.0/vconsole.min.js', function() {
+			
+			_addVConsole('plugin/vconsole-mpopt/1.0.1/vconsole-mpopt.js', _loadVConsolePlugin);
+		});
+	}
+})();
+</script>
+        
+<script nonce="1891694841" type="text/javascript">
+
+if (!window.console) window.console = { log: function() {} };
+
+if (typeof getComputedStyle == 'undefined') {
+    if (document.body.currentStyle) {
+        window.getComputedStyle = function(el) {
+            return el.currentStyle;
+        }
+    } else {
+        window.getComputedStyle = {};
+    }
+}
+(function(){
+    window.__zoom = 1;
+    
+    (function(){
+        var validArr = ","+([0.875, 1, 1.125, 1.25, 1.375]).join(",")+",";
+        var match = window.location.href.match(/winzoom=(\d+(?:\.\d+)?)/);
+        if (match && match[1]) {
+            var winzoom = parseFloat(match[1]);
+            if (validArr.indexOf(","+winzoom+",")>=0) {
+                window.__zoom = winzoom;
+            }
+        }
+    })();
+
+    var isIE = false;
+    if (typeof version != 'undefined' && version >= 6 && version <= 9) {
+        isIE = true;
+    }
+    var getMaxWith=function(){
+        var container = document.getElementById('img-content');
+        var max_width = container.offsetWidth;
+        var container_padding = 0;
+        var container_style = getComputedStyle(container);
+        container_padding = parseFloat(container_style.paddingLeft) + parseFloat(container_style.paddingRight);
+        max_width -= container_padding;
+        var ua = navigator.userAgent.toLowerCase();
+        var re = new RegExp("msie ([0-9]+[\.0-9]*)");
+        var version;
+        if (re.exec(ua) != null) {
+            version = parseInt(RegExp.$1);
+        }
+        var isIE = false;
+        if (typeof version != 'undefined' && version >= 6 && version <= 9) {
+            isIE = true;
+        }
+        if (!max_width) {
+            max_width = window.innerWidth - 30;      
+        }
+        return max_width;
+    };
+    var getParentWidth = function(dom){
+        var parent_width = 0;
+        var parent = dom.parentNode;
+        var outerWidth = 0;
+        while (true) {
+            if(!parent||parent.nodeType!=1) break;
+            var parent_style = getComputedStyle(parent);
+            if (!parent_style) break;
+            parent_width = parent.clientWidth - parseFloat(parent_style.paddingLeft) - parseFloat(parent_style.paddingRight) - outerWidth;
+            if (parent_width > 0) break;
+            outerWidth += parseFloat(parent_style.paddingLeft) + parseFloat(parent_style.paddingRight) + parseFloat(parent_style.marginLeft) + parseFloat(parent_style.marginRight) + parseFloat(parent_style.borderLeftWidth) + parseFloat(parent_style.borderRightWidth);
+            parent = parent.parentNode;
+        }
+        return parent_width;
+    }
+    var getOuterW=function(dom){
+        var style=getComputedStyle(dom),
+            w=0;
+        if(!!style){
+            w = parseFloat(style.paddingLeft) + parseFloat(style.paddingRight) + parseFloat(style.borderLeftWidth) + parseFloat(style.borderRightWidth);
+        }
+        return w;
+    };
+    var getOuterH =function(dom){
+        var style=getComputedStyle(dom),
+            h=0;
+        if(!!style){
+            h = parseFloat(style.paddingTop) + parseFloat(style.paddingBottom) + parseFloat(style.borderTopWidth) + parseFloat(style.borderBottomWidth);
+        }
+        return h;
+    };
+    var insertAfter = function(dom,afterDom){
+        var _p = afterDom.parentNode;
+        if(!_p){
+            return;
+        }
+        if(_p.lastChild === afterDom){
+            _p.appendChild(dom);
+        }else{
+            _p.insertBefore(dom,afterDom.nextSibling);
+        }
+    };
+    var getQuery = function(name,url){
+        
+        var u  = arguments[1] || window.location.search,
+            reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"),
+            r = u.substr(u.indexOf("\?")+1).match(reg);
+        return r!=null?r[2]:"";
+    };
+    (function(){
+        var images = document.getElementsByTagName('img');
+        var length = images.length;
+        var max_width = getMaxWith();
+        for (var i = 0; i < length; ++i) {
+            var src_ = images[i].getAttribute('data-src');
+            var realSrc = images[i].getAttribute('src');
+            if (!src_ || realSrc) continue;
+            var width_ = 1 * images[i].getAttribute('data-w') || max_width;
+            var ratio_ = 1 * images[i].getAttribute('data-ratio');
+            var height = 100;
+            if (ratio_ && ratio_ > 0) {
+                var img_style = getComputedStyle(images[i]);
+                var init_width = images[i].style.width;
+                
+                if (init_width) {
+                    images[i].setAttribute('_width', init_width);
+                    if (init_width != 'auto') width_ = parseFloat(img_style.width);
+                }
+                var parent_width = getParentWidth(images[i])||max_width;
+                var width = width_ > parent_width ? parent_width : width_; 
+                var img_padding_border = getOuterW(images[i])||0;
+                var img_padding_border_top_bottom = getOuterH(images[i])||0;
+                height = (width - img_padding_border) * ratio_ + img_padding_border_top_bottom;
+                images[i].style.cssText += ";width: " + width + "px !important;";
+                if (isIE) {
+                    var url = images[i].getAttribute('data-src');
+                    images[i].src = url;
+                } else {
+                    if(width > 40 && height > 40){
+                        images[i].className += ' img_loading';
+                    }
+                    images[i].src = "data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==";
+                }
+            } else {
+                images[i].style.cssText += ";visibility: hidden !important;";
+            }
+            images[i].style.cssText += ";height: " + height + "px !important;";
+        }
+    })();
+    window.__videoDefaultRatio=16/9;
+    window.__getVideoWh = function(dom){
+        var max_width = getMaxWith(),
+            width = max_width,
+            ratio_ = dom.getAttribute('data-ratio')*1||(4/3),
+            arr = [4/3, 16/9],
+            ret = arr[0],
+            abs = Math.abs(ret - ratio_);
+        for(var j=1,jl=arr.length;j<jl;j++){
+            var _abs = Math.abs(arr[j] - ratio_);
+            if(_abs<abs){
+                abs = _abs;
+                ret = arr[j];
+            }
+        }
+        ratio_ = ret;
+        var parent_width = getParentWidth(dom)||max_width,
+            width = width > parent_width ? parent_width : width,
+            outerW = getOuterW(dom)||0,
+            outerH = getOuterH(dom)||0,
+            videoW = width - outerW,
+            videoH = videoW/ratio_,
+            height = videoH + outerH;
+        return {w:width,h:height,vh:videoH,vw:videoW,ratio:ratio_};
+    };
+
+    (function(){
+        var iframe = document.getElementsByTagName('iframe');
+        for (var i=0,il=iframe.length;i<il;i++) {
+            var a = iframe[i];
+            var src_ = a.getAttribute('src')||a.getAttribute('data-src')||"";
+            if(!/http(s)*\:\/\/v\.qq\.com\/iframe\/(preview|player)\.html\?/.test(src_)){
+                continue;
+            }
+            var vid = getQuery("vid",src_);
+            if(!vid){
+                continue;
+            }
+            vid=vid.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,"");
+            a.removeAttribute('src');
+            a.style.display = "none";
+            var obj = window.__getVideoWh(a),
+                mydiv = document.createElement('img');
+            mydiv.className = "img_loading";
+            mydiv.src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==";
+            mydiv.setAttribute("data-vid",vid);
+            mydiv.style.cssText = "width: " + obj.w + "px !important;";
+            insertAfter(mydiv,a);
+            a.style.cssText += ";width: " + obj.w + "px !important;";
+            a.setAttribute("width",obj.w);
+            if(window.__zoom!=1){
+                a.style.display = "block";
+                mydiv.style.display = "none";
+                a.setAttribute("_ratio",obj.ratio);
+                a.setAttribute("_vid",vid);
+            }else{
+                mydiv.style.cssText += "height: " + obj.h + "px !important;";
+                a.style.cssText += "height: " + obj.h + "px !important;";
+                a.setAttribute("height",obj.h);
+            }
+            a.setAttribute("data-vh",obj.vh);
+            a.setAttribute("data-vw",obj.vw);
+            a.setAttribute("data-src",location.protocol+"//v.qq.com/iframe/player.html?vid="+ vid + "&width="+obj.vw+"&height="+obj.vh+"&auto=0");
+        }
+    })();
+
+    (function(){
+        if(window.__zoom!=1){
+            document.getElementById('page-content').style.zoom = window.__zoom;
+            var a = document.getElementById('activity-name');
+            var b = document.getElementById('meta_content');
+            if(!!a){
+                a.style.zoom = 1/window.__zoom;
+            }
+            if(!!b){
+                b.style.zoom = 1/window.__zoom;
+            }
+            var images = document.getElementsByTagName('img');
+            for (var i = 0,il=images.length;i<il;i++) {
+                images[i].style.zoom = 1/window.__zoom;
+            }
+            var iframe = document.getElementsByTagName('iframe');
+            for (var i = 0,il=iframe.length;i<il;i++) {
+                var a = iframe[i];
+                a.style.zoom = 1/window.__zoom;
+                var src_ = a.getAttribute('data-src')||"";
+                if(!/http(s)*\:\/\/v\.qq\.com\/iframe\/(preview|player)\.html\?/.test(src_)){
+                    continue;
+                }
+                var ratio = a.getAttribute("_ratio");
+                var vid = a.getAttribute("_vid");
+                a.removeAttribute("_ratio");
+                a.removeAttribute("_vid");
+                var vw = a.offsetWidth - (getOuterW(a)||0);
+                var vh = vw/ratio;
+                var h = vh + (getOuterH(a)||0)
+                a.style.cssText += "height: " + h + "px !important;"
+                a.setAttribute("height",h);
+                a.setAttribute("data-src",location.protocol+"//v.qq.com/iframe/player.html?vid="+ vid + "&width="+vw+"&height="+vh+"&auto=0");
+                a.style.display = "none";
+                var parent = a.parentNode;
+                if(!parent){
+                    continue;
+                }
+                for(var j=0,jl=parent.children.length;j<jl;j++){
+                    var child = parent.children[j];
+                    if(child.className.indexOf("img_loading")>=0 && child.getAttribute("data-vid")==vid){
+                        child.style.cssText += "height: " + h + "px !important;";
+                        child.style.display = "";
+                    }
+                }
+            }
+        }
+    })();
+})();
+</script>
+<script nonce="1891694841" type="text/javascript">
+
+    var not_in_mm_css = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm36906d.css";
+    var windowwx_css = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx31619e.css";
+    var article_improve_combo_css = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_combo3b540a.css";
+    var tid = "";
+    var aid = "";
+    var clientversion = "";
+    var appuin = "MjM5NzAxNTkzNg=="||"";
+
+    var source = "";
+    var ascene = "";
+    var subscene = "";
+    var abtest_cookie = "";
+
+    var scene = 75;
+
+    var itemidx = "";
+    var appmsg_token   = "";
+
+    var _copyright_stat = "0";
+    var _ori_article_type = "";
+
+    var nickname = "罗永浩";
+    var appmsg_type = "9";
+    var ct = "1515022800";
+    var publish_time = "2018-01-04" || "";
+    var user_name = "gh_9926e6e6da93";
+    var user_name_new = "";
+    var fakeid   = "";
+    var version   = "";
+    var is_limit_user   = "0";
+    var round_head_img = "http://mmbiz.qpic.cn/mmbiz/6AcP1PhrICia5w2QYLosh15GtVxFj4yKyFZhq4d0TI5yYDMYiaNgIduAOclLpcXCvF6LTW6XSzhWft4oTOSwy8WA/0?wx_fmt=png";
+    var ori_head_img_url = "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4SVs4dvotuGprQ07NGTkU9XYwY4DxcBucv72eemTdBYw/132";
+    var msg_title = "颜值即正义？一个《纽约客》杂志记者眼中的自拍中国";
+    var msg_desc = "不把照片 P 一下，都不好意思发朋友圈。”这在当下在中国已经司空见惯。";
+    var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz_jpg/6AcP1PhrIChxbgClbYRmEvuEU1DfgPwoRxsrkk9lt1pk8ia8S3wIPiaHXX2gcuO3lAq9Via7UUVnmD28Up6uSnp7Q/0?wx_fmt=jpeg";
+    var msg_link = "http://mp.weixin.qq.com/s?__biz=MjM5NzAxNTkzNg==\x26amp;mid=2654969234\x26amp;idx=1\x26amp;sn=938e120eca8d76564a1650a3f33c3374\x26amp;chksm=bd2b457d8a5ccc6b7f7c90651b88d40d6bf28abbfe831fc0c16c19cd6feefab1bb3630971a76#rd";
+    var user_uin = "0"*1;
+    var msg_source_url = 'https://www.smartisan.com/events/?20171212#/sale-1212';
+    var img_format = 'jpeg';
+    var srcid = '';
+    var req_id = '2217WSTj8WtjOzTytoKxgPH6';
+    var networkType;
+    var appmsgid = '' || ''|| "";
+    var comment_id = "1133017484" || "1133017484" * 1;
+    var comment_enabled = "" * 1;
+    var is_need_reward = "0" * 1;
+    var is_https_res = ("" * 1) && (location.protocol == "https:");
+    var msg_daily_idx = "1" || "";
+    var profileReportInfo = "" || "";
+
+    var devicetype = "";
+    var source_encode_biz = "";
+    var source_username = "";
+    
+    var reprint_ticket = "";
+    var source_mid = "";
+    var source_idx = "";
+    var source_biz = "";
+
+    var show_comment = "";
+    var __appmsgCgiData = {
+        wxa_product : ""*1,
+        show_msg_voice: "0"*1,
+        can_use_page : "0"*1,
+        is_wxg_stuff_uin : "0"*1,
+        card_pos : "",
+        copyright_stat : "0",
+        source_biz : "",
+        hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4SVs4dvotuGprQ07NGTkU9XYwY4DxcBucv72eemTdBYw/0"||(window.location.protocol+"//"+window.location.host + "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+    };
+    var _empty_v = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+    var copyright_stat = "0" * 1;
+
+    var pay_fee = "" * 1;
+    var pay_timestamp = "";
+    var need_pay = "" * 1;
+
+    var need_report_cost = "0" * 1;
+    var use_tx_video_player = "0" * 1;
+    var appmsg_fe_filter = "contenteditable";
+
+    var friend_read_source = "" || "";
+    var friend_read_version = "" || "";
+    var friend_read_class_id = "" || "";
+
+    var is_only_read = "1" * 1;
+    var read_num = "" * 1;
+    var like_num = "" * 1;
+    var liked = "" == 'true' ? true : false;
+    var is_temp_url = "" ? 1 : 0;
+    var send_time = "";
+    var icon_emotion_switch = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch.2x2f1273.png";
+    var icon_emotion_switch_active = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch_active.2x2f1273.png";
+    var icon_loading_white = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif";
+    var icon_audio_unread = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png";
+    var icon_qqmusic_default = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png";
+    var icon_qqmusic_source = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source393e3a.png";
+    var icon_kugou_source = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/kugou/icon_kugou_source393e3a.png";
+
+    var topic_default_img = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/topic/pic_book_thumb.2x2e4987.png';
+    var comment_edit_icon = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_edit25ded2.png';
+    var comment_loading_img = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif';
+    var voice_in_appmsg = {
+        "1":"1"
+            };
+    var wxa_img_alert = "" != 'false';
+
+    
+    
+    
+    
+
+    
+    var weapp_sn_arr_json = "" || "";
+
+    
+    var ban_scene = "0" * 1;
+
+    var svr_time = "1516614449" * 1;
+    
+    var is_transfer_msg = ""*1||0;
+
+    var malicious_title_reason_id = "0" * 1; 
+
+        window.wxtoken = "";
+        
+    
+    
+    
+    
+    window.is_login = '0' * 1; 
+
+    window.__moon_initcallback = function(){
+        if(!!window.__initCatch){
+            window.__initCatch({
+                idkey : 27611+2,
+                startKey : 0,
+                limit : 128,
+                badjsId: 43,
+                reportOpt : {
+                    uin : uin,
+                    biz : biz,
+                    mid : mid,
+                    idx : idx,
+                    sn  : sn
+                },
+                extInfo : {
+                    network_rate : 0.01,    
+                    badjs_rate: 0.1 
+                }
+            });
+        }
+    }
+    </script>
+
+<script nonce="1891694841" type="text/javascript">
+(function(){
+    window.__logClientLog = function(msg){
+        try{
+            var method;
+            if(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)){
+                method = 'writeLog';
+            }else if(/(Android)/i.test(navigator.userAgent)){
+                method = 'log';
+            }
+            if(!!method)
+                doLog(method, msg);
+        }catch(e){
+            console.error(e)
+            throw e
+        }
+    }
+    function doLog(method, msg){
+        if(!!method && !!top.window.WeixinJSBridge && !!top.window.WeixinJSBridge.invoke){
+            top.window.WeixinJSBridge.invoke(method, {
+                "level" : 'info',
+                "msg" : "[WechatFe][appmsg]" + msg
+            });
+        }else{
+            
+            setTimeout(function(){
+                if( top.window.document.addEventListener ){
+                    top.window.document.addEventListener('WeixinJSBridgeReady', function(){
+                        doLog(method,msg)
+                    }, false);
+                }else if (top.window.document.attachEvent){
+                    top.window.document.attachEvent('WeixinJSBridgeReady', function(){
+                        doLog(method, msg)
+                    });
+                    top.window.document.attachEvent('onWeixinJSBridgeReady', function(){
+                        doLog(method, msg)
+                    });
+                }
+            }, 0)
+        }
+    }
+    window.__moonErrRep = function(src){
+        window.__logClientLog(' moon load err ' + src);
+    }
+    window.__moonSucRep = function(src){
+        window.__logClientLog(' moon load suc ' + src);
+    }
+    window.setTimeout(function(){
+        window.__logClientLog(' index.html end, __moonhasinit : ' + window.__moonhasinit);
+    }, 500);
+})();
+</script>
+
+        <script nonce="1891694841">window.__moon_host = 'res.wx.qq.com';window.__moon_mainjs = 'appmsg/index.js';window.moon_map = {"new_video/player.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/player.html39e24c.js","biz_wap/zepto/touch.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch34c264.js","biz_wap/zepto/event.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event34c264.js","biz_wap/zepto/zepto.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto34c264.js","page/pages/video.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/pages/video.css3767b8.js","a/appdialog_confirm.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/appdialog_confirm.html34f0d8.js","widget/wx_profile_dialog_primary.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/widget/wx_profile_dialog_primary.css34f0d8.js","appmsg/emotion/caret.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","new_video/player.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/player39e24c.js","a/appdialog_confirm.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/appdialog_confirm34c32a.js","biz_wap/jsapi/cardticket.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket34c264.js","biz_common/utils/emoji_panel_data.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/emoji_panel_data3518c6.js","biz_common/utils/emoji_data.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/emoji_data3518c6.js","appmsg/emotion/textarea.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea353f34.js","appmsg/emotion/nav.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common3518c6.js","appmsg/emotion/slide.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","pages/loadscript.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript39aac6.js","pages/music_report_conf.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_report_conf39aac6.js","pages/report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report3a9bef.js","pages/player_adaptor.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/player_adaptor39d6ee.js","pages/music_player.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player3af14e.js","appmsg/emotion/dom.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom31ff31.js","appmsg/comment_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment_tpl.html36c376.js","biz_wap/utils/fakehash.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/fakehash38c7af.js","biz_common/utils/wxgspeedsdk.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/wxgspeedsdk3518c6.js","a/sponsor.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/sponsor39e101.js","a/app_card.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/app_card393ef4.js","a/ios.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios393966.js","a/android.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android393966.js","a/profile.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile31ff31.js","a/cpc_a_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/cpc_a_tpl.html3b540a.js","a/sponsor_a_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/sponsor_a_tpl.html36c7cf.js","a/a_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a_tpl.html393ef4.js","a/mpshop.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop311179.js","a/wxopen_card.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/wxopen_card3a95b8.js","a/card.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card311179.js","biz_wap/utils/position.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position34c264.js","a/a_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a_report393966.js","appmsg/my_comment_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/my_comment_tpl.html36906d.js","appmsg/cmt_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html369d00.js","sougou/a_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion353f34.js","biz_wap/utils/wapsdk.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/wapsdk34c264.js","biz_common/utils/report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report3518c6.js","appmsg/open_url_with_webview.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/open_url_with_webview3145f0.js","biz_common/utils/http.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/http3518c6.js","biz_common/utils/cookie.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie3518c6.js","appmsg/topic_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/topic_tpl.html31ff31.js","pages/weapp_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/weapp_tpl.html36906d.js","biz_common/utils/monitor.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor3518c6.js","appmsg/weapp_common.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/weapp_common3af55a.js","pages/voice_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_tpl.html38518d.js","pages/kugoumusic_ctrl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/kugoumusic_ctrl393e3a.js","pages/qqmusic_ctrl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/qqmusic_ctrl39b68c.js","pages/voice_component.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component3af14e.js","pages/qqmusic_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/qqmusic_tpl.html393e3a.js","new_video/ctl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl2d441f.js","a/testdata.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/testdata3a6969.js","appmsg/reward_entry.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry3b1cff.js","appmsg/comment.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment3944ad.js","appmsg/like.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like375fea.js","pages/version4video.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video3a9bef.js","a/a.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a3b540a.js","rt/appmsg/getappmsgext.rt.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage34c264.js","biz_common/tmpl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl3518c6.js","appmsg/share_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share_tpl.html36906d.js","appmsg/img_copyright_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","pages/video_ctrl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl36ebcf.js","biz_common/ui/imgonepx.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx3518c6.js","biz_common/utils/respTypes.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes3518c6.js","biz_wap/utils/log.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/log34c264.js","sougou/index.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index36913b.js","biz_wap/safe/mutation_observer_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report34c264.js","appmsg/fereport.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/fereport3b1088.js","appmsg/report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report3404b3.js","appmsg/report_and_source.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source3a7477.js","appmsg/page_pos.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos3a95b8.js","appmsg/cdn_speed_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report3097b2.js","appmsg/wxtopic.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/wxtopic31a3be.js","appmsg/new_index.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/new_index36906d.js","appmsg/weapp.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/weapp3af55a.js","appmsg/weproduct.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/weproduct3af55a.js","appmsg/voicemsg.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voicemsg3b1748.js","appmsg/autoread.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/autoread3af14e.js","appmsg/voice.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice38518d.js","appmsg/qqmusic.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic39dc43.js","appmsg/iframe.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe39ab71.js","appmsg/product.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/product393966.js","appmsg/review_image.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image3af55a.js","appmsg/outer_link.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link275627.js","appmsg/copyright_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2ec4b2.js","appmsg/async.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async3b27d5.js","biz_wap/ui/lazyload_img.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img3af55a.js","biz_common/log/jserr.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr3518c6.js","appmsg/share.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share3b4418.js","appmsg/cdn_img_lib.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib38b7bb.js","biz_common/utils/url/parse.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse36ebcf.js","page/appmsg/not_in_mm.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm.css36906d.js","page/appmsg/page_mp_article_improve_combo.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_combo.css3b540a.js","page/appmsg_new/not_in_mm.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/not_in_mm.css36f05c.js","page/appmsg_new/combo.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/combo.css3b540a.js","biz_wap/jsapi/core.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core3b0568.js","biz_common/dom/event.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event3a25e9.js","appmsg/test.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/test354009.js","biz_wap/utils/mmversion.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion34c264.js","appmsg/max_age.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/max_age2fdd28.js","biz_common/dom/attr.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr3518c6.js","biz_wap/utils/ajax.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax38c31a.js","appmsg/log.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/log300330.js","biz_common/dom/class.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class3518c6.js","biz_wap/utils/device.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device34c264.js","biz_common/utils/string/html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html3518c6.js","appmsg/index.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index3b1748.js"};</script><script nonce="1891694841" type="text/javascript" id="moon_inline" > window.__mooninline=1; window.setTimeout(function() {  function __moonf__(){
+if(!window.__moonhasinit){
+window.__moonhasinit=!0,window.__moonclientlog=[],window.__wxgspeeds&&(window.__wxgspeeds.moonloadedtime=+new Date),
+"object"!=typeof JSON&&(window.JSON={
+stringify:function(){
+return"";
+},
+parse:function(){
+return{};
+}
+});
+var e=function(){
+function e(e){
+try{
+var o;
+/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)?o="writeLog":/(Android)/i.test(navigator.userAgent)&&(o="log"),
+o&&t(o,e);
+}catch(n){
+throw console.error(n),n;
+}
+}
+function t(e,o){
+e&&top.window.WeixinJSBridge&&top.window.WeixinJSBridge.invoke?top.window.WeixinJSBridge.invoke(e,{
+level:"info",
+msg:"[WechatFe][moon]"+o
+}):setTimeout(function(){
+top.window.document.addEventListener?top.window.document.addEventListener("WeixinJSBridgeReady",function(){
+t(e,o);
+},!1):top.window.document.attachEvent&&(top.window.document.attachEvent("WeixinJSBridgeReady",function(){
+t(e,o);
+}),top.window.document.attachEvent("onWeixinJSBridgeReady",function(){
+t(e,o);
+}));
+},0);
+}
+var n;
+localStorage&&JSON.parse(localStorage.getItem("__WXLS__moonarg"))&&"fromls"==JSON.parse(localStorage.getItem("__WXLS__moonarg")).method&&(n=!0),
+e(" moon init, moon_inline:"+window.__mooninline+", moonls:"+n),function(){
+var e={},o={},t={};
+e.COMBO_UNLOAD=0,e.COMBO_LOADING=1,e.COMBO_LOADED=2;
+var n=function(e,t,n){
+if(!o[e]){
+o[e]=n;
+for(var r=3;r--;)try{
+moon.setItem(moon.prefix+e,n.toString()),moon.setItem(moon.prefix+e+"_ver",moon_map[e]);
+break;
+}catch(i){
+moon.clear();
+}
+}
+},r=window.alert;
+window.__alertList=[],window.alert=function(e){
+r(e),window.__alertList.push(e);
+};
+var i=function(e){
+if(!e||!o[e])return null;
+var n=o[e];
+if("function"==typeof n&&!t[e]){
+var a={},s={
+exports:a
+},c=n(i,a,s,r);
+n=o[e]=c||s.exports,t[e]=!0;
+}
+if(".css"===e.substr(-4)){
+var d=document.getElementById(e);
+if(!d){
+d=document.createElement("style"),d.id=e;
+var _=/url\s*\(\s*\/(\"(?:[^\\\"\r\n\f]|\\[\s\S])*\"|'(?:[^\\'\n\r\f]|\\[\s\S])*'|[^)}]+)\s*\)/g,m=window.testenv_reshost||window.__moon_host||"res.wx.qq.com";
+n=n.replace(_,"url(//"+m+"/$1)"),d.innerHTML=n,document.getElementsByTagName("head")[0].appendChild(d);
+}
+}
+return n;
+};
+e.combo_status=e.COMBO_UNLOAD,e.run=function(){
+var o=e.run.info,t=o&&o[0],n=o&&o[1];
+if(t&&e.combo_status==e.COMBO_LOADED){
+var r=i(t);
+n&&n(r);
+}
+},e.use=function(o,t){
+window.__wxgspeeds&&(window.__wxgspeeds.seajs_use_time=+new Date),e.run.info=[o,t],
+e.run();
+},window.define=n,window.seajs=e;
+}(),function(){
+if(window.__nonce_str){
+var e=document.createElement;
+document.createElement=function(o){
+var t=e.apply(this,arguments);
+return"object"==typeof o&&(o=o.toString()),"string"==typeof o&&"script"==o.toLowerCase()&&t.setAttribute("nonce",window.__nonce_str),
+t;
+};
+}
+window.addEventListener&&window.__DEBUGINFO&&Math.random()<.01&&window.addEventListener("load",function(){
+var e=document.createElement("script");
+e.src=__DEBUGINFO.safe_js,e.type="text/javascript",e.async=!0;
+var o=document.head||document.getElementsByTagName("head")[0];
+o.appendChild(e);
+});
+}(),function(){
+function t(e){
+return"[object Array]"===Object.prototype.toString.call(e);
+}
+function n(e){
+return"[object Object]"===Object.prototype.toString.call(e);
+}
+function r(e){
+var t=e.stack+" "+e.toString()||"";
+try{
+if(window.testenv_reshost){
+var n="http(s)?://"+window.testenv_reshost,r=new RegExp(n,"g");
+t=t.replace(r,"");
+}else t=t.replace(/http(s)?:\/\/res\.wx\.qq\.com/g,"");
+for(var r=/\/([^.]+)\/js\/(\S+?)\.js(\,|:)?/g;r.test(t);)t=t.replace(r,function(e,o,t,n){
+return t+n;
+});
+}catch(e){
+t=e.stack?e.stack:"";
+}
+var i=[];
+for(o in u)u.hasOwnProperty(o)&&i.push(o+":"+u[o]);
+return i.push("STK:"+t.replace(/\n/g,"")),i.join("|");
+}
+function i(e){
+if(!e){
+var o=window.onerror;
+window.onerror=function(){},f=setTimeout(function(){
+window.onerror=o,f=null;
+},50);
+}
+}
+function a(e,o,t){
+if(!/^mp\.weixin\.qq\.com$/.test(location.hostname)){
+var n=[];
+t=t.replace(location.href,(location.origin||"")+(location.pathname||"")).replace("#wechat_redirect","").replace("#rd","").split("&");
+for(var r=0,i=t.length;i>r;r++){
+var a=t[r].split("=");
+a[0]&&a[1]&&n.push(a[0]+"="+encodeURIComponent(a[1]));
+}
+var s=new window.Image;
+return void(s.src=(o+n.join("&")).substr(0,1024));
+}
+var c;
+if(window.ActiveXObject)try{
+c=new ActiveXObject("Msxml2.XMLHTTP");
+}catch(d){
+try{
+c=new ActiveXObject("Microsoft.XMLHTTP");
+}catch(_){
+c=!1;
+}
+}else window.XMLHttpRequest&&(c=new XMLHttpRequest);
+c&&(c.open(e,o,!0),c.setRequestHeader("cache-control","no-cache"),c.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8"),
+c.setRequestHeader("X-Requested-With","XMLHttpRequest"),c.send(t));
+}
+function s(e){
+return function(o,t){
+if("string"==typeof o)try{
+o=new Function(o);
+}catch(n){
+throw n;
+}
+var r=[].slice.call(arguments,2),a=o;
+return o=function(){
+try{
+return a.apply(this,r.length&&r||arguments);
+}catch(e){
+throw e.stack&&console&&console.error&&console.error("[TryCatch]"+e.stack),_&&window.__moon_report&&(window.__moon_report([{
+offset:O,
+log:"timeout_error;host:"+top.location.host,
+e:e
+}]),i(f)),e;
+}
+},e(o,t);
+};
+}
+function c(e){
+return function(o,t,n){
+if("undefined"==typeof n)var n=!1;
+var r=this,a=t||function(){};
+return t=function(){
+try{
+return a.apply(r,arguments);
+}catch(e){
+throw e.stack&&console&&console.error&&console.error("[TryCatch]"+e.stack),_&&window.__moon_report&&(window.__moon_report([{
+offset:y,
+log:"listener_error;type:"+o+";host:"+top.location.host,
+e:e
+}]),i(f)),e;
+}
+},a.moon_lid=b,D[b]=t,b++,e.call(r,o,t,n);
+};
+}
+function d(e){
+return function(o,t,n){
+if("undefined"==typeof n)var n=!1;
+var r=this;
+return t=D[t.moon_lid],e.call(r,o,t,n);
+};
+}
+var _,m,w,l,u,p,f,h=/MicroMessenger/i.test(navigator.userAgent),g=window.define,v=0,y=2,x=4,O=9,j=10;
+if(window.__initCatch=function(e){
+_=e.idkey,m=e.startKey||0,w=e.limit,l=e.badjsId,u=e.reportOpt||"",p=e.extInfo||{},
+p.rate=p.rate||.5;
+},window.__moon_report=function(e,o){
+var i=.5;
+if(p&&p.rate&&(i=p.rate),o&&"number"==typeof o&&(i=o),!(!/mp\.weixin\.qq\.com/.test(location.href)&&!/payapp\.weixin\.qq\.com/.test(location.href)||Math.random()>i||!h||top!=window&&!/mp\.weixin\.qq\.com/.test(top.location.href))&&(n(e)&&(e=[e]),
+t(e)&&""!=_)){
+var s="",c=[],d=[],u=[],f=[];
+"number"!=typeof w&&(w=1/0);
+for(var g=0;g<e.length;g++){
+var v=e[g]||{};
+if(!(v.offset>w||"number"!=typeof v.offset||v.offset==x&&p&&p.network_rate&&Math.random()>=p.network_rate)){
+var y=1/0==w?m:m+v.offset;
+c[g]="[moon]"+_+"_"+y+";"+v.log+";"+r(v.e||{})||"",d[g]=y,u[g]=1;
+}
+}
+for(var O=0;O<d.length;O++)f[O]=_+"_"+d[O]+"_"+u[O],s=s+"&log"+O+"="+c[O];
+if(f.length>0){
+a("POST",location.protocol+"//mp.weixin.qq.com/mp/jsmonitor?","idkey="+f.join(";")+"&r="+Math.random()+"&lc="+c.length+s);
+var i=1;
+if(p&&p.badjs_rate&&(i=p.badjs_rate),l&&Math.random()<i){
+s=s.replace(/uin\:(.)*\|biz\:(.)*\|mid\:(.)*\|idx\:(.)*\|sn\:(.)*\|/,"");
+var j=new Image,D="https://badjs.weixinbridge.com/badjs?id="+l+"&level=4&from="+encodeURIComponent(location.host)+"&msg="+encodeURIComponent(s);
+j.src=D.slice(0,1024);
+}
+}
+}
+},window.setTimeout=s(window.setTimeout),window.setInterval=s(window.setInterval),
+Math.random()<.01&&window.Document&&window.HTMLElement){
+var D={},b=0;
+Document.prototype.addEventListener=c(Document.prototype.addEventListener),Document.prototype.removeEventListener=d(Document.prototype.removeEventListener),
+HTMLElement.prototype.addEventListener=c(HTMLElement.prototype.addEventListener),
+HTMLElement.prototype.removeEventListener=d(HTMLElement.prototype.removeEventListener);
+}
+var E=window.navigator.userAgent;
+if((/ip(hone|ad|od)/i.test(E)||/android/i.test(E))&&!/windows phone/i.test(E)&&window.localStorage&&window.localStorage.setItem){
+var S=window.localStorage.setItem,I=0;
+window.localStorage.setItem=function(e,o){
+if(!(I>=10))try{
+S.call(window.localStorage,e,o);
+}catch(t){
+t.stack&&console&&console.error&&console.error("[TryCatch]"+t.stack),window.__moon_report([{
+offset:j,
+log:"localstorage_error;"+t.toString(),
+e:t
+}]),I++,I>=3&&window.moon&&window.moon.clear&&moon.clear();
+}
+};
+}
+window.seajs&&g&&(window.define=function(){
+for(var o,t=[],n=arguments&&arguments[0],a=0,s=arguments.length;s>a;a++){
+var c=o=arguments[a];
+"function"==typeof o&&(o=function(){
+try{
+return c.apply(this,arguments);
+}catch(o){
+throw"string"==typeof n&&console.error("[TryCatch][DefineeErr]id:"+n),o.stack&&console&&console.error&&console.error("[TryCatch]"+o.stack),
+_&&window.__moon_report&&(window.__moon_report([{
+offset:v,
+log:"define_error;id:"+n+";",
+e:o
+}]),i(f)),e(" [define_error]"+JSON.stringify(r(o))),o;
+}
+},o.toString=function(e){
+return function(){
+return e.toString();
+};
+}(arguments[a])),t.push(o);
+}
+return g.apply(this,t);
+});
+}(),function(o){
+function t(e,o,t){
+return window.__DEBUGINFO?(window.__DEBUGINFO.res_list||(window.__DEBUGINFO.res_list=[]),
+window.__DEBUGINFO.res_list[e]?(window.__DEBUGINFO.res_list[e][o]=t,!0):!1):!1;
+}
+function n(e){
+var o=new TextEncoder("utf-8").encode(e),t=crypto.subtle||crypto.webkitSubtle;
+return t.digest("SHA-256",o).then(function(e){
+return r(e);
+});
+}
+function r(e){
+for(var o=[],t=new DataView(e),n=0;n<t.byteLength;n+=4){
+var r=t.getUint32(n),i=r.toString(16),a="00000000",s=(a+i).slice(-a.length);
+o.push(s);
+}
+return o.join("");
+}
+function i(e,o,t){
+if("object"==typeof e){
+var n=Object.prototype.toString.call(e).replace(/^\[object (.+)\]$/,function(e,o){
+return o;
+});
+if(t=t||e,"Array"==n){
+for(var r=0,i=e.length;i>r;++r)if(o.call(t,e[r],r,e)===!1)return;
+}else{
+if("Object"!==n&&a!=e)throw"unsupport type";
+if(a==e){
+for(var r=e.length-1;r>=0;r--){
+var s=a.key(r),c=a.getItem(s);
+if(o.call(t,c,s,e)===!1)return;
+}
+return;
+}
+for(var r in e)if(e.hasOwnProperty(r)&&o.call(t,e[r],r,e)===!1)return;
+}
+}
+}
+var a=o.localStorage,s=document.head||document.getElementsByTagName("head")[0],c=1,d=11,_=12,m=13,w=window.__allowLoadResFromMp?1:2,l=window.__allowLoadResFromMp?1:0,u=w+l,p=window.testenv_reshost||window.__moon_host||"res.wx.qq.com",f=new RegExp("^(http(s)?:)?//"+p);
+window.__loadAllResFromMp&&(p="mp.weixin.qq.com",w=0,u=w+l);
+var h=0,g={
+prefix:"__MOON__",
+loaded:[],
+unload:[],
+clearSample:Math.random()<h,
+hit_num:0,
+mod_num:0,
+version:1003,
+cacheData:{
+js_mod_num:0,
+js_hit_num:0,
+js_not_hit_num:0,
+js_expired_num:0,
+css_mod_num:0,
+css_hit_num:0,
+css_not_hit_num:0,
+css_expired_num:0
+},
+init:function(){
+g.loaded=[],g.unload=[];
+var e,t,r;
+if(a){
+var s="_moon_ver_key_",c=a.getItem(s);
+c!=g.version&&(g.clear(),a.setItem(s,g.version));
+}
+if((-1!=location.search.indexOf("no_moon1=1")||-1!=location.search.indexOf("no_lshttps=1"))&&g.clear(),
+a){
+var d=1*a.getItem(g.prefix+"clean_time"),_=+new Date;
+if(_-d>=1296e6){
+g.clear();
+try{
+!!a&&a.setItem(g.prefix+"clean_time",+new Date);
+}catch(m){}
+}
+}
+i(moon_map,function(i,s){
+if(t=g.prefix+s,r=!!i&&i.replace(f,""),e=!!a&&a.getItem(t),version=!!a&&(a.getItem(t+"_ver")||"").replace(f,""),
+g.mod_num++,r&&-1!=r.indexOf(".css")?g.cacheData.css_mod_num++:r&&-1!=r.indexOf(".js")&&g.cacheData.js_mod_num++,
+g.clearSample||!e||r!=version)g.unload.push(r.replace(f,"")),r&&-1!=r.indexOf(".css")?e?r!=version&&g.cacheData.css_expired_num++:g.cacheData.css_not_hit_num++:r&&-1!=r.indexOf(".js")&&(e?r!=version&&g.cacheData.js_expired_num++:g.cacheData.js_not_hit_num++);else{
+if("https:"==location.protocol&&window.moon_hash_map&&window.moon_hash_map[s]&&window.crypto)try{
+n(e).then(function(e){
+window.moon_hash_map[s]!=e&&console.log(s);
+});
+}catch(c){}
+try{
+var d="//# sourceURL="+s+"\n//@ sourceURL="+s;
+o.eval.call(o,'define("'+s+'",[],'+e+")"+d),g.hit_num++,r&&-1!=r.indexOf(".css")?g.cacheData.css_hit_num++:r&&-1!=r.indexOf(".js")&&g.cacheData.js_hit_num++;
+}catch(c){
+g.unload.push(r.replace(f,""));
+}
+}
+}),g.load(g.genUrl());
+},
+genUrl:function(){
+var e=g.unload;
+if(!e||e.length<=0)return[];
+var o,t,n="",r=[],i={},a=-1!=location.search.indexOf("no_moon2=1"),s="//"+p;
+-1!=location.href.indexOf("moon_debug2=1")&&(s="//mp.weixin.qq.com");
+for(var c=0,d=e.length;d>c;++c){
+/^\/(.*?)\//.test(e[c]);
+var _=/^\/(.*?)\//.exec(e[c]);
+_.length<2||!_[1]||(t=_[1],n=i[t],n?(o=n+","+e[c],o.length>1e3||a?(r.push(n+"?v="+g.version),
+n=location.protocol+s+e[c],i[t]=n):(n=o,i[t]=n)):(n=location.protocol+s+e[c],i[t]=n));
+}
+for(var m in i)i.hasOwnProperty(m)&&r.push(i[m]);
+return r;
+},
+load:function(e){
+if(window.__wxgspeeds&&(window.__wxgspeeds.mod_num=g.mod_num,window.__wxgspeeds.hit_num=g.hit_num),
+!e||e.length<=0)return seajs.combo_status=seajs.COMBO_LOADED,seajs.run(),console.debug&&console.debug("[moon] load js complete, all in cache, cost time : 0ms, total count : "+g.mod_num+", hit num: "+g.hit_num),
+void window.__moonclientlog.push("[moon] load js complete, all in cache, cost time : 0ms, total count : "+g.mod_num+", hit num: "+g.hit_num);
+seajs.combo_status=seajs.COMBO_LOADING;
+var o=0,t=+new Date;
+window.__wxgspeeds&&(window.__wxgspeeds.combo_times=[],window.__wxgspeeds.combo_times.push(t)),
+i(e,function(n){
+g.request(n,u,function(){
+if(window.__wxgspeeds&&window.__wxgspeeds.combo_times.push(+new Date),o++,o==e.length){
+var n=+new Date-t;
+window.__wxgspeeds&&(window.__wxgspeeds.mod_downloadtime=n),seajs.combo_status=seajs.COMBO_LOADED,
+seajs.run(),console.debug&&console.debug("[moon] load js complete, url num : "+e.length+", total mod count : "+g.mod_num+", hit num: "+g.hit_num+", use time : "+n+"ms"),
+window.__moonclientlog.push("[moon] load js complete, url num : "+e.length+", total mod count : "+g.mod_num+", hit num: "+g.hit_num+", use time : "+n+"ms");
+}
+});
+});
+},
+request:function(o,n,r){
+if(o){
+n=n||0,o.indexOf("mp.weixin.qq.com")>-1&&((new Image).src=location.protocol+"//mp.weixin.qq.com/mp/jsmonitor?idkey=27613_32_1&r="+Math.random(),
+window.__moon_report([{
+offset:_,
+log:"load_script_from_mp: "+o
+}],1));
+var i=-1;
+window.__DEBUGINFO&&(__DEBUGINFO.res_list||(__DEBUGINFO.res_list=[]),__DEBUGINFO.res_list.push({
+type:"js",
+status:"pendding",
+start:+new Date,
+end:0,
+url:o
+}),i=__DEBUGINFO.res_list.length-1),-1!=location.search.indexOf("no_lshttps=1")&&(o=o.replace("http://","https://"));
+var a=document.createElement("script");
+a.src=o,a.type="text/javascript",a.async=!0,a.down_time=+new Date,a.onerror=function(s){
+t(i,"status","error"),t(i,"end",+new Date);
+var _=new Error(s);
+if(n>=0)if(l>n){
+var w=o.replace("res.wx.qq.com","mp.weixin.qq.com");
+g.request(w,n,r);
+}else g.request(o,n,r);else window.__moon_report&&window.__moon_report([{
+offset:c,
+log:"load_script_error: "+o,
+e:_
+}],1);
+if(n==l-1&&window.__moon_report([{
+offset:d,
+log:"load_script_error: "+o,
+e:_
+}],1),-1==n){
+var u="ua: "+window.navigator.userAgent+", time="+(+new Date-a.down_time)+", load_script_error -1 : "+o;
+window.__moon_report([{
+offset:m,
+log:u
+}],1);
+}
+window.__moonclientlog.push("moon load js error : "+o+", error -> "+_.toString()),
+e("moon_request_error url:"+o);
+},"undefined"!=typeof moon_crossorigin&&moon_crossorigin&&a.setAttribute("crossorigin",!0),
+a.onload=a.onreadystatechange=function(){
+t(i,"status","loaded"),t(i,"end",+new Date),!a||a.readyState&&!/loaded|complete/.test(a.readyState)||(t(i,"status","200"),
+a.onload=a.onreadystatechange=null,"function"==typeof r&&r());
+},n--,s.appendChild(a),e("moon_request url:"+o+" retry:"+n);
+}
+},
+setItem:function(e,o){
+!!a&&a.setItem(e,o);
+},
+clear:function(){
+a&&(i(a,function(e,o){
+~o.indexOf(g.prefix)&&a.removeItem(o);
+}),console.debug&&console.debug("[moon] clear"));
+},
+idkeyReport:function(e,o,t){
+t=t||1;
+var n=e+"_"+o+"_"+t;
+(new Image).src="/mp/jsmonitor?idkey="+n+"&r="+Math.random();
+}
+};
+seajs&&seajs.use&&"string"==typeof window.__moon_mainjs&&seajs.use(window.__moon_mainjs),
+window.moon=g;
+}(window),window.moon.init();
+};
+e(),!!window.__moon_initcallback&&window.__moon_initcallback(),window.__wxgspeeds&&(window.__wxgspeeds.moonendtime=+new Date);
+}
+}
+__moonf__(); }, 25);</script><script nonce="1891694841" type="text/javascript">
+    var real_show_page_time = +new Date();
+    if (!!window.addEventListener){
+        window.addEventListener("load", function(){
+            window.onload_endtime = +new Date();
+        });
+    }
+    
+</script>
+
+    </body>
+    <script nonce="1891694841" type="text/javascript">document.addEventListener("touchstart", function() {},false);</script>
+</html>
+<!--tailTrap<body></body><head></head><html></html>-->

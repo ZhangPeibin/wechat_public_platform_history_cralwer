@@ -6,26 +6,29 @@ import time
 from uiautomator import device as d
 import sys
 import activity
-
+import json
+import os
 
 tmp = "tmp/"
-STATUS_SUFFIX = ".task.status"
 DOWN_AND_UP = 'DOWN_AND_UP'
+pnp_data = "pnp_data/"
+biz_name_json_path = pnp_data + "biz_name_json"
 
-MIN_COUNT = 2000
 MAX_COUNT = 5000
 drag_count = 0
 
-wc_search_key = "cd44444"
-wc_name = "cd44444"
 
-if len(sys.argv) == 2:
-    wc_search_key = sys.argv[1]
-    wc_name = sys.argv[2]
-
-d.screen.on()
-
-print "connected ..."
+def save_biz_name(biz, name):
+    with open(biz_name_json_path, "a+") as f:
+        biz_exist = False
+        for line in f:
+            biz_name_json = json.loads(line)
+            if wc_biz in biz_name_json.keys():
+                biz_exist = True
+                break
+        if not biz_exist:
+            biz_json = {biz: name}
+            f.write(json.dumps(biz_json) + "\n")
 
 
 def wait_update(timeout):
@@ -66,16 +69,23 @@ def continue_drag():
     # 每滑动20次，就去读取下文件
     global drag_count
 
-    if drag_count == 0 or (drag_count < MIN_COUNT and drag_count % 20 != 0):
+    if drag_count > MAX_COUNT:
+        return False
+
+    if drag_count == 0 or drag_count % 20 != 0:
         drag_count = drag_count + 1
         return True
 
     drag_count = drag_count + 1
 
-    with open(tmp + wc_name + ".task.status", 'r') as status_f:
+    status_path = tmp + wc_biz + ".task.status"
+    if not os.path.exists(status_path):
+        return True
+
+    with open(status_path, "r") as status_f:
         status = status_f.read()
 
-    return status != "0" and drag_count < MAX_COUNT
+    return status != "0"
 
 
 def view_history_message():
@@ -141,13 +151,29 @@ def jump_search_public_number_page():
     elif current_page_str.count("LauncherUI") != 0:
         print "首页界面"
         click_by_description("搜索", timeout=2000)
-        wait(1)
+        wait(5)
         click_by_text("公众号")
+        wait(3)
         search_public_number()
     else:
         reload_wei_xin()
         jump_search_public_number_page()
 
+
+wc_search_key = "smartisan2013"
+wc_name = "罗永浩"
+wc_biz = "MjM5NzAxNTkzNg=="
+
+if len(sys.argv) == 3:
+    wc_search_key = sys.argv[1]
+    wc_name = sys.argv[2]
+    wc_biz = sys.argv[3]
+
+save_biz_name(wc_biz, wc_name)
+
+d.screen.on()
+
+print "connected ..."
 
 activity.start_weixin_app()
 jump_search_public_number_page()

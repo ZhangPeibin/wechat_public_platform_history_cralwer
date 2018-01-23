@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<!--headTrap<body></body><head></head><html></html>--><html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+
+        <script nonce="1093455048" type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+<script nonce="1093455048" type="text/javascript">
+    var biz = "MjM5NzAxNTkzNg=="||"";
+    var sn = "" || ""|| "";
+    var mid = "" || ""|| "";
+    var idx = "" || "" || "";
+    window.__allowLoadResFromMp = true; 
+    
+    </script>
+<script nonce="1093455048" type="text/javascript">
+var page_begintime=+new Date,is_rumor="",norumor="";
+1*is_rumor&&!(1*norumor)&&biz&&mid&&(document.referrer&&-1!=document.referrer.indexOf("mp.weixin.qq.com/mp/rumor")||(location.href="http://mp.weixin.qq.com/mp/rumor?action=info&__biz="+biz+"&mid="+mid+"&idx="+idx+"&sn="+sn+"#wechat_redirect")),
+document.domain="qq.com";
+</script>
+<script nonce="1093455048" type="text/javascript">
+var MutationObserver=window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver,isDangerSrc=function(t){
+if(t){
+var e=t.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+if(e&&!/qq\.com(\:8080)?$/.test(e[1])&&!/weishi\.com$/.test(e[1]))return!0;
+}
+return!1;
+},ishttp=0==location.href.indexOf("http://");
+-1==location.href.indexOf("safe=0")&&ishttp&&"function"==typeof MutationObserver&&"mp.weixin.qq.com"==location.host&&(window.__observer_data={
+count:0,
+exec_time:0,
+list:[]
+},window.__observer=new MutationObserver(function(t){
+window.__observer_data.count++;
+var e=new Date,r=[];
+t.forEach(function(t){
+for(var e=t.addedNodes,o=0;o<e.length;o++){
+var n=e[o];
+if("SCRIPT"===n.tagName){
+var i=n.src;
+isDangerSrc(i)&&(window.__observer_data.list.push(i),r.push(n)),!i&&window.__nonce_str&&n.getAttribute("nonce")!=window.__nonce_str&&(window.__observer_data.list.push("inlinescript_without_nonce"),
+r.push(n));
+}
+}
+});
+for(var o=0;o<r.length;o++){
+var n=r[o];
+n.parentNode&&n.parentNode.removeChild(n);
+}
+window.__observer_data.exec_time+=new Date-e;
+}),window.__observer.observe(document,{
+subtree:!0,
+childList:!0
+})),function(){
+if(-1==location.href.indexOf("safe=0")&&Math.random()<.01&&ishttp&&HTMLScriptElement.prototype.__lookupSetter__&&"undefined"!=typeof Object.defineProperty){
+window.__danger_src={
+xmlhttprequest:[],
+script_src:[],
+script_setAttribute:[]
+};
+var t="$"+Math.random();
+HTMLScriptElement.prototype.__old_method_script_src=HTMLScriptElement.prototype.__lookupSetter__("src"),
+HTMLScriptElement.prototype.__defineSetter__("src",function(t){
+t&&isDangerSrc(t)&&window.__danger_src.script_src.push(t),this.__old_method_script_src(t);
+});
+var e="element_setAttribute"+t;
+Object.defineProperty(Element.prototype,e,{
+value:Element.prototype.setAttribute,
+enumerable:!1
+}),Element.prototype.setAttribute=function(t,r){
+"SCRIPT"==this.tagName&&"src"==t&&isDangerSrc(r)&&window.__danger_src.script_setAttribute.push(r),
+this[e](t,r);
+};
+}
+}();
+</script>
+
+        <link rel="dns-prefetch" href="//res.wx.qq.com">
+<link rel="dns-prefetch" href="//mmbiz.qpic.cn">
+<link rel="shortcut icon" type="image/x-icon" href="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script nonce="1093455048" type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var tmp = url.split('?'),
+            query = (tmp[1] || "").split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || "" || '';
+        window.key = params['key'] || "" || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+        window.appmsg_token = "";
+    })();
+
+    function wx_loaderror() {
+        if (location.pathname === '/bizmall/reward') {
+            new Image().src = '/mp/jsreport?key=96&content=reward_res_load_err&r=' + Math.random();
+        }
+    }
+
+</script>
+
+        <title>我的哈佛路</title>
+        
+<style>html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;line-height:1.6}body{-webkit-touch-callout:none;font-family:-apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background-color:#f3f3f3;line-height:inherit}body.rich_media_empty_extra{background-color:#fff}body.rich_media_empty_extra .rich_media_area_primary:before{display:none}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:16px}*{margin:0;padding:0}a{color:#607fa6;text-decoration:none}.rich_media_inner{font-size:16px;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.rich_media_area_primary{position:relative;padding:20px 15px 15px;background-color:#fff}.rich_media_area_primary.voice{padding-top:66px}.rich_media_area_primary:before{content:" ";position:absolute;left:0;top:0;width:100%;height:1px;border-top:1px solid #e5e5e5;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5);top:auto;bottom:-2px}.rich_media_area_primary .original_img_wrp{display:inline-block;font-size:0}.rich_media_area_primary .original_img_wrp .tips_global{display:block;margin-top:.5em;font-size:14px;text-align:right;width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.rich_media_area_extra{padding:0 15px 0}.rich_media_title{margin-bottom:10px;line-height:1.4;font-weight:400;font-size:24px}.icon_original_tag_primary{display:inline-block;padding:1px .65em;margin-top:-0.2em;vertical-align:middle;line-height:1.4;font-size:12px;border-top-left-radius:.85em 50%;-moz-border-radius-topleft:.85em 50%;-webkit-border-top-left-radius:.85em 50%;border-top-right-radius:.85em 50%;-moz-border-radius-topright:.85em 50%;-webkit-border-top-right-radius:.85em 50%;border-bottom-left-radius:.85em 50%;-moz-border-radius-bottomleft:.85em 50%;-webkit-border-bottom-left-radius:.85em 50%;border-bottom-right-radius:.85em 50%;-moz-border-radius-bottomright:.85em 50%;-webkit-border-bottom-right-radius:.85em 50%;border:1px solid #9e9e9e;color:#8c8c8c}.icon_original_tag_primary.title_tag{background-color:#e94442;border-color:#d04b4e;color:#fff;margin-bottom:.5em;padding:2px .65em;border-top-left-radius:.95em 50%;-moz-border-radius-topleft:.95em 50%;-webkit-border-top-left-radius:.95em 50%;border-top-right-radius:.95em 50%;-moz-border-radius-topright:.95em 50%;-webkit-border-top-right-radius:.95em 50%;border-bottom-left-radius:.95em 50%;-moz-border-radius-bottomleft:.95em 50%;-webkit-border-bottom-left-radius:.95em 50%;border-bottom-right-radius:.95em 50%;-moz-border-radius-bottomright:.95em 50%;-webkit-border-bottom-right-radius:.95em 50%}.rich_media_meta_list{margin-bottom:18px;line-height:20px;font-size:0}.rich_media_meta_list em{font-style:normal}.rich_media_meta{display:inline-block;vertical-align:middle;margin-right:8px;margin-bottom:10px;font-size:16px}.meta_original_tag{display:inline-block;vertical-align:middle;padding:1px .5em;border:1px solid #9e9e9e;color:#8c8c8c;border-top-left-radius:20% 50%;-moz-border-radius-topleft:20% 50%;-webkit-border-top-left-radius:20% 50%;border-top-right-radius:20% 50%;-moz-border-radius-topright:20% 50%;-webkit-border-top-right-radius:20% 50%;border-bottom-left-radius:20% 50%;-moz-border-radius-bottomleft:20% 50%;-webkit-border-bottom-left-radius:20% 50%;border-bottom-right-radius:20% 50%;-moz-border-radius-bottomright:20% 50%;-webkit-border-bottom-right-radius:20% 50%;font-size:15px;line-height:1.1}.meta_enterprise_tag img{width:30px;height:30px!important;display:block;position:relative;margin-top:-3px;border:0}.rich_media_meta_text{color:#8c8c8c}span.rich_media_meta_nickname{display:none}.rich_media_thumb_wrp{margin-bottom:6px}.rich_media_thumb_wrp .original_img_wrp{display:block}.rich_media_thumb{display:block;width:100%}.rich_media_content{overflow:hidden;color:#3e3e3e}.rich_media_content *{max-width:100%!important;box-sizing:border-box!important;-webkit-box-sizing:border-box!important;word-wrap:break-word!important}.rich_media_content p{clear:both;min-height:1em}.rich_media_content em{font-style:italic}.rich_media_content fieldset{min-width:0}.rich_media_content .list-paddingleft-2{padding-left:2.2em}.rich_media_content .list-paddingleft-2 .list-paddingleft-2{padding-left:30px}.rich_media_content blockquote{margin:0;padding-left:10px;border-left:3px solid #dbdbdb}img{height:auto!important}@media screen and (device-aspect-ratio:2/3),screen and (device-aspect-ratio:40/71){.meta_original_tag{padding-top:0}}@media(min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2){.mm_appmsg .rich_media_inner,.mm_appmsg .rich_media_meta,.mm_appmsg .discuss_list,.mm_appmsg .rich_media_extra,.mm_appmsg .title_tips .tips{font-size:17px}.mm_appmsg .meta_original_tag{font-size:15px}}@media(min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3){.mm_appmsg .rich_media_title{font-size:25px}}@media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait){.rich_media_area_extra{padding-bottom:34px}}@media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape){.rich_media_area_primary{padding:20px 59px 15px 59px}.rich_media_area_extra{padding:0 59px 21px 59px}}@media screen and (min-width:1024px){.rich_media{width:740px;margin-left:auto;margin-right:auto}.rich_media_inner{padding:20px}body{background-color:#fff}}@media screen and (min-width:1025px){body{font-family:"Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif}.rich_media{position:relative}.rich_media_inner{background-color:#fff;padding-bottom:100px}}.radius_avatar{display:inline-block;background-color:#fff;padding:3px;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;overflow:hidden;vertical-align:middle}.radius_avatar img{display:block;width:100%;height:100%;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;background-color:#eee}.cell{padding:.8em 0;display:block;position:relative}.cell_hd,.cell_bd,.cell_ft{display:table-cell;vertical-align:middle;word-wrap:break-word;word-break:break-all;white-space:nowrap}.cell_primary{width:2000px;white-space:normal}.flex_cell{padding:10px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.flex_cell_primary{width:100%;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;box-flex:1;flex:1}.original_tool_area{display:block;padding:.75em 1em 0;-webkit-tap-highlight-color:rgba(0,0,0,0);color:#3e3e3e;border:1px solid #eaeaea;margin:20px 0}.original_tool_area .tips_global{position:relative;padding-bottom:.5em;font-size:15px}.original_tool_area .tips_global:after{content:" ";position:absolute;left:0;bottom:0;right:0;height:1px;border-bottom:1px solid #dbdbdb;-webkit-transform-origin:0 100%;transform-origin:0 100%;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.original_tool_area .radius_avatar{width:27px;height:27px;padding:0;margin-right:.5em}.original_tool_area .radius_avatar img{height:100%!important}.original_tool_area .flex_cell_bd{width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.original_tool_area .flex_cell_ft{font-size:14px;color:#8c8c8c;padding-left:1em;white-space:nowrap}.original_tool_area .icon_access:after{content:" ";display:inline-block;height:8px;width:8px;border-width:1px 1px 0 0;border-color:#cbcad0;border-style:solid;transform:matrix(0.71,0.71,-0.71,0.71,0,0);-ms-transform:matrix(0.71,0.71,-0.71,0.71,0,0);-webkit-transform:matrix(0.71,0.71,-0.71,0.71,0,0);position:relative;top:-2px;top:-1px}.weui_loading{width:20px;height:20px;display:inline-block;vertical-align:middle;-webkit-animation:weuiLoading 1s steps(12,end) infinite;animation:weuiLoading 1s steps(12,end) infinite;background:transparent url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iciIgd2lkdGg9JzEyMHB4JyBoZWlnaHQ9JzEyMHB4JyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJub25lIiBjbGFzcz0iYmsiPjwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjRTlFOUU5JwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoMCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICA8L3JlY3Q+CiAgICA8cmVjdCB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzk4OTY5NycKICAgICAgICAgIHRyYW5zZm9ybT0ncm90YXRlKDMwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4KICAgICAgICAgICAgICAgICByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyM5Qjk5OUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSg2MCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+CiAgICAgICAgICAgICAgICAgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz4KICAgIDwvcmVjdD4KICAgIDxyZWN0IHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjQTNBMUEyJwogICAgICAgICAgdHJhbnNmb3JtPSdyb3RhdGUoOTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNBQkE5QUEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxMjAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCMkIyQjInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxNTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNCQUI4QjknCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgxODAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDMkMwQzEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyMTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNDQkNCQ0InCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEMkQyRDInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgyNzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNEQURBREEnCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0PgogICAgPHJlY3QgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyNFMkUyRTInCiAgICAgICAgICB0cmFuc2Zvcm09J3JvdGF0ZSgzMzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPgogICAgPC9yZWN0Pgo8L3N2Zz4=) no-repeat;-webkit-background-size:100%;background-size:100%}@-webkit-keyframes weuiLoading{0%{-webkit-transform:rotate3d(0,0,1,0deg)}100%{-webkit-transform:rotate3d(0,0,1,360deg)}}@keyframes weuiLoading{0%{-webkit-transform:rotate3d(0,0,1,0deg)}100%{-webkit-transform:rotate3d(0,0,1,360deg)}}.gif_img_wrp{display:inline-block;font-size:0;position:relative;font-weight:400;font-style:normal;text-indent:0;text-shadow:none 1px 1px rgba(0,0,0,0.5)}.gif_img_wrp img{vertical-align:top}.gif_img_tips{background:rgba(0,0,0,0.6)!important;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000',endcolorstr = '#99000000');border-top-left-radius:1.2em 50%;-moz-border-radius-topleft:1.2em 50%;-webkit-border-top-left-radius:1.2em 50%;border-top-right-radius:1.2em 50%;-moz-border-radius-topright:1.2em 50%;-webkit-border-top-right-radius:1.2em 50%;border-bottom-left-radius:1.2em 50%;-moz-border-radius-bottomleft:1.2em 50%;-webkit-border-bottom-left-radius:1.2em 50%;border-bottom-right-radius:1.2em 50%;-moz-border-radius-bottomright:1.2em 50%;-webkit-border-bottom-right-radius:1.2em 50%;line-height:2.3;font-size:11px;color:#fff;text-align:center;position:absolute;bottom:10px;left:10px;min-width:65px}.gif_img_tips.loading{min-width:75px}.gif_img_tips i{vertical-align:middle;margin:-0.2em .73em 0 -2px}.gif_img_play_arrow{display:inline-block;width:0;height:0;border-width:8px;border-style:dashed;border-color:transparent;border-right-width:0;border-left-color:#fff;border-left-style:solid;border-width:5px 0 5px 8px}.gif_img_loading{width:14px;height:14px}i.gif_img_loading{margin-left:-4px}.gif_bg_tips_wrp{position:relative;height:0;line-height:0;margin:0;padding:0}.gif_bg_tips_wrp .gif_img_tips_group{position:absolute;top:0;left:0;z-index:9999}.gif_bg_tips_wrp .gif_img_tips_group .gif_img_tips{top:0;left:0;bottom:auto}.rich_media_global_msg{position:fixed;top:0;left:0;right:0;padding:1em 35px 1em 15px;z-index:2;background-color:#c6e0f8;color:#8c8c8c;font-size:13px}.rich_media_global_msg .icon_closed{position:absolute;right:15px;top:50%;margin-top:-5px;line-height:300px;overflow:hidden;-webkit-tap-highlight-color:rgba(0,0,0,0);background:transparent url(//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_appmsg_msg_closed_sprite.2x2eb52b.png) no-repeat 0 0;width:11px;height:11px;vertical-align:middle;display:inline-block;-webkit-background-size:100% auto;background-size:100% auto}.rich_media_global_msg .icon_closed:active{background-position:0 -17px}.rich_media_global_msg.voice{color:#1aad19;background-color:#e8f6e8;padding-left:43.3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rich_media_global_msg.voice .ic_voice{position:absolute;top:50%;margin-top:-10px;left:15px;display:inline-block;width:13.3px;height:18.3px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAA3CAYAAAB+fggjAAAAAXNSR0IArs4c6QAACb9JREFUaAW9WX9wVMUd3917d5cf/Agp1OTuQgIlQqUoI1JI1Noojg2I+VU7hVrtDDpadRypgzKjU52x09KOdsS20ypSO/WPWttcAqhTOlSoU4FIoRUn0wEZIMndBUkwGEhyv97bfvaS97L77t3lHYUuc+z3935397vf/e4LJZfQnuPPsW0d25ZQzr9mELKSUnIVzHxB/Dh+lBOKf4OEk0FOyQAl/CyltIt5tL29d/V2FzIkLUQ4FA7dwon+KCF0Fee8rBBdS5aSs/D+PUrYbyKtkb9b9BzAlA7CERrqDN1DOH8C8HU57FwSGat6kBGypbcluhMwFj+75XWwemf1vHQqtZ0T3pCtelkp73uJ79s9bT39dqs5HQyFK79jcPIKFErtSgLHjPvQHQB0EFt2hDE2QHU6RMvpkODrw3o50Uk5p3w2N/SlUKhHTNZjskHBz2pi6ylbH22J/k3mOToYCAceIYT/AgYVPhxJQTkMQ792Ez/yQCY8d0fgRl0nj8J2G5z1mvSJ3qCMrYOTb5l0xQFBDIUDjxmcbzUFJnu621/kf/DUmlM9k7RLh4LtwRChxquck0bFCqWjxENuijXF/iXoioNVnZU36wZ5D7PTTCWsWhyp4uFYa+x1k3Y5ezj6oNgtdTVpL0Lo+mhr9BwO0Xib+/bcWYZB35Sdg/sXsOSNV8o5MXK0LfoKYXQDxpJOMZ8L1g8E33JQT6aeQRoJCOJEMxjxfCvSEtlnEq5Uj5h7Ayv2I8U+5w9du/va0oyD896ZV004RQKebIzQ53EQ/jJJubJQhUa2YBXPmqNgy8vPjZ67N+NgMh6/HwSfyURgniwqLvmJif8/+sNrY6O4XV5WxjKMuvHDQOl9uCksHmX0xydWn0hYBJfAgncXzBhNjjZSnX8Fq3ENdmWWUMUhS2Ebv5HrtjDNg/+B5IY4wos0cVukUskqUwj9xfKS2W9GSEwi5QdxFS5BMn54dGzkHkhOy0x18j9COY1O5VxmhGJylIxMjgUTC7WUkfrqJAkQpfuP3nFUElO4WUgwHHza0HU1wG1SGOi0jeSI+kf92hgZlXg0yajBV0gUwri4vqZud/O7PbhxkGiNvM5NWHKV3NN8LGQbuVdDsYIVzOzHOI+ygzYhR/RAxwdbELcPZDEp+Q+2YQcS2L+Zwc4gdSUQS7Oz5BwIKUqWyq5ApEdDsVmhBKaHnHDQVUg1uwKLkkm+USEScsbjId/ra+7fbaMThMHVdpoTjuyxXloqcUg+Eqe4WBb26/5hGXeCkynyfdA9Fo/SQeZlN/StjUQtmgQUFxVnKhyJlAUGOgP13OC3ygxGWZhhSYtkYqIicUHGnWCUluoFz8mzkRzOCf14Wfyikx2ThvQ0B6XZdvhi1QaoAfZHmiMf40xMJmih4BvxWQnbNCD3i/cunoYab4FMQwr5o4zb4Uh9ZMxOM3Fsf91YfPQfOAeLTJrouYc8K3rEII0ikBcKRLTEhUQNuo8E7NSGh4dnyDOFzIioOpxkZdqyXYGSAV2rMYjhIUamkL2ZcANvG+MWWS4DU/parDm2R8AiBj/Bz3IQe14DPKeDRho1hNyonFplhgp/mmaNhpH6s0VVToNFxR7TPcVFJVZdgMG4cNBq0LvRQhyA2vLaMyDrFouTL169KzBlGkEofdnScQYMXBI/raiuXC1fs4wz2iXLI+U0y7gd3tewL41IVhLvmM6X2eWycM7nZ9EEAXWgWDWPpjWg7tx8+IbD4llhNTadTn8XcWgVBphprbhbLQkngJK/ymTdoE/IuDPME5jYSYx1HLn3EH6/B77Rq/m+FG2L3d7X1Pe+kx5kCBJp4G0clDWmAJTD0db+NhO398GO4G3cMDJBbPIY9bShfgyb+OXqMwGPV9rrskFsc6t4fck0GRZPQ5GnZBpO4x/wvrAmKfP+FzjjYF9zn5i58s0ET8MX8hnGc+BxOGnFi8innBg7UUBsFaV6Pt1CeBMrKD73qG8CbPnKUHvg/lzG+tr6DlGWufJkEWQp/tjgyMBJPF+fWrhj4XSZeSlwJgaFIhyioY7gHvS3moYyK6TRO6JN0b0mzd6HOgIbEBK/gp7fzsOBGMLUX2Z+bWvvnb1T3sd2fYFbDgoET8/56UTqKEBrizDIeY1463tae1BGObeq9qrlBtXb4aRcmVvCmOjneFq+UFZW9lJ3Q3fee9lSmgAUBwUNd+N9CPjfTfDHO0pO+z1FK081nfpUoUuIuKPPD322Gav5OMjWBCURRBGN4GH0QCGvxSwHhcFguPLnGEip97AKXd5y39dPN5yOy4PaYXGrjKToRsTMIzg4M+38cZz+LNYWe8qZp1Izh0QlEVLfctMmzNb6gCP4GGxFcij5W7usHT++NjaI4uHpadr0KkbpZvAH7DKw9iRi98lsejbFcQWF2LJ/LvOe6Yl14m5eLavhU8gqkQdlWj5YnOSL+sXNWNFNmKT1NQsLkGAez3zcIHmfj44rKAYUd2Jxcek6HCP1cHD+Ig5DzonZnT3WdOyCWFGukRUIwkGTL069kdYz319MmlOf00EhjKpiWKPku7IiDF9X3RHMecvIsjIsPqdh1ewO3SXLOMF5HRQKvS39h5GNOmVlnZP1Mu4W9pZ5/4TDZh0ybHkt3iKOqcm0OaWDQpB52DZTQfQo+Vtl3C08kQGO2OStYtlGz6CuHJxZO3MPYnHYMsDJVSKpW3ghAOXKsxaPoup86q4c7F7cncSyHZANGen0Shl3C+PSPy/L4qmZ97525aAwiMLgQ8Uwp8tl3C2MASff00KJMRW3GXLtIFbwY1kXp/kaGXcL42AoDqHit6p5JxuuHfQwj1IvIhFO9QhyGk/QpskM/C3Gyo0y3YRdOzgnNOcTHJS0qYgVrBIfLE28gF75ToN3bySfrmsHM68tTo7JxuKJ+PUyPhWcqbQ5XarI+TRlZxQeENcOjitS5dMc5/oqu8F8+ODI4FrEoPVpBTfL8akK2YIc9DCiFAkoyTbUdNSU5XPK5Im/MQPeZOKZnpNdCu6AFOTgrJLZO2FDrogrUjyxPbQ/VOxgWyG9Fn71h6hoJkMC8exlvl8qQg6I66rE1A22Vz6PEuwZExe92CrQtmmU72U+fzQ9K/15XV1dsuudrhlc50t0XX8Izq1TdAh5I9rWf69Mc4ILdlCU9kNDn32ICvZS0wySAY2W+shSUdw6OSXTCtpioSgePZrPeydWTUncstF8MPRw1dFvunFO2CnYQaGEk3cSn8iWYyVeBGoImqtG6RHxQsQfEJVskE+34C22GxOfb8fiY40owtaAJ0qnciTxcvSlE7VfBPX3IQ8lb/U2R3dgBRGu7tt/AYJkZEGv/oaXAAAAAElFTkSuQmCC) no-repeat center;background-size:contain}.rich_media_global_msg.voice .icon_more{position:absolute;right:15px;top:50%;margin-top:-6.5px;width:8px;height:13px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAmCAYAAADeB1slAAAAAXNSR0IArs4c6QAAA49JREFUSA2tVk1IVFEUPveOmhQk1ibfvLFZSJtACqJIIpCIoB+imcFV2Z9ZUVnRomgRGFn2i6mFf5XVotCZMYmgIMhlq6BFENFiwjfPAosgFzXOvNu5o3fmeue98Y16F3PP+c453/fu/xCQmvZSWwwJaC0G6P8WND9IoTmbVFRycpqAdgBWkwRo94V960RsPn1aoPpN9RI6CR0WsDWcjAErtUiqTR/S18+HnNcSTv5zYrwDSatVMgLkH6aciwfj79WYW5+OT4xfsyPnBIgvwt872qBW45ZQzaMlJXCfMPJbDQgfRUoIhduVUW2TwArpaWyX+bnYU9JAAH44FaJIccqCW76Ib7NTjhOOvFPN/8q/IvE3cR+npFJgao9rkiSUXjD2GCNqzMnPbNPYjth3mqINlJAvTsk4kiJmWa3eQe8WpxwVzwjwgFFn/CorL29EkY9qovC5CFDrKq7JVoHl6zNTJCf53/lLk78SN/FcbJRx2cZCixC4ZATGXsu4as8YgQjGamN/q5atOotn4K3A1J4BUMbgsh7Wt6sx2bcV4AkjtSPJxkDjRQL0hVwg21zEglSzN+rdKeOybTtFcgK39ajWZDFWr+IZHxfGQ8mV0YA5nMGmDVcCPNcb8R5gYJ1UCWQfp6PFCI4NyZhrAV6EIiHGrPOAB0ImkW2c0la8u8ICc0wUCWrvC1dsw+3TnN6uanDaJ4zeiIfiA9wtWIAX8XspxeA6iuBlaN88hNzCNXk+JwFOuXJYW5tMQmc+EcqgzXGb2n9XFk1NstX5yKczl89JAF+6vRaBM1m5XAu//qkRGrtb8BThTtqH2/V0LmUWwbvsiREw8X0vcJHxxNbjNm3KUuVaMjmPFuWm2CPesHc/kp+yj06hFMhj/PIOOcfVFLk6xZT0G3vMTpmc27MusityZk/OBfKOwA05MPLIDJn3OJldcxTQotpBYOyEXVEWIw/NoInvuHOznSJfVDs0GzneNw9mI+eyOSPQI9phfCqPO38TFhHaFw/Eu/LliNiMESB5w6zkzD05F8mMYJr8mFC263Fa+vAadvXloj4toEcrjlgMjgrQrseHpBcfkm67WD6M6MN6lTWZeoZjyYxGLcB57MGnsEfF3fjU2G189QBpcUqmBLrnSs4504s8GjLxrwm5qYrg3dKFf6x6VbwQ3yOS/wz8+bS0ruwfELaBY2nyoNkn4gvW65GKRn4WForwP+dONHDaOHeZAAAAAElFTkSuQmCC) no-repeat center;background-size:contain}.preview_appmsg .rich_media_title{margin-top:1.9em}@media screen and (min-width:1024px){.rich_media_global_msg{position:relative;margin:0 20px}.preview_appmsg .rich_media_title{margin-top:0}}.pages_reset{color:#3e3e3e;line-height:1.6;font-size:16px;font-weight:400;font-style:normal;text-indent:0;letter-spacing:normal;text-align:left;text-decoration:none;white-space:normal}.weapp_element,.weapp_display_element,.mp-miniprogram{display:block;margin:1em 0}.share_audio_context{margin:16px 0}.weapp_text_link{font-size:17px}.weapp_text_link:before{content:'';display:inline-block;line-height:1;background-size:12px 12px;background-repeat:no-repeat;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAb1BMVEUAAAB4it11h9x2h9x2h9x2htx8j+R8i+B1h9x2h9x3h92Snv91htt2h9x1h9x4h9x1h9x1h9x2idx1h9t2h9t1htt1h9x1h9x1htx2h9x1h912h9x4h913iN17juOOjuN1iNx2h9t4h958i+B1htvejBiPAAAAJHRSTlMALPLcxKcVEOXXUgXtspU498sx69DPu5+Yc2JeRDwbCYuIRiGBtoolAAAA3ElEQVQoz62S1xKDIBBFWYiFYImm2DWF///G7DJEROOb58U79zi4O8iOo8zuCRfV8EdFgbYE49qFQs8ksJInajOA1wWfYvLcGSueU/oUGBtPpti09uNS68KTMcrQ5jce4kmN/HKn9XVPAo702JEdx9hTUrWUqVrI3KwUmM1NhIWMKdwiGvpGMWZOAj1PZuzAxHwhVSplrajoseBnbyDHAwvrtvKKhdqTtFBkL8wO5ijcsS3G1JMNvQ5mdW7fc0x0+ZcnlJlZiflAomdEyFaM7qeK2JahEjy5ZyU7jC/q/Rz/DgqEuAAAAABJRU5ErkJggg==');vertical-align:middle;font-size:11px;color:#888;border-radius:10px;background-color:#f4f4f4;margin-right:6px;margin-top:-4px;background-position:center;height:20px;width:20px}.weui-mask{position:fixed;z-index:1000;top:0;right:0;left:0;bottom:0;background:rgba(0,0,0,0.6)}.weui-dialog{position:fixed;z-index:5000;width:80%;max-width:300px;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background-color:#fff;text-align:center;border-radius:3px;overflow:hidden}.weui-dialog__hd{padding:1.3em 1.6em .5em}.weui-dialog__title{font-weight:400;font-size:18px}.weui-dialog__bd{padding:0 1.6em .8em;min-height:40px;font-size:15px;line-height:1.3;word-wrap:break-word;word-break:break-all;color:#999}.weui-dialog__bd:first-child{padding:2.7em 20px 1.7em;color:#353535}.weui-dialog__ft{position:relative;line-height:48px;font-size:18px;display:-webkit-box;display:-webkit-flex;display:flex}.weui-dialog__ft:after{content:" ";position:absolute;left:0;top:0;right:0;height:1px;border-top:1px solid #d5d5d6;color:#d5d5d6;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleY(0.5);transform:scaleY(0.5)}.weui-dialog__btn{display:block;-webkit-box-flex:1;-webkit-flex:1;flex:1;color:#3cc51f;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);position:relative}.weui-dialog__btn:active{background-color:#eee}.weui-dialog__btn:after{content:" ";position:absolute;left:0;top:0;width:1px;bottom:0;border-left:1px solid #d5d5d6;color:#d5d5d6;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:scaleX(0.5);transform:scaleX(0.5)}.weui-dialog__btn:first-child:after{display:none}.weui-dialog__btn_default{color:#353535}.weui-dialog__btn_primary{color:#0bb20c}</style>
+<style>
+        </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_pc2c9cd6.css">
+<![endif]-->
+
+    </head>
+    <body id="activity-detail" class="zh_CN mm_appmsg">
+        
+<script nonce="1093455048" type="text/javascript">
+    var write_sceen_time = (+new Date());
+</script>
+
+<div id="js_article" class="rich_media">
+    <div class="rich_media_inner">
+                        
+        
+        <div id="page-content" class="rich_media_area_primary">
+            
+                        <div id="img-content">
+                
+                <h2 class="rich_media_title" id="activity-name">
+                    我的哈佛路                                    </h2>
+                <div id="meta_content" class="rich_media_meta_list">
+                                                            <em id="post-date" class="rich_media_meta rich_media_meta_text">2017-10-30</em>
+
+                                        <a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname" href="##" id="post-user">罗永浩</a>
+                    <span class="rich_media_meta rich_media_meta_text rich_media_meta_nickname">罗永浩</span>
+
+                    <div id="js_profile_qrcode" class="profile_container" style="display:none;">
+                        <div class="profile_inner">
+                            <strong class="profile_nickname">罗永浩</strong>
+                            <img class="profile_avatar" id="js_profile_qrcode_img" src="" alt="">
+
+                            <p class="profile_meta">
+                            <label class="profile_meta_label">微信号</label>
+                            <span class="profile_meta_value">smartisan2013</span>
+                            </p>
+
+                            <p class="profile_meta">
+                            <label class="profile_meta_label">功能介绍</label>
+                            <span class="profile_meta_value">锤子科技 CEO</span>
+                            </p>
+                            
+                        </div>
+                        <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                            <i class="profile_arrow arrow_out"></i>
+                            <i class="profile_arrow arrow_in"></i>
+                        </span>
+                    </div>
+                </div>
+                
+                
+                
+                
+                                                
+                                                                
+                
+                <div class="rich_media_content " id="js_content">
+                    
+
+                    
+
+                    
+                    
+                    <section class="xmteditor" style="display:none;" data-tools="新媒体管家" data-label="powered by xmt.cn"></section><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><img data-s="300,640" data-type="jpeg" data-src="https://mmbiz.qpic.cn/mmbiz_jpg/6AcP1PhrICjiaRyasqjO8kaIiaMOGl7ND8nvns7icbGGlcbESV7CmsUpwDSosiayf3ZxUW197BfJ3WzMKK6ZI2QYiaA/0?wx_fmt=jpeg" data-copyright="0" class="" data-ratio="0.5555555555555556" data-w="900" data-backw="540" data-backh="300" style="width: 100%;height: auto;"  /><br  /></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(102, 102, 102);font-size: 15px;"><br  /></span></p><blockquote style="white-space: normal;"><p style="margin: 0em 0.5em;line-height: 1.75em;text-align: justify;"><span style="color: rgb(102, 102, 102);font-size: 13px;"><span style="color: rgb(102, 102, 102);">来源：锤子阅读｜本文授权转载自微信公众号：<span style="font-size: 13px;color: rgb(214, 0, 15);"><strong>真实故事计划</strong></span></span><span style="color: rgb(102, 102, 102);text-align: justify;">（ID:zhenshigushi1）。真实故事计划是由青年媒体人打造的国内首个真实故事平台，这里每天讲述一个从生命里拿出来的故事。</span></span></p></blockquote><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><br  /></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><em><span style="color: rgb(102, 102, 102);font-size: 13px;">“出生于湖南农村的何江，在经历了贫困和劳作的童年后，在 2016 年，作为哈佛大学优秀毕业生登上毕业典礼演讲台，成为获此殊荣的第一位中国大陆学生。”</span></em></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: center;"><span style="font-size: 15px;color: rgb(51, 51, 51);">━━━━━</span></p><p><span style="font-size: 15px;color: rgb(51, 51, 51);"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">一九八八年的大年初一，我出生在湖南省长沙市宁乡县停钟村。我爷爷觉得龙年正月初一出生是个好兆头，预示着我今后将像龙一样飞跃。在当时的乡村，人们普遍认为，名字将会左右一个人的命运。为了让我一生都有好运，爷爷决定给他的大孙子取个大气的名字。&nbsp;</span><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我们何家到我这辈，五行都缺水，因此孩子取名或多或少和水相关。比我大几岁的两个堂哥分别取名为“海”、“勇”（取‘涌’音），我的堂弟取名为“水”，爷爷给我取名为“江”。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">在我出生年份左右，附近的村子才开始通电，所有和电相关的物件都是奢侈品。尽管家里条件艰苦，但给我做满月酒的时候，爷爷还是请了皮影戏艺人，让他们在一排白炽灯下，演了一出大戏《杨家将》。那算是我们何家做得非常热闹的一次酒席，直到现在，当年参加满月酒席的亲戚仍然记忆犹新，津津乐道。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我的父母都是农民。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">父亲出生在停钟村，母亲则出生在与停钟村北面相邻的兴无村。两村之间隔着一条叫乌江的河，作为两个村子的分界线。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">父亲虽是农民，年轻时却曾在县城饭店当过厨师。不过，在我出生的时候，他已经辞工了，一心待在村里侍弄家中的几亩田地。他上过学，但是我不知道他到底读了多少年。他自己说他读完了高中，但乡亲们说他吹牛，因为村庄里他那一辈的人，没几个读过高中的。父亲的脑瓜特别灵活，脑筋转得很快，尤其是在和钱相关的事情上。尽管几十年来，他一直没赚到大钱。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">和父亲不同，我的母亲没有多少机会上学。她在读四年级的时候，便在外公外婆的要求下退学了。那个年代，乡下重男轻女的思想比较严重。作为长女，母亲自小便要帮忙打理家务，好让她的哥哥——我的舅舅能够安心上学。她爱读书，四年的学习生涯中，她的成绩一直很好，这更让她觉得遗憾，到现在，她还会念叨，如果不辍学的话，没准她会嫁到一户富贵人家。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">世事难测，母亲倒也没过多抱怨。退学后，她从外婆那里学会了织渔网，并成了村里织网的能手。她的这项手艺，在往后的日子里，将给家里带来不少收入。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我的弟弟也是在正月里出生的——正月初二，比我小了两岁。弟弟的小名叫“沟伢子”，因为他出生时，老家旁边有一条水沟。&nbsp;</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我们兄弟俩出生的年代，计划生育政策推行得非常严格，我们家因为违反政策被重罚了，这让本就贫困的家庭更是艰难。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">弟弟出生那年，下了一场罕见的大雪。冰天雪地里，长辈们在村里四处求人借钱。这个艰难的开头，让迷信的爷爷觉得小孙子的命数需要贵人扶持，于是他找村里的算命先生卜了一卦。算命先生说，这个小孩，会从他哥哥那里得到扶助，并劝我爷爷给小孙子取名的时候，把这个命理考虑进去。因此爷爷给弟弟取名“蛟龙”，蛟龙生长于江河，也算是依了算命先生的建议吧。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">弟弟在何家年幼一辈的男丁里排行老五，我是老三。和我乖巧的性格不同，弟弟自小便很淘气。他常常倒腾家里的锅碗瓢盆，玩坏了便会招来父亲的一顿训斥或是责打。打疼了，哭几句，但就是长不了记性。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">记得有一次，弟弟不知从哪里抓来了几条鱼，但又舍不得吃，他便偷偷将鱼扔进了家中的水井里。水井氧气含量少，没过几天鱼便死了。鱼腥味和死鱼尸体腐烂的味道，从水井里扩散出来，闻起来恶心极了。父亲很快发现了井水异常，便开始审问我们兄弟俩。&nbsp;</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">弟弟坚持不认错，尽管父亲知道是他做的。看到弟弟错不悔改，父亲怒上心头。为了让弟弟明白事态的严重性，父亲提着他把他悬在井口，狠狠地警告他，要是再不承认错误，就松开手，让他和那些死鱼一起待在井底。弟弟被吓傻了，不得不坦白了所有事情。&nbsp;</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">父亲常说，小孩子只有被打了几顿后，才会知道什么事情是该做的，什么事情是不该做的。打得越多，记得越牢。那一年，因为弟弟的无心之举，我们家的那口老井需要消毒清理。父亲花了好大力气，用轱辘一桶一桶把井底的脏水提上来，清空后，他再在井里撒上石灰粉，等着地下水慢慢渗透，把细菌和腐烂的味道驱除。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">整个过程花了将近一个月，在这一个月里，父亲每天都要来来回回走好几里路，到村里其他人家的井去挑水。每次挑水的时候，父亲都会恶狠狠地盯几眼弟弟，而弟弟则会内疚地躲在母亲身后，看着一桶桶水在缸里泛起涟漪。多年后，我们兄弟俩闲聊，我还会拿这件事调侃弟弟。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我和弟弟在很小的时候，就跟着父母干农活了。父母当时并不能预见他们的儿子将来是否有出息，他们有点隐隐担心，要是将来两个儿子找不到工作，要怎么过日子。乡里人常说，学会了种田，就一辈子不愁自己的饭碗。因为这个缘由，父母对教我们种水稻这件事，很是上心。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我们四五岁的时候，就被带到田里跟着大人干农活，这在当时的村里很常见，我们这一代农村长大的孩子都经历过。不过比我们晚出生几年的小孩，因为条件好了，不一定会被要求下地干活。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我们一家四口人，将近分了八亩水田。八亩水田约莫能产五六千斤稻谷，上缴农业税后，剩下的便是我们家一年的收成。进入新千年，国家决定给农民减免农业税，缴粮自此成了历史，不过这些都是后话。我们生产的谷子大部分是给人和牲畜吃的，偶尔有剩下，父亲便会把谷子卖掉，好换点钱补贴家用。再加上养猪挣上的一两千块钱，便是我们家在九十年代主要的年收入。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><img data-s="300,640" data-type="jpeg" data-src="https://mmbiz.qpic.cn/mmbiz_jpg/6AcP1PhrICjiaRyasqjO8kaIiaMOGl7ND8QVCgYdPiaicdarlRBGOrqlM713dSPH81mUSPeYzJPwnZBdTmGnAyKicWg/0?wx_fmt=jpeg" data-copyright="0" class="" data-ratio="0.75" data-w="600" data-backw="540" data-backh="405" style="width: 100%;height: auto;"  /></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><span style="color: rgb(51, 51, 51);font-size: 13px;text-align: justify;">· 何江的故乡湖南省宁乡县停钟村</span></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">那个时候，父亲最大的梦想是成为村里的“万元户”。那时银行还未在乡村流行，父亲说，如果他有一万块钱，他会把钱一张张地藏在箱子的夹层里。父亲这么一说，让我和弟弟对家里所有的木箱产生了兴趣。我们常幻想，趁父母不在家时，从木箱里偷点钱买糖吃——不过，幻想终归只是幻想。直到二零零年之后，父亲才实现“万元户”的梦想。&nbsp;</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">湖南以水稻为主要农作物，多是双季种植。我出生的年代，水稻种植全靠人工，因为没有机械进得了满是淤泥的水田。我们用水牛犁田，锄头除草，镰刀收割水稻，扮桶给稻穗脱粒。这些都是最为传统的农作方式，效率低下，也很耗精力。随着乡村的变革，它们都将被现代化的农业耕作方式取代。&nbsp;</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">传统农业效率低下，农民买不起化肥农药增进产量等问题，因此水田产出的每一粒稻谷便显得尤为珍贵。九十年代初，村庄里有时仍会有一些人家因稻谷产量过少而揭不开锅，他们会面带难色地请求其他人家，匀一点粮食出来，接济一下，好让他们过渡到下一个收获季节。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">父亲借此教育我和弟弟，既要体谅人家的难处，更要珍惜碗里的白饭。吃饭的时候，要是我们在饭桌上掉了饭粒，父亲便用筷子打我们的手，让我们捡起来吃掉。我自此对粮食有了敬畏之心，直到现在，尽管在城市里生活了很多年月，我对浪费粮食仍然有种近乎本能的内疚。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: center;"><span style="font-size: 15px;color: rgb(51, 51, 51);">━━━━━</span></p><p style="white-space: normal;"><span style="font-size: 15px;color: rgb(51, 51, 51);"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我五岁时，父亲在母亲的鼓励下成了渔民。&nbsp;</span><br  /></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">每年冬天，他会跟随村里其他渔民到湖北或是江西，开始长达三个月的捕鱼生活。那是父亲少有的出省工作机会，也是他经常向人吹嘘的打工经历。打鱼生活让父亲开阔了眼界，也让他从停钟这个小山村走了出去，头一回领略到国家的广大。&nbsp;</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">每年年关将至的时候，他就会背着一袋子充满鱼腥味的衣服、棉被和一些淡水湖鱼，出现在村口。他也会给我们带一些小礼物回来，好让我们更多地了解外面的世界。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我六岁那年，父亲带回了一口高压锅，它在当时的村里是个稀罕物件。父亲回来的那天，好多人来我家，围看父亲组装高压锅：锅身、锅盖、密封胶圈……组装完后，乡亲们要求父亲用高压锅煮一锅水。父亲开心地应允。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">父亲把水倒进高压锅，然后，把高压锅放在柴火灶上。烟火烘烤不锈钢锅底，很快就把锅底烧黑了，看得我很是心疼。水很快烧开了，排气口喷着粗气，好像快要爆炸的样子，一些邻居吓得直往后退。这口高压锅我们家用了十年，直到它的塑料手柄几乎融化了才被扔掉——这大概是我童年里头一回接触的“高科技”物件。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">大概在父亲带回高压锅的那年，我们家老房子的厨房和猪圈，在一场大雪中倒塌了。我当时并不懂事，只觉得砸死的那几头猪，在雪地上鲜血淋淋的场景，很是恶心。出事那天，我站在曾经的猪圈口，抓起地上的碎土块，朝附近想舔猪血的野狗掷了出去。野狗被打退，我便“咯咯咯”地笑，好像家中的变故，与我没有多少关系。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">父母站在毁坏的房子前，忧心忡忡。房子倒塌后，他们在雪地里埋头苦干，把厨房里的东西挖出来，一点点挪到还未倒的另一半房间。然后他们在附近的山里砍一些树，用来支撑住未倒的那面摇摇欲坠的土墙。那年的冬天在我印象中显得格外的冷，也格外的长。夜里，冷风吹进破墙，我便会问父亲，天气什么时候回暖，我的手脚什么时候不再冰凉。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">开春后，父亲决定建新房。因为家里没多少积蓄，所以建房子的材料大都需要自己亲手准备。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">父亲先在附近的山头挖红泥，和上水，放在木质模具里做成一块块泥砖。泥砖晾干了，父亲把它们一层层叠起来，放进临时搭建的砖窑。他在泥砖缝隙里填满碎煤，糊上泥巴，用炭火烧烤泥砖，足足花了二十天，泥砖才变成红砖。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">红砖出窑后，父亲到附近山头，买回来好几车石灰。石灰并不能直接作为涂料，需要纯化后才可以用。所幸父亲对这个工艺也很是熟悉。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">他先给石灰浇水，使它们受热膨胀炸开，作为“发石”。石头碎了后，他再把它们抛入挂在水池上的过滤铁丝网上，进行“滤石”。过滤后的粉末和水充分发生化学反应，才能成为用做涂料的氢氧化钙，是为“沉石”。当然，我对这些化学反应不熟悉，只觉得往石头上浇水，石头就发热膨胀，是一件很有趣的事情。一点一点，修建新家的材料逐渐准备齐全了，然后是盖房子，搬新家。在孩子的世界里，一切都发生得如此简单自然，就好像睡了一个长觉，睡觉之前，我们还住在冰冷的土砖房里，睡醒后，便搬进了宽敞的红砖屋。新房子刚盖好的那段日子，父母脸上总是堆满了笑容。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><img data-s="300,640" data-type="jpeg" data-src="https://mmbiz.qpic.cn/mmbiz_jpg/6AcP1PhrICjiaRyasqjO8kaIiaMOGl7ND8gfaRSv2F2zs97A51QX4ctEhK35nsrBF6dojgfR7BnKRRbf90WJlUSg/0?wx_fmt=jpeg" data-copyright="0" class="" data-ratio="0.54375" data-w="640" data-backw="540" data-backh="294" style="width: 100%;height: auto;"  /></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><span style="color: rgb(51, 51, 51);font-size: 13px;text-align: justify;">·&nbsp;</span><span style="color: rgb(51, 51, 51);font-size: 13px;text-align: justify;">何江的父亲</span></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">家里新房盖好后，父亲的弟弟、我的叔叔，也开始翻修他家的房子。叔叔自小体弱，一直干不了太重的体力活，成年后便从事泥瓦匠这种相对轻松的职业。他的泥瓦活很好，在村子里帮很多人家盖过房子。不过，那个年代盖房子不挣钱，叔叔家也没有多少积蓄。看着父亲盖了房子，叔叔有点耐不住，也想一个人盖一栋楼房。他很卖力，除了上梁请人帮忙，两层的楼房几乎都是由他一人一砖一瓦砌好的。&nbsp;</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">可惜的是，叔叔没来得及好好享用他亲手盖好的楼房。在房子将近完工的时候，他被诊断出癌症。不到半年，他便离世，只留下一栋还未封顶的房子，给我婶婶和他们不到五岁的儿子。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">那一年是我童年记忆里灰暗的一年。当叔叔被诊断出癌症时，我的父亲仍在江西打鱼。因为没有电话，信件也不通畅，父亲对于叔叔的病毫不知情。爷爷带着一家人，在村里四处筹钱。由于治疗癌症的费用太贵，乡里人家也没有多少积蓄，很快，叔叔便因为付不起医药费而离开了医院。我们只能用一些土方子减轻叔叔的病痛，但叔叔的病情越来越重，直到父亲年底从江西回来，我们才有钱再次把叔叔送进了医院。&nbsp;</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">癌症在那个年代没有有效的治疗方法，尽管父亲打鱼的所有积蓄都花掉了，但叔叔的病还是没有任何好转。很快，医院那边便传来了叔叔的死讯，得知消息的家里人无不撕心裂肺地痛哭。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">那是我生平第一次，看见父亲掉眼泪。悲剧还在持续，丝毫没给我们家喘息的机会。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: center;"><span style="font-size: 15px;color: rgb(51, 51, 51);">━━━━━</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">叔叔去世后的第二年，一场洪水席卷了中国的南方。乌江河水在连续几周大雨后，村里不少靠近河堤的人家都进了齐腰的水。好在我们家靠近山脚，地势较高，水漫不过来。不过，因为村里水田大都靠近乌江，所以，家里的水稻田没逃过洪灾。几周后，洪水退去，秧苗几乎全被毁掉，家里上半年的收成便没了着落，父亲期望通过田地收成偿还叔叔治病所欠债务的想法，就此泡汤。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">那一年，我恰好十岁，还从未看过洪水的我觉得好玩，经常一个人偷偷跑出去，站在村子高处看洪水，或是在浅水滩里捕鱼。一场洪水，在大人眼里是悲剧，在小孩眼里，却充满了乐子，多年以后，再想到这件事，我心里五味杂陈。&nbsp;</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">洪水退后，爷爷便一直咳嗽，体力也日渐虚弱。他一直是个健硕的老人，便不觉得自己患了什么大病，总是安慰家里人说，咳一阵子就好了。因此，他拒绝花钱看医生。或许是爷爷知道家里没什么钱给他看病吧，又或许他觉得，死并不是那么可怕的一件事，生死在天，富贵由命。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">不到半年，爷爷的病加重到只能躺在床上。很快，爷爷离世了，离世之前，他没来得及和儿女们，说几句最后他想说的话。&nbsp;</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">乡下的成长经历让我对一切事物都充满了好奇，而这好奇心在我成长的不同阶段，帮助我克服了很多困难，也让我在一个新环境里迅速成长。&nbsp;</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">爷爷去世那一年，我刚好小学六年级毕业。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我四岁起，便进了村里的小学——倒不是因为我天赋异禀，而是四岁那年，父亲觉得我妨碍他们做农活，便说服老师让我进了学前班。村里规定入学的年龄是六岁或七岁，我年龄太小，老师担心我跟不上班级进度，而拒绝了我的入学请求。可父亲觉得只要我能在班里坐得住就行，并不要求我在课堂上学到什么东西。我倒也听父亲的话，进了学校，一直在角落里安安静静地坐着。这一坐，让老师觉得我比那些大孩子容易教，我于是也就成了村里入学最早的学生。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我在村里小学读书的时间很短，只有一年。一年后的暑假，一场大雨淋垮了好几间教室，学校从此就解散了。我于是不得不在升入一年级的时候，转学到邻村的学校——竹山小学。学校离家有好几里路，要穿过长长的田埂和好几个小山头。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">孩子们无论年纪大小，都是自己走路上学，我每天要走近一个小时的路，才到得了学校，要是碰到雨雪天气，花的时间便更多。冬天里天黑得早，亮得晚。有时候早晨我还要摸黑上学，被山林里的虫鸟声吓坏，再联想一些听到的鬼怪故事，好几次，在上学路上，我被吓得大哭。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">上学路上发生的也不一定都是心酸事，有些经历还挺好玩。山涧里，经常有一些小朋友抓鱼或抓螃蟹。或者，在水稻田里，有些小孩因为在学校里踩了其他学生一脚，而在路上约架。又或者，几个要好的伙伴，跑到山里抓鸟雀。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">那个时候生态没被破坏，村子附近有许多野生动物，比如兔子、麻雀、黄鼠狼和鼹鼠等等。手快的孩子经常能在上学路上抓到一两只，带到学校里炫耀，弄得其他同学的心里直痒痒。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我弟弟那个时候痴迷养蚕，多的时候养过几千条，养肥了，他便把蚕带到学校，兜卖给那些不会养蚕但又想养小宠物的同学。直到现在，我仍记得弟弟养在卧室的那些白蚕啃食桑叶的“窸窣”声。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">农村小学的课程设置并不丰富，无非是语文、数学、自然和思想品德之类，语文、数学是重中之重。大家一般都讲方言，语文老师也是用方言教学，只有在朗诵课文时，才会偶尔秀几句湖南地区独有的“塑料普通话”。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">小学时，我有过好几个数学老师，但印象最深的一位，在邻村还做着屠夫。他家里经营一家杂货店，他每天早晨要早起到养猪人家杀一头猪，然后再把那些切碎的肉送回杂货店卖。他经常骑着一辆自行车来学校，自行车的后座沾满了猪油和猪血，有时候早上没来得及回家，便把杀猪的屠刀也带到学校。我们由此很怕这位数学老师，老觉得那些被他叫进办公室的学生会被屠刀千刀万剐。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">进学校的头几年，我的成绩并不算太好，可能是因为我年龄太小，跟不上进度。不过，我那时也不知道读书有什么用，因为村里没多少人念过高中，很少有人能用切身经历告诉我们，读书如何改变命运。村里人文化水平普遍不高，有个高中文凭便显得高人一等，我那时的梦想就是拿一个高中文凭。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">因为乡村教育资源有限，我那时能读到的课外书有限。除了学校发的课本，我几乎没有其他课外书可读。家里经济困难，父母有时都舍不得给我买文具，课外读物对我而言就更是奢望了。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">父母对我和弟弟的教育虽然支持，可他们也并不确定，我们兄弟俩能否通过读书翻身。放学或者放假在家，他们仍会要求我们干好农活，以防在将来找不到出路时能把家里的田地耕种好。我们会跟随父母在田里干点碎活，或是到野外去放牛，或是切猪草。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">要是哪天我们干的家务活多，父亲便会带着我们到附近的水田抓黄鳝或是青蛙。我提着手电筒走在田埂上，弟弟背着竹篓跟在最后面，一晚上，我们很容易便能抓到几十条黄鳝或一袋子青蛙。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: center;"><span style="font-size: 15px;color: rgb(51, 51, 51);">━━━━━</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">小学毕业后，我们又要转学到另一个村子去读初中，当然离家也更远了，有十几里的路程，走路要花两三个小时。为了缩短上学时间，我不得不学会骑自行车。家里那时没有钱给我买合适我骑的自行车，我只能骑父亲当年结婚时买的二八式自行车。我个头小，站着才比自行车高一个脑袋，于是只能用脚跨进自行车的三角区域侧着骑，行的又是崎岖的山路，其难度可想而知。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">要是冬天路被冻住了，一不小心，我便会滑倒在路上。我曾无数次咒骂这该死的天气，该死的学校，该死的路，可就是舍不得咒骂我那不合适的自行车。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">不过，山里骑自行车也会有好玩的事情。我记得有一个清晨，骑过某个山头的时候，一只野兔从路边的草丛窜了出来，正好冲到了自行车的轮子下，被撞晕了。我却乐了，因为家里的餐桌上又会出现一道美妙的野味了。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">以后的日子里，在同一个山头，我常会有意识地放慢自行车的速度，盼着另一只兔子撞到轮子上。可我至今也没能再次碰到那天的好运气。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">读初中的时候，家里的一个亲人出了点事故：我的舅舅被一条毒蛇咬伤，不得不放弃做了多年的捕蛇业务。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">舅舅是个职业捕蛇人，曾受过村里一个老中医训练。老中医教他捕蛇，本是想教他捕蛇，用来制中药的，可不曾想到，学成之后，城里愿意吃蛇的人越来越多，于是舅舅便专门捕蛇卖给城里的餐馆。他是我们那一带小有名气的捕蛇者，连我母亲也曾从他那儿学过捕蛇的技巧。不过，捕蛇风险很大，在我读初二的时候，舅舅在捕一条银环蛇的时候被蛇咬伤，差点丧命。他也因此转行，与父亲一起做了好些年的打井工。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">父亲和舅舅在往后的好几年里经常一起共事。要是没有人家需要打井，他们便会在家喂养猪、鸡等家畜。可惜，这些农活都赚不了多少钱，鸡瘟猪瘟还经常来袭，最后舅舅被逼无奈，决定外出打工。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">父亲在几年后也加入了农民工的队伍。他们去过广东、宁夏、江西、湖北、浙江等等地方，在很多城市建起了高楼大厦，只可惜他们自己一直都没能在这些建起的房子里住过。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">初三结束，我考上了县城最好的高中，学校离家将近有四十里路，我不得不寄宿在学校。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><img data-s="300,640" data-type="jpeg" data-src="https://mmbiz.qpic.cn/mmbiz_jpg/6AcP1PhrICjiaRyasqjO8kaIiaMOGl7ND8u3RwoxG5fptcicRqz5cwfVTZEhdKS7c5hyYjtN6aCpOOC5IJQzZPJZA/0?wx_fmt=jpeg" data-copyright="0" class="" data-ratio="0.665406427221172" data-w="529" data-backw="529" data-backh="352" style="width: 100%;height: auto;"  /></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><span style="color: rgb(51, 51, 51);text-align: justify;font-size: 13px;">·&nbsp;</span><span style="color: rgb(51, 51, 51);text-align: justify;font-size: 13px;">何江初中毕业照片</span></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我也是第一次走出乡村，第一次真正感受到城乡的差距。县城的一切，在我眼里都是新奇的，水泥路、红绿灯、小轿车、自来水、霓虹灯……我若是在县城看到新奇东西，都会跑到电话亭打电话回家，与母亲分享。母亲在电话那头，每次都会勉励我，好好读书，将来才能住在城里——我才真正意识到“城里人”这个词，在乡里人眼里，代表着一种向往。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">对类似我这种背景的农村学生来说，进城读高中才开始最大的问题不是学习，而是生活上的不适应，因为我们对城镇生活没什么具体概念。简单说，冲水厕所该怎么用，一开始很多农村学生就不清楚。农家子弟想要融入城市子弟的圈子，也比较困难，因为大家的成长环境相差太大。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">举个例子，乡下孩子不太会追星，大家听过的歌星磁带，看过的电视剧也少，更别说电影了。还有个人的打扮——乡下孩子的衣服破了，补一补还可以穿，也没觉得有什么；但到县城里，城里的同学穿着各种时髦衣服，农村的同学很容易产生自卑感。语言也能分隔乡下和城里的学生。虽说宁乡地区的方言大体一致，但口音仍有差别，乡里人说话似乎是带了一层土气，要是不小心说了几句乡下的脏话，更会被人笑掉大牙。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我那时在同学中间，总表现得小心翼翼，生怕说错了什么话，或是做错了什么事，被人暗地里嘲笑。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">经过了将近一年的适应期，我慢慢地改变了自己的习惯，我观察同学们怎么穿戴，怎么讲话，我努力学习标准普通话的发音，好改掉自己土气的口音。所幸，一切都在慢慢改观。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">或许是因为我在乡下读书少的原因，到了县城，我对所有和文字相关的东西都很敏感，一有时间我便会钻进书堆里。高一的时候，为了提高英语成绩，我买了一本《乱世佳人》的英文版。我懂的单词并不太多，但这并不妨碍我读英文原著的决心。碰到不懂的词，我会查词典注音释义，写在书的边角。到最后，整本书的空白页几乎写满了标注。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">老师经常会以我为例，跟其他同学讲“笨鸟先飞”的道理。要是有同学问我英语怎么学的，我也会告诉他，我是只笨鸟，花了些笨办法学会飞罢了。我的高中成绩一直很好，我经常考到全年级第一名，让很多和我背景不同的人很是惊讶。我在二零零五年参加高考，那一年，湖南有好几十万考生，我考到全省三百名左右，然后顺利被中国科学技术大学录取。高考前的日子，老师常会向我们说，高考是我们人生的分水岭，要想有个好前程，我们必须奋斗冲刺。我们也给自己定了目标，铆足了劲儿要为自己的未来努力。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我记得高考那两天，我睡得不是很好，迷迷糊糊地到凌晨才入睡。我平常不会这样，想来也是因为高考带来的压力吧。高考后，同学们便各奔东西，很多人至今都未再相见。我们读高中的那个年代，通信工具没有现在这么发达，很多人的联系方式一旦更改，便很难再找回，于是，大家都在自己的世界里，为前途奋斗着。我偶尔记起他们，也只能是惦记。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: center;"><span style="font-size: 15px;color: rgb(51, 51, 51);">━━━━━</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">二零零五年秋天，我第一次真正意义上生活在一个省会城市。中国科学技术大学在安徽合肥，湖南长沙没有直达的火车。我从江西鹰潭转车，乘坐一辆绿皮火车花了十几个小时才到合肥。火车经过长江的时候，我激动不已。十几年来，我只在书上见识过长江的浩荡，第一次目睹长江的时候，我真正被那股奔流不尽的气势所震撼。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我想，人或许只有走出了原有的视野空间，才会真正意识到这个世界的广大，才会知道这个世界上还有多少东西我们未曾见过，未曾听过。我十分庆幸，我走出了我的小世界。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">在大学里，我读的是生物。生物专业在当时非常热门，每个学校都宣传生物相关的行业是“二十一世纪的朝阳产业”，非常值得攻读。我高中时分在理科班，文科也一直挺好，我当时想着生物介于文理之间，没准适合我，便在报考志愿时填了生物。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">学生物还有个好处，要是我父母在乡下病了，我的一些生物医学知识没准可以帮助他们。乡村医疗条件虽说比我出生那会儿改善了很多，可很多农民还是看不起病，用乡村土办法治病的事情仍多有发生，比如，用蜘蛛来吮吸蜈蚣毒，用火疗治理蜘蛛咬伤……这些在生物专业的人看来，显得格外的落后。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我也是进了大学后，才逐渐地了解很多西方医学知识。我有机会在显微镜下观察一个细胞怎么分裂，也学习了生物分子在细胞、机体内的相互作用，免疫系统如何对抗病原体入侵，不同的疾病如何在人体内发生发展……</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我一直觉得，乡下的成长经历让我对一切事物都充满了好奇，而这好奇心在我成长的不同阶段，帮助我克服了很多困难，也让我在一个新环境里迅速成长。记得刚入大学的时候，我需要学习一门C++的计算机编程语言，而在那时，我对电脑不了解，连“电脑界面”这个名词是什么意思都听不明白，学习的难度可想而知。为此，我从补习使用键盘开始攻克。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">大一的寒假，我从同学那儿借来了键盘，通过玩打字游戏来学习如何打字。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">大学四年里，我有了蜕变式的成长，变得比以前更有自信了，对未来也有了更多憧憬。小时候，我的梦想只是走出乡村，进入城市。我对城市没有一个具象的概念，也完全不知道自己要做什么。于是，“进城”对我而言，只是一个空泛的梦想。<strong>这个梦想猛然实现了，我却显得那样的彷徨。</strong>也恰好是这份彷徨，在大学里给了我机会探索，寻找自己想做的事情。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我庆幸自己曾在成长阶段满怀好奇地学我想学的东西，为自己的兴趣播下了种子。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">二零零九年，我大学毕业，并拿到了学校本科生最高的荣誉——郭沫若奖学金。同时，我也收到了哈佛大学生物系的录取通知书。不出意外，我成了村里知识水平最高的，也是第一个出国留学的小孩。乡下人对国外的印象并不明晰，哈佛是个什么学校也不一定弄得清楚。不过，大家听到何家有小孩要出国留学后，都感到特别新奇。<strong>出国前的那一夜，父亲邀请了村里的皮影戏艺人又演了一出《杨家将》</strong>，那是我印象中我们何家又一个热闹的夜晚。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><img data-s="300,640" data-type="jpeg" data-src="https://mmbiz.qpic.cn/mmbiz_jpg/6AcP1PhrICjiaRyasqjO8kaIiaMOGl7ND85ssCCDrbENZWzdgS2mcFDleLnsMtDlVVOKWYnrfVFb8W28bibiaEQ9Pw/0?wx_fmt=jpeg" data-copyright="0" class="" data-ratio="0.554" data-w="500" data-backw="500" data-backh="277" style="width: 100%;height: auto;"  /></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><span style="color: rgb(51, 51, 51);text-align: justify;font-size: 13px;">·&nbsp;</span><span style="color: rgb(51, 51, 51);text-align: justify;font-size: 13px;">何江荣获郭沫若奖学金</span></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我这二十几年的生活经历，从湖南的一个小山村，到县城，到省城，再到美国波士顿，涵盖了社会发展的不同层面。这短短的经历，要以历史学家的角度看来，或许可算作是前工业时代到现代社会的大踏步。二十几载，其实也可以说是恍如隔世。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">二零一六年五月二十五日，哈佛园内，哈佛经典文学系的 Richard Tarrant 教授领着我、Joshuah Campbell 和 Anne Power 来到哈佛 Memorial Church 旁的演讲台。Joshuah 和 Anne 是哈佛二零一六届的大四学生，我是当届毕业的博士生。我们三人将要在第二天的哈佛毕业典礼上，作为学生代表致辞，另外一位特邀演讲嘉宾是史蒂芬·斯皮尔伯格大导演。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">演讲台下，成排的白色座椅已经一一排好，不少游客坐在椅上，悠闲地拍着哈佛四处的校景。我拿着写好的演讲稿，在心里默念了一遍，心想，要是明天忘词了，在三万多听众面前，该有多么尴尬。Tarrant 教授笑着说，他已经指导了十多届毕业生做演讲致辞，到目前为止，还没出现过忘词的人。我笑了笑，跟他说：“我要是忘词了，是否创造了哈佛的一个新纪录?”</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我已经不是第一次在 Memorial Church 的演讲台上，进行毕业典礼演讲的排练了，在四月底得知消息后，我几乎每周都接受一两次演讲培训。临近毕业典礼，学校安排的培训更多，让我也倍感压力。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">哈佛的毕业典礼演讲从十七世纪便开始了，建校初始，学校多以培训牧师为主，演讲的学生经常以希腊语、希伯来语、拉丁语等古老的语种做演讲。随着时间推移，只有拉丁语演讲保留了下来，再加上英语演讲，它们成了毕业典礼的一道重要程序。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">将近四百年的校史，使得哈佛对学校的传统有着近乎痴迷的坚持。校长在毕业典礼上坐的凳子会被摆到典礼现场的最高处，凳子是十七世纪的老古董，只有三条腿。校长席位以下是学校各学院的院长，以及杰出校友代表、荣誉学位代表的席位，再往外，入座的是毕业典礼演讲的学生代表，然后再是博士生群体、本科生群体、硕士生群体等等。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">毕业典礼开始时，哈佛所属郡的治安官用权杖敲击地面，缓缓入场，宣告仪式开始。学校的乐队会奏乐，然后会有牧师祷告，美国国歌演奏，接下来便是拉丁语、本科生代表、硕士和博士生代表的三场演讲。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">毕业典礼上演讲代表的筛选也是颇为严格的。三月份提交演讲初稿后，学校的十多名评委，会在上百份申请文书里面筛选出他们认为当届最好的演讲稿，进行初赛。初赛的学生拿着自己的演讲稿在评委老师面前宣读，让评委听评文稿转化为声音的效果。只有三至四个学生能最终入选复赛，然后是终极演讲比拼，直到评委老师选出心目中最合适的演讲者。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">整个流程的时间跨度超过一个月，学校希望能够在这些有意竞选的学生里，挑选出能够代表学校文化理念的演讲人选，作为当届的代表致辞。成功选上后，学校会安排专门的演讲培训老师进行训练，文学系的老师也会为演讲稿把关，好让每一处词句的运用恰到好处。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">四月二十六日，我知道自己被选上，作为硕士和博士生群体的发言代表。在往年的毕业典礼演讲中，并没有出现过中国人的面孔，因此我在得知消息的那一刻，既兴奋也惊讶。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">很快，我被选上的消息在校友圈里传开，中国科大的新闻部联系上了我，发布了新闻。很快，《中国教育报》刊登了我将要演讲的消息，新闻里提及了我在农村成长的经历。“农村学子”和“哈佛毕业演讲”这两个名词碰撞在一起，点燃了读者的热情，于是，各种角度的新闻报道开始出现，到五月二十六日演讲当日，我刚从毕业演讲台上下来，演讲的照片和视频便已在各个平台传播。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我是带着惶恐的心，接受媒体采访的。在毕业典礼之前，我想到了自己的演讲可能会被国内的媒体报道，可我从未想过报道的面会如此之广。我也未曾料到，对于农村学子读哈佛这样一件事情，在国内会产生如此大的反响。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">在报道完我的演讲消息后，媒体开始挖掘我的成长背景，然后是学习经历，再后来，我的家人、亲友和老师一一被采访。好像所有人都希望，从我的成长背景里面找出一些不平常的东西，好来解释“农村娃”和“哈佛”这两个名词之间的关联。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">面对这样的问题，我有时会感到疑惑，因为我并未觉得自己与常人比有任何独特之处，硬是要搜寻出一点可说的，我想或许是<strong>曾经那些苦难的经历，让我很早便明白了，要把握自己命运这样一个简单的道理吧。</strong></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">在哈佛读博士的时候，我做科研报告的机会很多，但很少会在公共场合演讲。这样偶然的一次机会，倒也让我真真正正开始思考，这些年在哈佛学到的东西、曾经的经历。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><img data-s="300,640" data-type="jpeg" data-src="https://mmbiz.qpic.cn/mmbiz_jpg/6AcP1PhrICjiaRyasqjO8kaIiaMOGl7ND8MMmDsS6DZ69EVv4zTtn4BkAZOZ1krGlExyjnSJLy6uszjMYTYUSYDQ/0?wx_fmt=jpeg" data-copyright="0" class="" data-ratio="0.64" data-w="500" data-backw="500" data-backh="320" style="width: 100%;height: auto;"  /></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><span style="color: rgb(51, 51, 51);text-align: justify;font-size: 13px;">·&nbsp;</span><span style="color: rgb(51, 51, 51);text-align: justify;font-size: 13px;">何江在美国实验室</span></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">这些思考里关于乡村生活的经历尤其偏多，因为那段看似平凡的经历在无形中塑造了我。但是，要厘清这段经历却很难，因为那个时候，我大多是处在一个半懵懂的状态，对于身边发生了什么，村庄经历了怎样的变动，我都难以用只言片语勾勒出来。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">不过，正像鼓励我将这些经历写出来的哈佛历史系尼尔弗格森教授所提到的，我这二十几年的生活经历，从湖南的一个小山村，到县城，到省城，再到美国波士顿，涵盖了社会发展的不同层面。这短短的经历，要以历史学家的角度看来，或许可算作是前工业时代到现代社会的大踏步。二十几载，其实也可以说是恍如隔世。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">在外生活久了，童年少年的经历反而愈加清晰。在野地里放牛，在稻田里捕鱼，在夏天的夜晚捉萤火虫……我现在想来显得格外珍贵。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">社会在飞速发展，现代化的变革，已经让我童年时代的生活场景，发生了翻天覆地的变化。水泥路铺开了，摩托车、小汽车进村了，家家户户装电视、冰箱了，村里的老人也开始学用手机了。这些事情，在我小时候是想都不敢想的，现在一一都变成了现实。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">物质条件的改善对于乡村是件好事，<strong>可我回过头来想想，总觉得生活好像丢掉了一些什么。</strong>乡下的村民仍像我小时候一样，觉得进城是这辈子最大的梦想。可真正在城里购置房产了，却又住不习惯，老是想着回乡下的老家住住。就这样，我们这一代处在城市和农村中间的一群人，慢慢地忘记了过去的生活，却又未曾真正融入当下。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">我的父亲常会叹着气告诉我说，我和弟弟这一辈，可能是村里最后一代经历过传统农业生活的人了，现在村里的小孩连秧苗是怎么插的都已经忘了。我笑着反问父亲：“您难道还希望我们的后代继续过那种穷苦生活吗？”</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">在这传统的乡村生活即将消失的时代，我常会不知所措，心里想把它留住，可一细想，又会告诉自己它是该消逝的。于是，我唯一能做的，便是用文字把曾经的那些记忆记录下来。</span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></p><blockquote><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><span style="color: rgb(102, 102, 102);font-size: 13px;text-align: justify;">作者何江，哈佛毕业生。</span><span style="color: rgb(102, 102, 102);font-size: 13px;text-align: justify;">本文选自何江作品《走出自己的天空》，已获作者授权。</span></span></p></blockquote><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;"><span style="font-size: 13px;"><br  /></span></span></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><img data-s="300,640" data-type="png" data-src="https://mmbiz.qpic.cn/mmbiz_png/6AcP1PhrICgqeeQajsyy8ZQa8UIjgy37TdH6YFlUha94UCJaP6w2sGLLvYibboogAlhoVk1RWkb7Fj9JpzcEwJw/0.png" class="" data-ratio="0.011111111111111112" data-w="900" data-backw="540" data-backh="6" style="width: 100%;height: auto;"  /></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><strong><span style="color: rgb(51, 51, 51);font-size: 15px;">你或许还对这些内容感兴趣：</span></strong></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><strong><span style="color: rgb(51, 51, 51);font-size: 15px;"><br  /></span></strong></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><a href="http://mp.weixin.qq.com/s?__biz=MjM5NzAxNTkzNg==&amp;mid=2654967560&amp;idx=1&amp;sn=16b43c8418856ffe7216e35b82ebd769&amp;chksm=bd2b4fe78a5cc6f1664444834cdd4cc7c17082c6a2602b3167877f8ae224d4af02f6fe609308&amp;scene=21#wechat_redirect" target="_blank"><img data-s="300,640" data-type="png" data-src="https://mmbiz.qpic.cn/mmbiz_png/6AcP1PhrIChYu7vcuLHepZsFIzlbn1c7ibnpuKAaI6Umtj6QiblIRAibico0txZ02zxavQxp2Kok0AcHg8j8wOclrw/0.png" data-copyright="0" class="" data-ratio="0.2222222222222222" data-w="900" data-backw="540" data-backh="120" style="width: 100%;height: auto;"  /></a></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><a href="http://mp.weixin.qq.com/s?__biz=MjM5NzAxNTkzNg==&amp;mid=2654967531&amp;idx=1&amp;sn=b93bf52613e2bac077d28ca13dd1e4c7&amp;chksm=bd2b4e048a5cc71297d5018dc6aefebe820b9e328cf495d01e79695351f27a2160484ef45b3d&amp;scene=21#wechat_redirect" target="_blank"><img data-s="300,640" data-type="png" data-src="https://mmbiz.qpic.cn/mmbiz_png/6AcP1PhrIChYu7vcuLHepZsFIzlbn1c7c2TicFcNibUz9eQ0aDLNicEg2nibezac03Dia2K2xenWAK5GpwGcErNqHVg/0?wx_fmt=png" data-copyright="0" class="" data-ratio="0.2222222222222222" data-w="900" data-backw="540" data-backh="120" style="width: 100%;height: auto;"  /></a></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><img data-s="300,640" data-type="png" data-src="https://mmbiz.qpic.cn/mmbiz_png/6AcP1PhrICgqeeQajsyy8ZQa8UIjgy37TdH6YFlUha94UCJaP6w2sGLLvYibboogAlhoVk1RWkb7Fj9JpzcEwJw/0.png" class="" data-ratio="0.011111111111111112" data-w="900" data-backw="540" data-backh="6" style="width: 100%;height: auto;"  /></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><img data-s="300,640" data-type="png" data-src="https://mmbiz.qpic.cn/mmbiz_png/6AcP1PhrICgqeeQajsyy8ZQa8UIjgy37x8gS3ib3XCzqGxq5zvG9VyINaDxR71LzkSNDxMqicia3UyQiazIAclfGlw/0.png" class="" data-ratio="0.6666666666666666" data-w="1080" data-backw="540" data-backh="360" style="width: 100%;height: auto;"  /></p><p style="margin: 0em 0.5em;white-space: normal;line-height: 1.75em;text-align: justify;"><span style="color: rgb(51, 51, 51);font-size: 15px;">点击「<strong><span style="color: rgb(214, 0, 15);">阅读原文</span></strong>」购买坚果 Pro。</span></p>
+                </div>
+                <script nonce="1093455048" type="text/javascript">
+                    var first_sceen__time = (+new Date());
+
+                    if ("" == 1 && document.getElementById('js_content')) {
+                        document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+                    }
+
+                    
+                    (function(){
+                        if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                            var link = document.createElement('link');
+                            var head = document.getElementsByTagName('head')[0];
+                            link.rel = 'stylesheet';
+                            link.type = 'text/css';
+                            link.href = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx31619e.css";
+                            head.appendChild(link);
+                        }
+                    })();
+                </script>
+                
+                
+                                
+                <div class="ct_mpda_wrp" id="js_sponsor_ad_area" style="display:none;"></div>
+
+                
+                                <div class="reward_area tc" id="js_preview_reward" style="display:none;">
+                    <p id="js_preview_reward_wording" class="tips_global reward_tips" style="display:none;"></p>
+                    <p>
+                        <a class="reward_access" id='js_preview_reward_link' href="##"><span class="icon-reward"></span>赞赏</a>
+
+                    </p>
+                </div>
+                <div class="reward_qrcode_area reward_area tc" id="js_preview_reward_qrcode" style="display:none;">
+                    <p class="tips_global">长按二维码向我转账</p>
+                    <p id="js_preview_reward_ios_wording" class="reward_tips" style="display:none;"></p>
+                    <span class="reward_qrcode_img_wrp"><img class="reward_qrcode_img" src="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_reward_qrcode.2x3534dd.png"></span>
+                    <p class="tips_global">受苹果公司新规定影响，微信 iOS 版的赞赏功能被关闭，可通过二维码转账支持公众号。</p>
+                </div>
+                            </div>
+                        
+                        <div class="rich_media_tool" id="js_toobar3">
+                                            <a class="media_tool_meta meta_primary" id="js_view_source" href="##">阅读原文</a>
+                                <div id="js_read_area3" class="media_tool_meta tips_global meta_primary" style="display:none;">阅读 <span id="readNum3"></span></div>
+
+                <span style="display:none;" class="media_tool_meta meta_primary tips_global meta_praise" id="like3">
+                    <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                </span>
+
+                <a id="js_report_article3" style="display:none;" class="media_tool_meta tips_global meta_extra" href="##">投诉</a>
+
+            </div>
+
+
+                    </div>
+
+        <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none"></div>
+
+        
+        <div class="rich_media_area_extra">
+
+            
+                        <div class="mpda_bottom_container" id="js_bottom_ad_area"></div>
+                        
+            <div id="js_iframetest" style="display:none;"></div>
+                        
+                        <div class="rich_media_extra" id="js_cmt_area" style="display:none">
+            </div>
+                    </div>
+
+        
+        <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display:none;">
+            <div class="qr_code_pc_inner">
+                <div class="qr_code_pc">
+                    <img id="js_pc_qr_code_img" class="qr_code_pc_img">
+                    <p>微信扫一扫<br>关注该公众号</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="js_minipro_dialog" style="display:none;">
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+        <div class="weui-dialog__bd">即将打开"<span id="js_minipro_dialog_name"></span>"小程序</div>
+        <div class="weui-dialog__ft">
+            <a id="js_minipro_dialog_cancel" href="javascript:void(0);" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+            <a id="js_minipro_dialog_ok" href="javascript:void(0);" class="weui-dialog__btn weui-dialog__btn_primary">打开</a>
+        </div>
+    </div>
+</div>
+
+        
+        <script nonce="1093455048">
+    var __DEBUGINFO = {
+        debug_js : "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console34c264.js",
+        safe_js : "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe34c264.js",
+        res_list: []
+    };
+</script>
+
+<script nonce="1093455048" type="text/javascript">
+(function() {
+	var totalCount = 0,
+			finishCount = 0;
+
+	function _loadVConsolePlugin() {
+		window.vConsole = new window.VConsole();
+		while (window.vConsolePlugins.length > 0) {
+			var p = window.vConsolePlugins.shift();
+			window.vConsole.addPlugin(p);
+		}
+	}
+	
+	function _addVConsole(uri, cb) {
+		totalCount++;
+		var url = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/vconsole/' + uri;
+		var node = document.createElement('SCRIPT');
+		node.type = 'text/javascript';
+		node.src = url;
+		node.setAttribute('nonce', '1093455048');
+		if (cb) {
+			node.onload = cb;
+		}
+		document.getElementsByTagName('head')[0].appendChild(node);
+	}
+	if (
+		(document.cookie && document.cookie.indexOf('vconsole_open=1') > -1)
+		|| location.href.indexOf('vconsole=1') > -1
+	) {
+		window.vConsolePlugins = [];
+		_addVConsole('3.0.0/vconsole.min.js', function() {
+			
+			_addVConsole('plugin/vconsole-mpopt/1.0.1/vconsole-mpopt.js', _loadVConsolePlugin);
+		});
+	}
+})();
+</script>
+        
+<script nonce="1093455048" type="text/javascript">
+
+if (!window.console) window.console = { log: function() {} };
+
+if (typeof getComputedStyle == 'undefined') {
+    if (document.body.currentStyle) {
+        window.getComputedStyle = function(el) {
+            return el.currentStyle;
+        }
+    } else {
+        window.getComputedStyle = {};
+    }
+}
+(function(){
+    window.__zoom = 1;
+    
+    (function(){
+        var validArr = ","+([0.875, 1, 1.125, 1.25, 1.375]).join(",")+",";
+        var match = window.location.href.match(/winzoom=(\d+(?:\.\d+)?)/);
+        if (match && match[1]) {
+            var winzoom = parseFloat(match[1]);
+            if (validArr.indexOf(","+winzoom+",")>=0) {
+                window.__zoom = winzoom;
+            }
+        }
+    })();
+
+    var isIE = false;
+    if (typeof version != 'undefined' && version >= 6 && version <= 9) {
+        isIE = true;
+    }
+    var getMaxWith=function(){
+        var container = document.getElementById('img-content');
+        var max_width = container.offsetWidth;
+        var container_padding = 0;
+        var container_style = getComputedStyle(container);
+        container_padding = parseFloat(container_style.paddingLeft) + parseFloat(container_style.paddingRight);
+        max_width -= container_padding;
+        var ua = navigator.userAgent.toLowerCase();
+        var re = new RegExp("msie ([0-9]+[\.0-9]*)");
+        var version;
+        if (re.exec(ua) != null) {
+            version = parseInt(RegExp.$1);
+        }
+        var isIE = false;
+        if (typeof version != 'undefined' && version >= 6 && version <= 9) {
+            isIE = true;
+        }
+        if (!max_width) {
+            max_width = window.innerWidth - 30;      
+        }
+        return max_width;
+    };
+    var getParentWidth = function(dom){
+        var parent_width = 0;
+        var parent = dom.parentNode;
+        var outerWidth = 0;
+        while (true) {
+            if(!parent||parent.nodeType!=1) break;
+            var parent_style = getComputedStyle(parent);
+            if (!parent_style) break;
+            parent_width = parent.clientWidth - parseFloat(parent_style.paddingLeft) - parseFloat(parent_style.paddingRight) - outerWidth;
+            if (parent_width > 0) break;
+            outerWidth += parseFloat(parent_style.paddingLeft) + parseFloat(parent_style.paddingRight) + parseFloat(parent_style.marginLeft) + parseFloat(parent_style.marginRight) + parseFloat(parent_style.borderLeftWidth) + parseFloat(parent_style.borderRightWidth);
+            parent = parent.parentNode;
+        }
+        return parent_width;
+    }
+    var getOuterW=function(dom){
+        var style=getComputedStyle(dom),
+            w=0;
+        if(!!style){
+            w = parseFloat(style.paddingLeft) + parseFloat(style.paddingRight) + parseFloat(style.borderLeftWidth) + parseFloat(style.borderRightWidth);
+        }
+        return w;
+    };
+    var getOuterH =function(dom){
+        var style=getComputedStyle(dom),
+            h=0;
+        if(!!style){
+            h = parseFloat(style.paddingTop) + parseFloat(style.paddingBottom) + parseFloat(style.borderTopWidth) + parseFloat(style.borderBottomWidth);
+        }
+        return h;
+    };
+    var insertAfter = function(dom,afterDom){
+        var _p = afterDom.parentNode;
+        if(!_p){
+            return;
+        }
+        if(_p.lastChild === afterDom){
+            _p.appendChild(dom);
+        }else{
+            _p.insertBefore(dom,afterDom.nextSibling);
+        }
+    };
+    var getQuery = function(name,url){
+        
+        var u  = arguments[1] || window.location.search,
+            reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"),
+            r = u.substr(u.indexOf("\?")+1).match(reg);
+        return r!=null?r[2]:"";
+    };
+    (function(){
+        var images = document.getElementsByTagName('img');
+        var length = images.length;
+        var max_width = getMaxWith();
+        for (var i = 0; i < length; ++i) {
+            var src_ = images[i].getAttribute('data-src');
+            var realSrc = images[i].getAttribute('src');
+            if (!src_ || realSrc) continue;
+            var width_ = 1 * images[i].getAttribute('data-w') || max_width;
+            var ratio_ = 1 * images[i].getAttribute('data-ratio');
+            var height = 100;
+            if (ratio_ && ratio_ > 0) {
+                var img_style = getComputedStyle(images[i]);
+                var init_width = images[i].style.width;
+                
+                if (init_width) {
+                    images[i].setAttribute('_width', init_width);
+                    if (init_width != 'auto') width_ = parseFloat(img_style.width);
+                }
+                var parent_width = getParentWidth(images[i])||max_width;
+                var width = width_ > parent_width ? parent_width : width_; 
+                var img_padding_border = getOuterW(images[i])||0;
+                var img_padding_border_top_bottom = getOuterH(images[i])||0;
+                height = (width - img_padding_border) * ratio_ + img_padding_border_top_bottom;
+                images[i].style.cssText += ";width: " + width + "px !important;";
+                if (isIE) {
+                    var url = images[i].getAttribute('data-src');
+                    images[i].src = url;
+                } else {
+                    if(width > 40 && height > 40){
+                        images[i].className += ' img_loading';
+                    }
+                    images[i].src = "data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==";
+                }
+            } else {
+                images[i].style.cssText += ";visibility: hidden !important;";
+            }
+            images[i].style.cssText += ";height: " + height + "px !important;";
+        }
+    })();
+    window.__videoDefaultRatio=16/9;
+    window.__getVideoWh = function(dom){
+        var max_width = getMaxWith(),
+            width = max_width,
+            ratio_ = dom.getAttribute('data-ratio')*1||(4/3),
+            arr = [4/3, 16/9],
+            ret = arr[0],
+            abs = Math.abs(ret - ratio_);
+        for(var j=1,jl=arr.length;j<jl;j++){
+            var _abs = Math.abs(arr[j] - ratio_);
+            if(_abs<abs){
+                abs = _abs;
+                ret = arr[j];
+            }
+        }
+        ratio_ = ret;
+        var parent_width = getParentWidth(dom)||max_width,
+            width = width > parent_width ? parent_width : width,
+            outerW = getOuterW(dom)||0,
+            outerH = getOuterH(dom)||0,
+            videoW = width - outerW,
+            videoH = videoW/ratio_,
+            height = videoH + outerH;
+        return {w:width,h:height,vh:videoH,vw:videoW,ratio:ratio_};
+    };
+
+    (function(){
+        var iframe = document.getElementsByTagName('iframe');
+        for (var i=0,il=iframe.length;i<il;i++) {
+            var a = iframe[i];
+            var src_ = a.getAttribute('src')||a.getAttribute('data-src')||"";
+            if(!/http(s)*\:\/\/v\.qq\.com\/iframe\/(preview|player)\.html\?/.test(src_)){
+                continue;
+            }
+            var vid = getQuery("vid",src_);
+            if(!vid){
+                continue;
+            }
+            vid=vid.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,"");
+            a.removeAttribute('src');
+            a.style.display = "none";
+            var obj = window.__getVideoWh(a),
+                mydiv = document.createElement('img');
+            mydiv.className = "img_loading";
+            mydiv.src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==";
+            mydiv.setAttribute("data-vid",vid);
+            mydiv.style.cssText = "width: " + obj.w + "px !important;";
+            insertAfter(mydiv,a);
+            a.style.cssText += ";width: " + obj.w + "px !important;";
+            a.setAttribute("width",obj.w);
+            if(window.__zoom!=1){
+                a.style.display = "block";
+                mydiv.style.display = "none";
+                a.setAttribute("_ratio",obj.ratio);
+                a.setAttribute("_vid",vid);
+            }else{
+                mydiv.style.cssText += "height: " + obj.h + "px !important;";
+                a.style.cssText += "height: " + obj.h + "px !important;";
+                a.setAttribute("height",obj.h);
+            }
+            a.setAttribute("data-vh",obj.vh);
+            a.setAttribute("data-vw",obj.vw);
+            a.setAttribute("data-src",location.protocol+"//v.qq.com/iframe/player.html?vid="+ vid + "&width="+obj.vw+"&height="+obj.vh+"&auto=0");
+        }
+    })();
+
+    (function(){
+        if(window.__zoom!=1){
+            document.getElementById('page-content').style.zoom = window.__zoom;
+            var a = document.getElementById('activity-name');
+            var b = document.getElementById('meta_content');
+            if(!!a){
+                a.style.zoom = 1/window.__zoom;
+            }
+            if(!!b){
+                b.style.zoom = 1/window.__zoom;
+            }
+            var images = document.getElementsByTagName('img');
+            for (var i = 0,il=images.length;i<il;i++) {
+                images[i].style.zoom = 1/window.__zoom;
+            }
+            var iframe = document.getElementsByTagName('iframe');
+            for (var i = 0,il=iframe.length;i<il;i++) {
+                var a = iframe[i];
+                a.style.zoom = 1/window.__zoom;
+                var src_ = a.getAttribute('data-src')||"";
+                if(!/http(s)*\:\/\/v\.qq\.com\/iframe\/(preview|player)\.html\?/.test(src_)){
+                    continue;
+                }
+                var ratio = a.getAttribute("_ratio");
+                var vid = a.getAttribute("_vid");
+                a.removeAttribute("_ratio");
+                a.removeAttribute("_vid");
+                var vw = a.offsetWidth - (getOuterW(a)||0);
+                var vh = vw/ratio;
+                var h = vh + (getOuterH(a)||0)
+                a.style.cssText += "height: " + h + "px !important;"
+                a.setAttribute("height",h);
+                a.setAttribute("data-src",location.protocol+"//v.qq.com/iframe/player.html?vid="+ vid + "&width="+vw+"&height="+vh+"&auto=0");
+                a.style.display = "none";
+                var parent = a.parentNode;
+                if(!parent){
+                    continue;
+                }
+                for(var j=0,jl=parent.children.length;j<jl;j++){
+                    var child = parent.children[j];
+                    if(child.className.indexOf("img_loading")>=0 && child.getAttribute("data-vid")==vid){
+                        child.style.cssText += "height: " + h + "px !important;";
+                        child.style.display = "";
+                    }
+                }
+            }
+        }
+    })();
+})();
+</script>
+<script nonce="1093455048" type="text/javascript">
+
+    var not_in_mm_css = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm36906d.css";
+    var windowwx_css = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx31619e.css";
+    var article_improve_combo_css = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_combo3b540a.css";
+    var tid = "";
+    var aid = "";
+    var clientversion = "";
+    var appuin = "MjM5NzAxNTkzNg=="||"";
+
+    var source = "";
+    var ascene = "";
+    var subscene = "";
+    var abtest_cookie = "";
+
+    var scene = 75;
+
+    var itemidx = "";
+    var appmsg_token   = "";
+
+    var _copyright_stat = "0";
+    var _ori_article_type = "";
+
+    var nickname = "罗永浩";
+    var appmsg_type = "9";
+    var ct = "1509320400";
+    var publish_time = "2017-10-30" || "";
+    var user_name = "gh_9926e6e6da93";
+    var user_name_new = "";
+    var fakeid   = "";
+    var version   = "";
+    var is_limit_user   = "0";
+    var round_head_img = "http://mmbiz.qpic.cn/mmbiz/6AcP1PhrICia5w2QYLosh15GtVxFj4yKyFZhq4d0TI5yYDMYiaNgIduAOclLpcXCvF6LTW6XSzhWft4oTOSwy8WA/0?wx_fmt=png";
+    var ori_head_img_url = "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4SVs4dvotuGprQ07NGTkU9XYwY4DxcBucv72eemTdBYw/132";
+    var msg_title = "我的哈佛路";
+    var msg_desc = "“或许是曾经那些苦难的经历，让我很早便明白了，要把握自己命运这样一个简单的道理吧。”";
+    var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz_jpg/6AcP1PhrICjiaRyasqjO8kaIiaMOGl7ND8Q48HkW1KxzQlpHGjQ2VDYRiab4r7wRhdIE0icLFsC05NZzxsiaynvKeyw/0?wx_fmt=jpeg";
+    var msg_link = "http://mp.weixin.qq.com/s?__biz=MjM5NzAxNTkzNg==\x26amp;mid=2654967678\x26amp;idx=1\x26amp;sn=6a5715c88f0e8d671b35d7bfd6b5c621\x26amp;chksm=bd2b4f918a5cc68757422469f953fb9b8623864b052723aadea88247e018ed23d33f11ab4437#rd";
+    var user_uin = "0"*1;
+    var msg_source_url = 'http://www.smartisan.com/events/?1023#/sale-1023';
+    var img_format = 'jpeg';
+    var srcid = '';
+    var req_id = '2217qmNHJlWdQsUObacBezz3';
+    var networkType;
+    var appmsgid = '' || ''|| "";
+    var comment_id = "1818631652" || "1818631652" * 1;
+    var comment_enabled = "" * 1;
+    var is_need_reward = "0" * 1;
+    var is_https_res = ("" * 1) && (location.protocol == "https:");
+    var msg_daily_idx = "1" || "";
+    var profileReportInfo = "" || "";
+
+    var devicetype = "";
+    var source_encode_biz = "";
+    var source_username = "";
+    
+    var reprint_ticket = "";
+    var source_mid = "";
+    var source_idx = "";
+    var source_biz = "";
+
+    var show_comment = "";
+    var __appmsgCgiData = {
+        wxa_product : ""*1,
+        show_msg_voice: "0"*1,
+        can_use_page : "0"*1,
+        is_wxg_stuff_uin : "0"*1,
+        card_pos : "",
+        copyright_stat : "0",
+        source_biz : "",
+        hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4SVs4dvotuGprQ07NGTkU9XYwY4DxcBucv72eemTdBYw/0"||(window.location.protocol+"//"+window.location.host + "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+    };
+    var _empty_v = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+    var copyright_stat = "0" * 1;
+
+    var pay_fee = "" * 1;
+    var pay_timestamp = "";
+    var need_pay = "" * 1;
+
+    var need_report_cost = "0" * 1;
+    var use_tx_video_player = "0" * 1;
+    var appmsg_fe_filter = "contenteditable";
+
+    var friend_read_source = "" || "";
+    var friend_read_version = "" || "";
+    var friend_read_class_id = "" || "";
+
+    var is_only_read = "1" * 1;
+    var read_num = "" * 1;
+    var like_num = "" * 1;
+    var liked = "" == 'true' ? true : false;
+    var is_temp_url = "" ? 1 : 0;
+    var send_time = "";
+    var icon_emotion_switch = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch.2x2f1273.png";
+    var icon_emotion_switch_active = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/emotion/icon_emotion_switch_active.2x2f1273.png";
+    var icon_loading_white = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif";
+    var icon_audio_unread = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png";
+    var icon_qqmusic_default = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png";
+    var icon_qqmusic_source = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source393e3a.png";
+    var icon_kugou_source = "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/kugou/icon_kugou_source393e3a.png";
+
+    var topic_default_img = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/topic/pic_book_thumb.2x2e4987.png';
+    var comment_edit_icon = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_edit25ded2.png';
+    var comment_loading_img = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/icon_loading_white2805ea.gif';
+    var voice_in_appmsg = {
+        "1":"1"
+            };
+    var wxa_img_alert = "" != 'false';
+
+    
+    
+    
+    
+
+    
+    var weapp_sn_arr_json = "" || "";
+
+    
+    var ban_scene = "0" * 1;
+
+    var svr_time = "1516614546" * 1;
+    
+    var is_transfer_msg = ""*1||0;
+
+    var malicious_title_reason_id = "0" * 1; 
+
+        window.wxtoken = "";
+        
+    
+    
+    
+    
+    window.is_login = '0' * 1; 
+
+    window.__moon_initcallback = function(){
+        if(!!window.__initCatch){
+            window.__initCatch({
+                idkey : 27611+2,
+                startKey : 0,
+                limit : 128,
+                badjsId: 43,
+                reportOpt : {
+                    uin : uin,
+                    biz : biz,
+                    mid : mid,
+                    idx : idx,
+                    sn  : sn
+                },
+                extInfo : {
+                    network_rate : 0.01,    
+                    badjs_rate: 0.1 
+                }
+            });
+        }
+    }
+    </script>
+
+<script nonce="1093455048" type="text/javascript">
+(function(){
+    window.__logClientLog = function(msg){
+        try{
+            var method;
+            if(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)){
+                method = 'writeLog';
+            }else if(/(Android)/i.test(navigator.userAgent)){
+                method = 'log';
+            }
+            if(!!method)
+                doLog(method, msg);
+        }catch(e){
+            console.error(e)
+            throw e
+        }
+    }
+    function doLog(method, msg){
+        if(!!method && !!top.window.WeixinJSBridge && !!top.window.WeixinJSBridge.invoke){
+            top.window.WeixinJSBridge.invoke(method, {
+                "level" : 'info',
+                "msg" : "[WechatFe][appmsg]" + msg
+            });
+        }else{
+            
+            setTimeout(function(){
+                if( top.window.document.addEventListener ){
+                    top.window.document.addEventListener('WeixinJSBridgeReady', function(){
+                        doLog(method,msg)
+                    }, false);
+                }else if (top.window.document.attachEvent){
+                    top.window.document.attachEvent('WeixinJSBridgeReady', function(){
+                        doLog(method, msg)
+                    });
+                    top.window.document.attachEvent('onWeixinJSBridgeReady', function(){
+                        doLog(method, msg)
+                    });
+                }
+            }, 0)
+        }
+    }
+    window.__moonErrRep = function(src){
+        window.__logClientLog(' moon load err ' + src);
+    }
+    window.__moonSucRep = function(src){
+        window.__logClientLog(' moon load suc ' + src);
+    }
+    window.setTimeout(function(){
+        window.__logClientLog(' index.html end, __moonhasinit : ' + window.__moonhasinit);
+    }, 500);
+})();
+</script>
+
+        <script nonce="1093455048">window.__moon_host = 'res.wx.qq.com';window.__moon_mainjs = 'appmsg/index.js';window.moon_map = {"new_video/player.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/player.html39e24c.js","biz_wap/zepto/touch.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/touch34c264.js","biz_wap/zepto/event.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/event34c264.js","biz_wap/zepto/zepto.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/zepto/zepto34c264.js","page/pages/video.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/pages/video.css3767b8.js","a/appdialog_confirm.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/appdialog_confirm.html34f0d8.js","widget/wx_profile_dialog_primary.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/widget/wx_profile_dialog_primary.css34f0d8.js","appmsg/emotion/caret.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","new_video/player.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/player39e24c.js","a/appdialog_confirm.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/appdialog_confirm34c32a.js","biz_wap/jsapi/cardticket.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket34c264.js","biz_common/utils/emoji_panel_data.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/emoji_panel_data3518c6.js","biz_common/utils/emoji_data.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/emoji_data3518c6.js","appmsg/emotion/textarea.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea353f34.js","appmsg/emotion/nav.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common3518c6.js","appmsg/emotion/slide.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","pages/loadscript.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript39aac6.js","pages/music_report_conf.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_report_conf39aac6.js","pages/report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report3a9bef.js","pages/player_adaptor.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/player_adaptor39d6ee.js","pages/music_player.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player3af14e.js","appmsg/emotion/dom.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom31ff31.js","appmsg/comment_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment_tpl.html36c376.js","biz_wap/utils/fakehash.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/fakehash38c7af.js","biz_common/utils/wxgspeedsdk.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/wxgspeedsdk3518c6.js","a/sponsor.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/sponsor39e101.js","a/app_card.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/app_card393ef4.js","a/ios.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios393966.js","a/android.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android393966.js","a/profile.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile31ff31.js","a/cpc_a_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/cpc_a_tpl.html3b540a.js","a/sponsor_a_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/sponsor_a_tpl.html36c7cf.js","a/a_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a_tpl.html393ef4.js","a/mpshop.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop311179.js","a/wxopen_card.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/wxopen_card3a95b8.js","a/card.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card311179.js","biz_wap/utils/position.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position34c264.js","a/a_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a_report393966.js","appmsg/my_comment_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/my_comment_tpl.html36906d.js","appmsg/cmt_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html369d00.js","sougou/a_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion353f34.js","biz_wap/utils/wapsdk.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/wapsdk34c264.js","biz_common/utils/report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report3518c6.js","appmsg/open_url_with_webview.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/open_url_with_webview3145f0.js","biz_common/utils/http.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/http3518c6.js","biz_common/utils/cookie.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie3518c6.js","appmsg/topic_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/topic_tpl.html31ff31.js","pages/weapp_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/weapp_tpl.html36906d.js","biz_common/utils/monitor.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor3518c6.js","appmsg/weapp_common.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/weapp_common3af55a.js","pages/voice_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_tpl.html38518d.js","pages/kugoumusic_ctrl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/kugoumusic_ctrl393e3a.js","pages/qqmusic_ctrl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/qqmusic_ctrl39b68c.js","pages/voice_component.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component3af14e.js","pages/qqmusic_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/qqmusic_tpl.html393e3a.js","new_video/ctl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl2d441f.js","a/testdata.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/testdata3a6969.js","appmsg/reward_entry.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry3b1cff.js","appmsg/comment.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment3944ad.js","appmsg/like.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like375fea.js","pages/version4video.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video3a9bef.js","a/a.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/a3b540a.js","rt/appmsg/getappmsgext.rt.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage34c264.js","biz_common/tmpl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl3518c6.js","appmsg/share_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share_tpl.html36906d.js","appmsg/img_copyright_tpl.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","pages/video_ctrl.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/video_ctrl36ebcf.js","biz_common/ui/imgonepx.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx3518c6.js","biz_common/utils/respTypes.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes3518c6.js","biz_wap/utils/log.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/log34c264.js","sougou/index.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index36913b.js","biz_wap/safe/mutation_observer_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report34c264.js","appmsg/fereport.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/fereport3b1088.js","appmsg/report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report3404b3.js","appmsg/report_and_source.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source3a7477.js","appmsg/page_pos.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos3a95b8.js","appmsg/cdn_speed_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report3097b2.js","appmsg/wxtopic.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/wxtopic31a3be.js","appmsg/new_index.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/new_index36906d.js","appmsg/weapp.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/weapp3af55a.js","appmsg/weproduct.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/weproduct3af55a.js","appmsg/voicemsg.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voicemsg3b1748.js","appmsg/autoread.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/autoread3af14e.js","appmsg/voice.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice38518d.js","appmsg/qqmusic.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic39dc43.js","appmsg/iframe.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe39ab71.js","appmsg/product.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/product393966.js","appmsg/review_image.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image3af55a.js","appmsg/outer_link.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link275627.js","appmsg/copyright_report.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2ec4b2.js","appmsg/async.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async3b27d5.js","biz_wap/ui/lazyload_img.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img3af55a.js","biz_common/log/jserr.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr3518c6.js","appmsg/share.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share3b4418.js","appmsg/cdn_img_lib.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib38b7bb.js","biz_common/utils/url/parse.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse36ebcf.js","page/appmsg/not_in_mm.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm.css36906d.js","page/appmsg/page_mp_article_improve_combo.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_combo.css3b540a.js","page/appmsg_new/not_in_mm.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/not_in_mm.css36f05c.js","page/appmsg_new/combo.css":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg_new/combo.css3b540a.js","biz_wap/jsapi/core.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core3b0568.js","biz_common/dom/event.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event3a25e9.js","appmsg/test.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/test354009.js","biz_wap/utils/mmversion.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion34c264.js","appmsg/max_age.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/max_age2fdd28.js","biz_common/dom/attr.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr3518c6.js","biz_wap/utils/ajax.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax38c31a.js","appmsg/log.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/log300330.js","biz_common/dom/class.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class3518c6.js","biz_wap/utils/device.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device34c264.js","biz_common/utils/string/html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html3518c6.js","appmsg/index.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index3b1748.js"};</script><script nonce="1093455048" type="text/javascript" id="moon_inline" > window.__mooninline=1; window.setTimeout(function() {  function __moonf__(){
+if(!window.__moonhasinit){
+window.__moonhasinit=!0,window.__moonclientlog=[],window.__wxgspeeds&&(window.__wxgspeeds.moonloadedtime=+new Date),
+"object"!=typeof JSON&&(window.JSON={
+stringify:function(){
+return"";
+},
+parse:function(){
+return{};
+}
+});
+var e=function(){
+function e(e){
+try{
+var o;
+/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)?o="writeLog":/(Android)/i.test(navigator.userAgent)&&(o="log"),
+o&&t(o,e);
+}catch(n){
+throw console.error(n),n;
+}
+}
+function t(e,o){
+e&&top.window.WeixinJSBridge&&top.window.WeixinJSBridge.invoke?top.window.WeixinJSBridge.invoke(e,{
+level:"info",
+msg:"[WechatFe][moon]"+o
+}):setTimeout(function(){
+top.window.document.addEventListener?top.window.document.addEventListener("WeixinJSBridgeReady",function(){
+t(e,o);
+},!1):top.window.document.attachEvent&&(top.window.document.attachEvent("WeixinJSBridgeReady",function(){
+t(e,o);
+}),top.window.document.attachEvent("onWeixinJSBridgeReady",function(){
+t(e,o);
+}));
+},0);
+}
+var n;
+localStorage&&JSON.parse(localStorage.getItem("__WXLS__moonarg"))&&"fromls"==JSON.parse(localStorage.getItem("__WXLS__moonarg")).method&&(n=!0),
+e(" moon init, moon_inline:"+window.__mooninline+", moonls:"+n),function(){
+var e={},o={},t={};
+e.COMBO_UNLOAD=0,e.COMBO_LOADING=1,e.COMBO_LOADED=2;
+var n=function(e,t,n){
+if(!o[e]){
+o[e]=n;
+for(var r=3;r--;)try{
+moon.setItem(moon.prefix+e,n.toString()),moon.setItem(moon.prefix+e+"_ver",moon_map[e]);
+break;
+}catch(i){
+moon.clear();
+}
+}
+},r=window.alert;
+window.__alertList=[],window.alert=function(e){
+r(e),window.__alertList.push(e);
+};
+var i=function(e){
+if(!e||!o[e])return null;
+var n=o[e];
+if("function"==typeof n&&!t[e]){
+var a={},s={
+exports:a
+},c=n(i,a,s,r);
+n=o[e]=c||s.exports,t[e]=!0;
+}
+if(".css"===e.substr(-4)){
+var d=document.getElementById(e);
+if(!d){
+d=document.createElement("style"),d.id=e;
+var _=/url\s*\(\s*\/(\"(?:[^\\\"\r\n\f]|\\[\s\S])*\"|'(?:[^\\'\n\r\f]|\\[\s\S])*'|[^)}]+)\s*\)/g,m=window.testenv_reshost||window.__moon_host||"res.wx.qq.com";
+n=n.replace(_,"url(//"+m+"/$1)"),d.innerHTML=n,document.getElementsByTagName("head")[0].appendChild(d);
+}
+}
+return n;
+};
+e.combo_status=e.COMBO_UNLOAD,e.run=function(){
+var o=e.run.info,t=o&&o[0],n=o&&o[1];
+if(t&&e.combo_status==e.COMBO_LOADED){
+var r=i(t);
+n&&n(r);
+}
+},e.use=function(o,t){
+window.__wxgspeeds&&(window.__wxgspeeds.seajs_use_time=+new Date),e.run.info=[o,t],
+e.run();
+},window.define=n,window.seajs=e;
+}(),function(){
+if(window.__nonce_str){
+var e=document.createElement;
+document.createElement=function(o){
+var t=e.apply(this,arguments);
+return"object"==typeof o&&(o=o.toString()),"string"==typeof o&&"script"==o.toLowerCase()&&t.setAttribute("nonce",window.__nonce_str),
+t;
+};
+}
+window.addEventListener&&window.__DEBUGINFO&&Math.random()<.01&&window.addEventListener("load",function(){
+var e=document.createElement("script");
+e.src=__DEBUGINFO.safe_js,e.type="text/javascript",e.async=!0;
+var o=document.head||document.getElementsByTagName("head")[0];
+o.appendChild(e);
+});
+}(),function(){
+function t(e){
+return"[object Array]"===Object.prototype.toString.call(e);
+}
+function n(e){
+return"[object Object]"===Object.prototype.toString.call(e);
+}
+function r(e){
+var t=e.stack+" "+e.toString()||"";
+try{
+if(window.testenv_reshost){
+var n="http(s)?://"+window.testenv_reshost,r=new RegExp(n,"g");
+t=t.replace(r,"");
+}else t=t.replace(/http(s)?:\/\/res\.wx\.qq\.com/g,"");
+for(var r=/\/([^.]+)\/js\/(\S+?)\.js(\,|:)?/g;r.test(t);)t=t.replace(r,function(e,o,t,n){
+return t+n;
+});
+}catch(e){
+t=e.stack?e.stack:"";
+}
+var i=[];
+for(o in u)u.hasOwnProperty(o)&&i.push(o+":"+u[o]);
+return i.push("STK:"+t.replace(/\n/g,"")),i.join("|");
+}
+function i(e){
+if(!e){
+var o=window.onerror;
+window.onerror=function(){},f=setTimeout(function(){
+window.onerror=o,f=null;
+},50);
+}
+}
+function a(e,o,t){
+if(!/^mp\.weixin\.qq\.com$/.test(location.hostname)){
+var n=[];
+t=t.replace(location.href,(location.origin||"")+(location.pathname||"")).replace("#wechat_redirect","").replace("#rd","").split("&");
+for(var r=0,i=t.length;i>r;r++){
+var a=t[r].split("=");
+a[0]&&a[1]&&n.push(a[0]+"="+encodeURIComponent(a[1]));
+}
+var s=new window.Image;
+return void(s.src=(o+n.join("&")).substr(0,1024));
+}
+var c;
+if(window.ActiveXObject)try{
+c=new ActiveXObject("Msxml2.XMLHTTP");
+}catch(d){
+try{
+c=new ActiveXObject("Microsoft.XMLHTTP");
+}catch(_){
+c=!1;
+}
+}else window.XMLHttpRequest&&(c=new XMLHttpRequest);
+c&&(c.open(e,o,!0),c.setRequestHeader("cache-control","no-cache"),c.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8"),
+c.setRequestHeader("X-Requested-With","XMLHttpRequest"),c.send(t));
+}
+function s(e){
+return function(o,t){
+if("string"==typeof o)try{
+o=new Function(o);
+}catch(n){
+throw n;
+}
+var r=[].slice.call(arguments,2),a=o;
+return o=function(){
+try{
+return a.apply(this,r.length&&r||arguments);
+}catch(e){
+throw e.stack&&console&&console.error&&console.error("[TryCatch]"+e.stack),_&&window.__moon_report&&(window.__moon_report([{
+offset:O,
+log:"timeout_error;host:"+top.location.host,
+e:e
+}]),i(f)),e;
+}
+},e(o,t);
+};
+}
+function c(e){
+return function(o,t,n){
+if("undefined"==typeof n)var n=!1;
+var r=this,a=t||function(){};
+return t=function(){
+try{
+return a.apply(r,arguments);
+}catch(e){
+throw e.stack&&console&&console.error&&console.error("[TryCatch]"+e.stack),_&&window.__moon_report&&(window.__moon_report([{
+offset:y,
+log:"listener_error;type:"+o+";host:"+top.location.host,
+e:e
+}]),i(f)),e;
+}
+},a.moon_lid=b,D[b]=t,b++,e.call(r,o,t,n);
+};
+}
+function d(e){
+return function(o,t,n){
+if("undefined"==typeof n)var n=!1;
+var r=this;
+return t=D[t.moon_lid],e.call(r,o,t,n);
+};
+}
+var _,m,w,l,u,p,f,h=/MicroMessenger/i.test(navigator.userAgent),g=window.define,v=0,y=2,x=4,O=9,j=10;
+if(window.__initCatch=function(e){
+_=e.idkey,m=e.startKey||0,w=e.limit,l=e.badjsId,u=e.reportOpt||"",p=e.extInfo||{},
+p.rate=p.rate||.5;
+},window.__moon_report=function(e,o){
+var i=.5;
+if(p&&p.rate&&(i=p.rate),o&&"number"==typeof o&&(i=o),!(!/mp\.weixin\.qq\.com/.test(location.href)&&!/payapp\.weixin\.qq\.com/.test(location.href)||Math.random()>i||!h||top!=window&&!/mp\.weixin\.qq\.com/.test(top.location.href))&&(n(e)&&(e=[e]),
+t(e)&&""!=_)){
+var s="",c=[],d=[],u=[],f=[];
+"number"!=typeof w&&(w=1/0);
+for(var g=0;g<e.length;g++){
+var v=e[g]||{};
+if(!(v.offset>w||"number"!=typeof v.offset||v.offset==x&&p&&p.network_rate&&Math.random()>=p.network_rate)){
+var y=1/0==w?m:m+v.offset;
+c[g]="[moon]"+_+"_"+y+";"+v.log+";"+r(v.e||{})||"",d[g]=y,u[g]=1;
+}
+}
+for(var O=0;O<d.length;O++)f[O]=_+"_"+d[O]+"_"+u[O],s=s+"&log"+O+"="+c[O];
+if(f.length>0){
+a("POST",location.protocol+"//mp.weixin.qq.com/mp/jsmonitor?","idkey="+f.join(";")+"&r="+Math.random()+"&lc="+c.length+s);
+var i=1;
+if(p&&p.badjs_rate&&(i=p.badjs_rate),l&&Math.random()<i){
+s=s.replace(/uin\:(.)*\|biz\:(.)*\|mid\:(.)*\|idx\:(.)*\|sn\:(.)*\|/,"");
+var j=new Image,D="https://badjs.weixinbridge.com/badjs?id="+l+"&level=4&from="+encodeURIComponent(location.host)+"&msg="+encodeURIComponent(s);
+j.src=D.slice(0,1024);
+}
+}
+}
+},window.setTimeout=s(window.setTimeout),window.setInterval=s(window.setInterval),
+Math.random()<.01&&window.Document&&window.HTMLElement){
+var D={},b=0;
+Document.prototype.addEventListener=c(Document.prototype.addEventListener),Document.prototype.removeEventListener=d(Document.prototype.removeEventListener),
+HTMLElement.prototype.addEventListener=c(HTMLElement.prototype.addEventListener),
+HTMLElement.prototype.removeEventListener=d(HTMLElement.prototype.removeEventListener);
+}
+var E=window.navigator.userAgent;
+if((/ip(hone|ad|od)/i.test(E)||/android/i.test(E))&&!/windows phone/i.test(E)&&window.localStorage&&window.localStorage.setItem){
+var S=window.localStorage.setItem,I=0;
+window.localStorage.setItem=function(e,o){
+if(!(I>=10))try{
+S.call(window.localStorage,e,o);
+}catch(t){
+t.stack&&console&&console.error&&console.error("[TryCatch]"+t.stack),window.__moon_report([{
+offset:j,
+log:"localstorage_error;"+t.toString(),
+e:t
+}]),I++,I>=3&&window.moon&&window.moon.clear&&moon.clear();
+}
+};
+}
+window.seajs&&g&&(window.define=function(){
+for(var o,t=[],n=arguments&&arguments[0],a=0,s=arguments.length;s>a;a++){
+var c=o=arguments[a];
+"function"==typeof o&&(o=function(){
+try{
+return c.apply(this,arguments);
+}catch(o){
+throw"string"==typeof n&&console.error("[TryCatch][DefineeErr]id:"+n),o.stack&&console&&console.error&&console.error("[TryCatch]"+o.stack),
+_&&window.__moon_report&&(window.__moon_report([{
+offset:v,
+log:"define_error;id:"+n+";",
+e:o
+}]),i(f)),e(" [define_error]"+JSON.stringify(r(o))),o;
+}
+},o.toString=function(e){
+return function(){
+return e.toString();
+};
+}(arguments[a])),t.push(o);
+}
+return g.apply(this,t);
+});
+}(),function(o){
+function t(e,o,t){
+return window.__DEBUGINFO?(window.__DEBUGINFO.res_list||(window.__DEBUGINFO.res_list=[]),
+window.__DEBUGINFO.res_list[e]?(window.__DEBUGINFO.res_list[e][o]=t,!0):!1):!1;
+}
+function n(e){
+var o=new TextEncoder("utf-8").encode(e),t=crypto.subtle||crypto.webkitSubtle;
+return t.digest("SHA-256",o).then(function(e){
+return r(e);
+});
+}
+function r(e){
+for(var o=[],t=new DataView(e),n=0;n<t.byteLength;n+=4){
+var r=t.getUint32(n),i=r.toString(16),a="00000000",s=(a+i).slice(-a.length);
+o.push(s);
+}
+return o.join("");
+}
+function i(e,o,t){
+if("object"==typeof e){
+var n=Object.prototype.toString.call(e).replace(/^\[object (.+)\]$/,function(e,o){
+return o;
+});
+if(t=t||e,"Array"==n){
+for(var r=0,i=e.length;i>r;++r)if(o.call(t,e[r],r,e)===!1)return;
+}else{
+if("Object"!==n&&a!=e)throw"unsupport type";
+if(a==e){
+for(var r=e.length-1;r>=0;r--){
+var s=a.key(r),c=a.getItem(s);
+if(o.call(t,c,s,e)===!1)return;
+}
+return;
+}
+for(var r in e)if(e.hasOwnProperty(r)&&o.call(t,e[r],r,e)===!1)return;
+}
+}
+}
+var a=o.localStorage,s=document.head||document.getElementsByTagName("head")[0],c=1,d=11,_=12,m=13,w=window.__allowLoadResFromMp?1:2,l=window.__allowLoadResFromMp?1:0,u=w+l,p=window.testenv_reshost||window.__moon_host||"res.wx.qq.com",f=new RegExp("^(http(s)?:)?//"+p);
+window.__loadAllResFromMp&&(p="mp.weixin.qq.com",w=0,u=w+l);
+var h=0,g={
+prefix:"__MOON__",
+loaded:[],
+unload:[],
+clearSample:Math.random()<h,
+hit_num:0,
+mod_num:0,
+version:1003,
+cacheData:{
+js_mod_num:0,
+js_hit_num:0,
+js_not_hit_num:0,
+js_expired_num:0,
+css_mod_num:0,
+css_hit_num:0,
+css_not_hit_num:0,
+css_expired_num:0
+},
+init:function(){
+g.loaded=[],g.unload=[];
+var e,t,r;
+if(a){
+var s="_moon_ver_key_",c=a.getItem(s);
+c!=g.version&&(g.clear(),a.setItem(s,g.version));
+}
+if((-1!=location.search.indexOf("no_moon1=1")||-1!=location.search.indexOf("no_lshttps=1"))&&g.clear(),
+a){
+var d=1*a.getItem(g.prefix+"clean_time"),_=+new Date;
+if(_-d>=1296e6){
+g.clear();
+try{
+!!a&&a.setItem(g.prefix+"clean_time",+new Date);
+}catch(m){}
+}
+}
+i(moon_map,function(i,s){
+if(t=g.prefix+s,r=!!i&&i.replace(f,""),e=!!a&&a.getItem(t),version=!!a&&(a.getItem(t+"_ver")||"").replace(f,""),
+g.mod_num++,r&&-1!=r.indexOf(".css")?g.cacheData.css_mod_num++:r&&-1!=r.indexOf(".js")&&g.cacheData.js_mod_num++,
+g.clearSample||!e||r!=version)g.unload.push(r.replace(f,"")),r&&-1!=r.indexOf(".css")?e?r!=version&&g.cacheData.css_expired_num++:g.cacheData.css_not_hit_num++:r&&-1!=r.indexOf(".js")&&(e?r!=version&&g.cacheData.js_expired_num++:g.cacheData.js_not_hit_num++);else{
+if("https:"==location.protocol&&window.moon_hash_map&&window.moon_hash_map[s]&&window.crypto)try{
+n(e).then(function(e){
+window.moon_hash_map[s]!=e&&console.log(s);
+});
+}catch(c){}
+try{
+var d="//# sourceURL="+s+"\n//@ sourceURL="+s;
+o.eval.call(o,'define("'+s+'",[],'+e+")"+d),g.hit_num++,r&&-1!=r.indexOf(".css")?g.cacheData.css_hit_num++:r&&-1!=r.indexOf(".js")&&g.cacheData.js_hit_num++;
+}catch(c){
+g.unload.push(r.replace(f,""));
+}
+}
+}),g.load(g.genUrl());
+},
+genUrl:function(){
+var e=g.unload;
+if(!e||e.length<=0)return[];
+var o,t,n="",r=[],i={},a=-1!=location.search.indexOf("no_moon2=1"),s="//"+p;
+-1!=location.href.indexOf("moon_debug2=1")&&(s="//mp.weixin.qq.com");
+for(var c=0,d=e.length;d>c;++c){
+/^\/(.*?)\//.test(e[c]);
+var _=/^\/(.*?)\//.exec(e[c]);
+_.length<2||!_[1]||(t=_[1],n=i[t],n?(o=n+","+e[c],o.length>1e3||a?(r.push(n+"?v="+g.version),
+n=location.protocol+s+e[c],i[t]=n):(n=o,i[t]=n)):(n=location.protocol+s+e[c],i[t]=n));
+}
+for(var m in i)i.hasOwnProperty(m)&&r.push(i[m]);
+return r;
+},
+load:function(e){
+if(window.__wxgspeeds&&(window.__wxgspeeds.mod_num=g.mod_num,window.__wxgspeeds.hit_num=g.hit_num),
+!e||e.length<=0)return seajs.combo_status=seajs.COMBO_LOADED,seajs.run(),console.debug&&console.debug("[moon] load js complete, all in cache, cost time : 0ms, total count : "+g.mod_num+", hit num: "+g.hit_num),
+void window.__moonclientlog.push("[moon] load js complete, all in cache, cost time : 0ms, total count : "+g.mod_num+", hit num: "+g.hit_num);
+seajs.combo_status=seajs.COMBO_LOADING;
+var o=0,t=+new Date;
+window.__wxgspeeds&&(window.__wxgspeeds.combo_times=[],window.__wxgspeeds.combo_times.push(t)),
+i(e,function(n){
+g.request(n,u,function(){
+if(window.__wxgspeeds&&window.__wxgspeeds.combo_times.push(+new Date),o++,o==e.length){
+var n=+new Date-t;
+window.__wxgspeeds&&(window.__wxgspeeds.mod_downloadtime=n),seajs.combo_status=seajs.COMBO_LOADED,
+seajs.run(),console.debug&&console.debug("[moon] load js complete, url num : "+e.length+", total mod count : "+g.mod_num+", hit num: "+g.hit_num+", use time : "+n+"ms"),
+window.__moonclientlog.push("[moon] load js complete, url num : "+e.length+", total mod count : "+g.mod_num+", hit num: "+g.hit_num+", use time : "+n+"ms");
+}
+});
+});
+},
+request:function(o,n,r){
+if(o){
+n=n||0,o.indexOf("mp.weixin.qq.com")>-1&&((new Image).src=location.protocol+"//mp.weixin.qq.com/mp/jsmonitor?idkey=27613_32_1&r="+Math.random(),
+window.__moon_report([{
+offset:_,
+log:"load_script_from_mp: "+o
+}],1));
+var i=-1;
+window.__DEBUGINFO&&(__DEBUGINFO.res_list||(__DEBUGINFO.res_list=[]),__DEBUGINFO.res_list.push({
+type:"js",
+status:"pendding",
+start:+new Date,
+end:0,
+url:o
+}),i=__DEBUGINFO.res_list.length-1),-1!=location.search.indexOf("no_lshttps=1")&&(o=o.replace("http://","https://"));
+var a=document.createElement("script");
+a.src=o,a.type="text/javascript",a.async=!0,a.down_time=+new Date,a.onerror=function(s){
+t(i,"status","error"),t(i,"end",+new Date);
+var _=new Error(s);
+if(n>=0)if(l>n){
+var w=o.replace("res.wx.qq.com","mp.weixin.qq.com");
+g.request(w,n,r);
+}else g.request(o,n,r);else window.__moon_report&&window.__moon_report([{
+offset:c,
+log:"load_script_error: "+o,
+e:_
+}],1);
+if(n==l-1&&window.__moon_report([{
+offset:d,
+log:"load_script_error: "+o,
+e:_
+}],1),-1==n){
+var u="ua: "+window.navigator.userAgent+", time="+(+new Date-a.down_time)+", load_script_error -1 : "+o;
+window.__moon_report([{
+offset:m,
+log:u
+}],1);
+}
+window.__moonclientlog.push("moon load js error : "+o+", error -> "+_.toString()),
+e("moon_request_error url:"+o);
+},"undefined"!=typeof moon_crossorigin&&moon_crossorigin&&a.setAttribute("crossorigin",!0),
+a.onload=a.onreadystatechange=function(){
+t(i,"status","loaded"),t(i,"end",+new Date),!a||a.readyState&&!/loaded|complete/.test(a.readyState)||(t(i,"status","200"),
+a.onload=a.onreadystatechange=null,"function"==typeof r&&r());
+},n--,s.appendChild(a),e("moon_request url:"+o+" retry:"+n);
+}
+},
+setItem:function(e,o){
+!!a&&a.setItem(e,o);
+},
+clear:function(){
+a&&(i(a,function(e,o){
+~o.indexOf(g.prefix)&&a.removeItem(o);
+}),console.debug&&console.debug("[moon] clear"));
+},
+idkeyReport:function(e,o,t){
+t=t||1;
+var n=e+"_"+o+"_"+t;
+(new Image).src="/mp/jsmonitor?idkey="+n+"&r="+Math.random();
+}
+};
+seajs&&seajs.use&&"string"==typeof window.__moon_mainjs&&seajs.use(window.__moon_mainjs),
+window.moon=g;
+}(window),window.moon.init();
+};
+e(),!!window.__moon_initcallback&&window.__moon_initcallback(),window.__wxgspeeds&&(window.__wxgspeeds.moonendtime=+new Date);
+}
+}
+__moonf__(); }, 25);</script><script nonce="1093455048" type="text/javascript">
+    var real_show_page_time = +new Date();
+    if (!!window.addEventListener){
+        window.addEventListener("load", function(){
+            window.onload_endtime = +new Date();
+        });
+    }
+    
+</script>
+
+    </body>
+    <script nonce="1093455048" type="text/javascript">document.addEventListener("touchstart", function() {},false);</script>
+</html>
+<!--tailTrap<body></body><head></head><html></html>-->

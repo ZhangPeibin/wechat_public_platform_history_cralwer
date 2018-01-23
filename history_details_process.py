@@ -12,10 +12,9 @@ reload(sys)
 sys.setdefaultencoding("utf-8")
 
 tmp = "tmp/"
-this_dir_save_path = '.'+tmp+'this_dir_path'
-this_dir = None
 db = None
-data_root = "pnp_data/"
+pnp_data = "pnp_data/"
+biz_name_json_path = pnp_data+"biz_name_json"
 
 
 def process_list(message_json_tuple, save_path):
@@ -49,7 +48,7 @@ def process_home(content, save_path):
     process_list(messageJsonTuple, save_path)
 
 
-def process_more(content, save_path, wechat_public_num_name):
+def process_more(content, save_path, biz):
     json_data = json.loads(content)
     can_msg_continue = int(json_data['can_msg_continue'])
     general_msg_list = json.loads(json_data['general_msg_list'])
@@ -59,47 +58,51 @@ def process_more(content, save_path, wechat_public_num_name):
     process_list(messageJsonTuple, save_path)
 
     if can_msg_continue == 0:
-        with open(tmp+wechat_public_num_name+".task.status", 'wb') as f:
+        with open(tmp+biz+".task.status", 'wb') as f:
             f.write("0")
 
 
-def process(save_path, msg_offset):
-    soup = BeautifulSoup(open(save_path))
+def process(biz, page_cache_path, msg_offset):
+    soup = BeautifulSoup(open(page_cache_path))
     if soup is None:
-        print "open %s err " % save_path
+        print "open %s err " % page_cache_path
 
-    # 删除tmp文件
-    # os.remove(save_path)
+    with open(biz_name_json_path, 'r') as f:
+        for line in f:
+            biz_name_json = json.loads(line)
+            if biz in biz_name_json.keys():
+                wechat_public_num_name = biz_name_json[biz]
+            else:
+                wechat_public_num_name = biz
 
-    global this_dir
-    # 公众号
-    if int(msg_offset) == 0:
-        wechat_public_num_name = str(soup.find('strong', 'profile_nickname').string).lstrip().rstrip()
-        # wechat_public_des = str(soup.find('p', 'profile_desc').string).lstrip().rstrip()
-        this_dir = data_root + wechat_public_num_name+"/"
-        if not os.path.exists(this_dir):
-            os.mkdir(this_dir)
+    # global this_dir
+    # # 公众号
+    # if int(msg_offset) == 0:
+    #     # 从html解析公众号名称
+    #     wechat_public_num_name = str(soup.find('strong', 'profile_nickname').string).lstrip().rstrip()
+    #
+    #
+    #     this_dir = pnp_data + wechat_public_num_name + "/"
+    #     if not os.path.exists(this_dir):
+    #         os.mkdir(this_dir)
+    # else:
+    #     # 从biz_name_json中获取公众号名称
 
-        with open(this_dir_save_path, 'wb') as f:
-            f.write(this_dir)
-    else:
-        with open(this_dir_save_path, 'r') as f:
-            this_dir = f.read()
-        wechat_public_num_name = this_dir.split("/")[1]
+    pnp_save_dir = pnp_data + wechat_public_num_name + "/"
 
     global db
-    db = sql.SqlHelper(this_dir.replace("/", "").split("-")[0])
+    db = sql.SqlHelper(str(biz).replace("=", ""))
 
-    c_dir = this_dir + msg_offset+"/"
-    if not os.path.exists(c_dir):
-        os.mkdir(c_dir)
+    pnp_save_dir = pnp_save_dir + msg_offset+"/"
+    if not os.path.exists(pnp_save_dir):
+        os.mkdir(pnp_save_dir)
 
     if int(offset) == 0:
         content = soup.prettify()
-        process_home(content, c_dir)
+        process_home(content, pnp_save_dir)
     else:
-        with open(save_path, 'r') as f:
-            process_more(f.read(), c_dir, wechat_public_num_name)
+        with open(page_cache_path, 'r') as f:
+            process_more(f.read(), pnp_save_dir, biz)
 
 
 class WeChatNumDetails:
@@ -109,7 +112,6 @@ class WeChatNumDetails:
 
     def callback(self, curl):
         self.contents = self.contents + curl
-        print self.save_path
         try:
             with open(self.save_path, "wb") as f:
                 f.write(self.contents)
@@ -129,6 +131,7 @@ if __name__ == "__main__":
     if len(sys.argv) == 0:
         print "错误的参数"
     else:
-        path = sys.argv[1]
-        offset = sys.argv[2]
-        process(path, offset)
+        _biz = sys.argv[1]
+        path = sys.argv[2]
+        offset = sys.argv[3]
+        process(_biz, path, offset)
