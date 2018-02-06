@@ -18,19 +18,6 @@ MAX_COUNT = 5000
 drag_count = 0
 
 
-def save_biz_name(biz, name):
-    with open(biz_name_json_path, "a+") as f:
-        biz_exist = False
-        for line in f:
-            biz_name_json = json.loads(line)
-            if wc_biz in biz_name_json.keys():
-                biz_exist = True
-                break
-        if not biz_exist:
-            biz_json = {biz: name}
-            f.write(json.dumps(biz_json) + "\n")
-
-
 def wait_update(timeout):
     d.wait.update(timeout=timeout)
 
@@ -98,6 +85,7 @@ def view_history_message():
 
 
 def detail_to_history_message():
+    wait(5)
     """
     处理在详情界面的操作
     1:没关注则关注
@@ -120,17 +108,21 @@ def search_public_number():
     """
     resourceId = 公众号搜索界面的editText的id
     :return:
+
     """
-    d(resourceId="com.tencent.mm:id/hb", className='android.widget.EditText').clear_text()  # clear the text
-    d(resourceId="com.tencent.mm:id/hb", className='android.widget.EditText').set_text(wc_search_key)  # set the text
+    # d(resourceId="com.tencent.mm:id/hb", className='android.widget.EditText').clear_text()  # clear the text
+    # d(resourceId="com.tencent.mm:id/hb", className='android.widget.EditText').set_text(wc_search_key)  # set the text
+    d(className='android.widget.EditText').clear_text()  # clear the text
+    d(className='android.widget.EditText').set_text(wc_search_key)  # set the text
     wait_update(1000)
-    d.click(663, 1121)
+    wait(2)
+    d.click(1005, 1710)
     # 键盘的搜索
     # d.click(663, 888)
     wait_update(10000)
-    wait(2)
+    wait(5)
     # 第一个公众号的位置
-    d.click(346, 330)
+    d.click(646, 330)
     wait_update(5000)
     detail_to_history_message()
 
@@ -162,14 +154,10 @@ def jump_search_public_number_page():
 
 wc_search_key = "smartisan2013"
 wc_name = "罗永浩"
-wc_biz = "MjM5NzAxNTkzNg=="
 
 if len(sys.argv) == 3:
     wc_search_key = sys.argv[1]
     wc_name = sys.argv[2]
-    wc_biz = sys.argv[3]
-
-save_biz_name(wc_biz, wc_name)
 
 d.screen.on()
 

@@ -14,7 +14,7 @@ sys.setdefaultencoding("utf-8")
 tmp = "tmp/"
 db = None
 pnp_data = "pnp_data/"
-biz_name_json_path = pnp_data+"biz_name_json"
+biz_name_json_path = pnp_data + "biz_name_json"
 
 
 def process_list(message_json_tuple, save_path):
@@ -58,8 +58,39 @@ def process_more(content, save_path, biz):
     process_list(messageJsonTuple, save_path)
 
     if can_msg_continue == 0:
-        with open(tmp+biz+".task.status", 'wb') as f:
+        with open(tmp + biz + ".task.status", 'wb') as f:
             f.write("0")
+
+
+def save_biz_name(biz, name):
+    with open(biz_name_json_path, "a+") as f:
+        biz_exist = False
+        for line in f:
+            biz_name_json = json.loads(line)
+            if biz in biz_name_json.keys():
+                biz_exist = True
+                break
+        if not biz_exist:
+            biz_json = {biz: name}
+            f.write(json.dumps(biz_json) + "\n")
+
+
+def read_biz_name(msg_offset, soup, biz):
+    # 公众号
+    if int(msg_offset) == 0:
+        # 从html解析公众号名称
+        wechat_public_num_name = str(soup.find('strong', 'profile_nickname').string).lstrip().rstrip()
+        save_biz_name(biz, wechat_public_num_name)
+        return wechat_public_num_name
+    else:
+        with open(biz_name_json_path, 'r') as f:
+            for line in f:
+                biz_name_json = json.loads(line)
+                if biz in biz_name_json.keys():
+                    wechat_public_num_name = biz_name_json[biz]
+                else:
+                    wechat_public_num_name = biz
+        return wechat_public_num_name
 
 
 def process(biz, page_cache_path, msg_offset):
@@ -67,33 +98,14 @@ def process(biz, page_cache_path, msg_offset):
     if soup is None:
         print "open %s err " % page_cache_path
 
-    with open(biz_name_json_path, 'r') as f:
-        for line in f:
-            biz_name_json = json.loads(line)
-            if biz in biz_name_json.keys():
-                wechat_public_num_name = biz_name_json[biz]
-            else:
-                wechat_public_num_name = biz
-
-    # global this_dir
-    # # 公众号
-    # if int(msg_offset) == 0:
-    #     # 从html解析公众号名称
-    #     wechat_public_num_name = str(soup.find('strong', 'profile_nickname').string).lstrip().rstrip()
-    #
-    #
-    #     this_dir = pnp_data + wechat_public_num_name + "/"
-    #     if not os.path.exists(this_dir):
-    #         os.mkdir(this_dir)
-    # else:
-    #     # 从biz_name_json中获取公众号名称
+    wechat_public_num_name = read_biz_name(msg_offset=msg_offset, soup=soup, biz=biz)
 
     pnp_save_dir = pnp_data + wechat_public_num_name + "/"
 
     global db
     db = sql.SqlHelper(str(biz).replace("=", ""))
 
-    pnp_save_dir = pnp_save_dir + msg_offset+"/"
+    pnp_save_dir = pnp_save_dir + msg_offset + "/"
     if not os.path.exists(pnp_save_dir):
         os.mkdir(pnp_save_dir)
 
