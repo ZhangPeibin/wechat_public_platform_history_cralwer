@@ -48,7 +48,7 @@ def process_home(content, save_path):
     process_list(messageJsonTuple, save_path)
 
 
-def process_more(content, save_path, biz):
+def process_more(content, save_path, wc_name):
     json_data = json.loads(content)
     can_msg_continue = int(json_data['can_msg_continue'])
     general_msg_list = json.loads(json_data['general_msg_list'])
@@ -58,7 +58,7 @@ def process_more(content, save_path, biz):
     process_list(messageJsonTuple, save_path)
 
     if can_msg_continue == 0:
-        with open(tmp + biz + ".task.status", 'wb') as f:
+        with open(tmp + wc_name + ".task.status", 'wb') as f:
             f.write("0")
 
 
@@ -114,7 +114,7 @@ def process(biz, page_cache_path, msg_offset):
         process_home(content, pnp_save_dir)
     else:
         with open(page_cache_path, 'r') as f:
-            process_more(f.read(), pnp_save_dir, biz)
+            process_more(f.read(), pnp_save_dir, wechat_public_num_name)
 
 
 class WeChatNumDetails:

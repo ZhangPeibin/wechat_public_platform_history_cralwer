@@ -65,7 +65,7 @@ def continue_drag():
 
     drag_count = drag_count + 1
 
-    status_path = tmp + wc_biz + ".task.status"
+    status_path = tmp + wc_name + ".task.status"
     if not os.path.exists(status_path):
         return True
 
@@ -101,6 +101,7 @@ def detail_to_history_message():
 
     if can_view_history:
         click_by_text("查看历史消息", 10000)
+        wait_sleep(3000)
         view_history_message()
 
 
@@ -110,19 +111,17 @@ def search_public_number():
     :return:
 
     """
-    # d(resourceId="com.tencent.mm:id/hb", className='android.widget.EditText').clear_text()  # clear the text
-    # d(resourceId="com.tencent.mm:id/hb", className='android.widget.EditText').set_text(wc_search_key)  # set the text
     d(className='android.widget.EditText').clear_text()  # clear the text
     d(className='android.widget.EditText').set_text(wc_search_key)  # set the text
     wait_update(1000)
     wait(2)
-    d.click(1005, 1710)
+    # d.click(1005, 1710)
     # 键盘的搜索
-    # d.click(663, 888)
+    d.click(663, 1132)
     wait_update(10000)
     wait(5)
     # 第一个公众号的位置
-    d.click(646, 330)
+    d.click(300, 330)
     wait_update(5000)
     detail_to_history_message()
 
@@ -152,8 +151,8 @@ def jump_search_public_number_page():
         jump_search_public_number_page()
 
 
-wc_search_key = "smartisan2013"
-wc_name = "罗永浩"
+wc_search_key = ""
+wc_name = ""
 
 if len(sys.argv) == 3:
     wc_search_key = sys.argv[1]
