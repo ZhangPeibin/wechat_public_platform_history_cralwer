@@ -14,9 +14,9 @@ sys.setdefaultencoding("utf-8")
 调用{@link uiauto.py}去处理
 """
 
-host = "39.106.39.162"
+host = "******"
 port = 6379
-password = "JFRedis?"
+password = "******"
 task_queue_name = "somp_crawl_list"
 process_queue_name = "process_somp_crawl_list"
 system_command = "python uiauto.py %1s %2s "
